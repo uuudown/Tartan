@@ -1,0 +1,162 @@
+
+Lmod is automatically replacing "xl/20180125" with "gcc/5.4.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) hdf5/1.10.0-patch1     2) spectrum-mpi/10.1.0.4-20170915
+
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 1, BLOCK_DIM_Z = 2
+ExE_Time: 10.89
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 1, BLOCK_DIM_Z = 2
+ExE_Time: 10.34
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 1, BLOCK_DIM_Z = 2
+ExE_Time: 10.28
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 1, BLOCK_DIM_Z = 2
+ExE_Time: 10.25
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 1, BLOCK_DIM_Z = 2
+ExE_Time: 10.22
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 304889: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 4;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 4;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c2n14>
+                            <20*summitdev-r0c1n16>
+                            <20*summitdev-r0c1n17>
+                            <20*summitdev-r0c0n11>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out/b2reqwp> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 4
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+export OMPI_MCA_pml_pami_enable_cuda=0 
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.36 sec.
+    Max Memory :                                 52 MB
+    Average Memory :                             52.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   54 sec.
+    Turnaround time :                            564122 sec.
+
+The output (if any) is above this job summary.
+
+
+Lmod is automatically replacing "xl/20180125" with "gcc/5.4.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) hdf5/1.10.0-patch1     2) spectrum-mpi/10.1.0.4-20170915
+
+[1521119697.959824] [summitdev-r0c1n13:160548:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119697.964324] [summitdev-r0c1n13:160548:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119697.965368] [summitdev-r0c1n15:67722:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119697.969691] [summitdev-r0c1n15:67722:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 11.75
+[1521119709.842624] [summitdev-r0c1n13:160561:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119709.849604] [summitdev-r0c1n13:160561:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119709.874907] [summitdev-r0c1n15:67735:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119709.880937] [summitdev-r0c1n15:67735:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 13.05
+[1521119722.273120] [summitdev-r0c1n15:67748:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119722.280468] [summitdev-r0c1n15:67748:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119722.274562] [summitdev-r0c1n13:160576:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119722.282743] [summitdev-r0c1n13:160576:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 12.03
+[1521119735.981727] [summitdev-r0c1n15:67760:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119735.985913] [summitdev-r0c1n15:67760:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119735.997707] [summitdev-r0c1n13:160590:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119736.001694] [summitdev-r0c1n13:160590:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 12.33
+[1521119746.517512] [summitdev-r0c1n13:160602:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119746.521648] [summitdev-r0c1n13:160602:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119746.532706] [summitdev-r0c1n15:67772:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521119746.537759] [summitdev-r0c1n15:67772:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 10.45
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 304890: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c2n17>
+                            <20*summitdev-r0c1n11>
+                            <20*summitdev-r0c1n12>
+                            <20*summitdev-r0c1n13>
+                            <20*summitdev-r0c1n15>
+                            <20*summitdev-r0c1n16>
+                            <20*summitdev-r0c1n17>
+                            <20*summitdev-r0c0n11>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out/b2reqwp> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 8
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+export OMPI_MCA_pml_pami_enable_cuda=0 
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_strong.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.38 sec.
+    Max Memory :                                 52 MB
+    Average Memory :                             52.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   66 sec.
+    Turnaround time :                            565412 sec.
+
+The output (if any) is above this job summary.
+

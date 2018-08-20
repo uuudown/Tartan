@@ -1,0 +1,176 @@
+myRank=0, setting CUDA device 0
+Running until t=0.010000, Problem size=256x256x256 
+Run completed:  
+   Elapsed Time        =  3.1507e+01 seconds
+   Problem size        =  256x256x256 
+   Iteration count     =  3171 
+   Final Origin Energy =  1.8552103739e+05 
+   Used Memory         =  1509.0000 Mb
+Writing solution to file xyz_rank0.asc
+myRank=7, setting CUDA device 0
+Writing solution to file xyz_rank7.asc
+myRank=2, setting CUDA device 0
+Writing solution to file xyz_rank2.asc
+myRank=1, setting CUDA device 0
+Writing solution to file xyz_rank1.asc
+myRank=5, setting CUDA device 0
+Writing solution to file xyz_rank5.asc
+myRank=4, setting CUDA device 0
+Writing solution to file xyz_rank4.asc
+myRank=3, setting CUDA device 0
+Writing solution to file xyz_rank3.asc
+myRank=6, setting CUDA device 0
+Writing solution to file xyz_rank6.asc
+ExE_Time: 38.78
+myRank=0, setting CUDA device 0
+Running until t=0.010000, Problem size=256x256x256 
+Run completed:  
+   Elapsed Time        =  3.1740e+01 seconds
+   Problem size        =  256x256x256 
+   Iteration count     =  3171 
+   Final Origin Energy =  1.8552103739e+05 
+   Used Memory         =  1509.0000 Mb
+Writing solution to file xyz_rank0.asc
+myRank=5, setting CUDA device 0
+Writing solution to file xyz_rank5.asc
+myRank=2, setting CUDA device 0
+Writing solution to file xyz_rank2.asc
+myRank=7, setting CUDA device 0
+Writing solution to file xyz_rank7.asc
+myRank=1, setting CUDA device 0
+Writing solution to file xyz_rank1.asc
+myRank=4, setting CUDA device 0
+Writing solution to file xyz_rank4.asc
+myRank=3, setting CUDA device 0
+Writing solution to file xyz_rank3.asc
+myRank=6, setting CUDA device 0
+Writing solution to file xyz_rank6.asc
+ExE_Time: 39.57
+myRank=0, setting CUDA device 0
+Running until t=0.010000, Problem size=256x256x256 
+Run completed:  
+   Elapsed Time        =  3.1731e+01 seconds
+   Problem size        =  256x256x256 
+   Iteration count     =  3171 
+   Final Origin Energy =  1.8552103739e+05 
+   Used Memory         =  1509.0000 Mb
+Writing solution to file xyz_rank0.asc
+myRank=7, setting CUDA device 0
+Writing solution to file xyz_rank7.asc
+myRank=2, setting CUDA device 0
+Writing solution to file xyz_rank2.asc
+myRank=1, setting CUDA device 0
+Writing solution to file xyz_rank1.asc
+myRank=6, setting CUDA device 0
+Writing solution to file xyz_rank6.asc
+myRank=3, setting CUDA device 0
+Writing solution to file xyz_rank3.asc
+myRank=5, setting CUDA device 0
+Writing solution to file xyz_rank5.asc
+myRank=4, setting CUDA device 0
+Writing solution to file xyz_rank4.asc
+ExE_Time: 39.36
+myRank=0, setting CUDA device 0
+Running until t=0.010000, Problem size=256x256x256 
+Run completed:  
+   Elapsed Time        =  3.1753e+01 seconds
+   Problem size        =  256x256x256 
+   Iteration count     =  3171 
+   Final Origin Energy =  1.8552103739e+05 
+   Used Memory         =  1509.0000 Mb
+Writing solution to file xyz_rank0.asc
+myRank=5, setting CUDA device 0
+Writing solution to file xyz_rank5.asc
+myRank=2, setting CUDA device 0
+Writing solution to file xyz_rank2.asc
+myRank=6, setting CUDA device 0
+Writing solution to file xyz_rank6.asc
+myRank=7, setting CUDA device 0
+Writing solution to file xyz_rank7.asc
+myRank=3, setting CUDA device 0
+Writing solution to file xyz_rank3.asc
+myRank=1, setting CUDA device 0
+Writing solution to file xyz_rank1.asc
+myRank=4, setting CUDA device 0
+Writing solution to file xyz_rank4.asc
+ExE_Time: 39.23
+myRank=0, setting CUDA device 0
+Running until t=0.010000, Problem size=256x256x256 
+Run completed:  
+   Elapsed Time        =  3.1739e+01 seconds
+   Problem size        =  256x256x256 
+   Iteration count     =  3171 
+   Final Origin Energy =  1.8552103739e+05 
+   Used Memory         =  1509.0000 Mb
+Writing solution to file xyz_rank0.asc
+myRank=1, setting CUDA device 0
+Writing solution to file xyz_rank1.asc
+myRank=5, setting CUDA device 0
+Writing solution to file xyz_rank5.asc
+myRank=7, setting CUDA device 0
+Writing solution to file xyz_rank7.asc
+myRank=4, setting CUDA device 0
+Writing solution to file xyz_rank4.asc
+myRank=3, setting CUDA device 0
+Writing solution to file xyz_rank3.asc
+myRank=6, setting CUDA device 0
+Writing solution to file xyz_rank6.asc
+myRank=2, setting CUDA device 0
+Writing solution to file xyz_rank2.asc
+ExE_Time: 38.99
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 268235: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n13>
+                            <20*summitdev-r0c1n01>
+                            <20*summitdev-r0c2n09>
+                            <20*summitdev-r0c1n02>
+                            <20*summitdev-r0c1n03>
+                            <20*summitdev-r0c1n05>
+                            <20*summitdev-r0c1n06>
+                            <20*summitdev-r0c1n07>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out-rdma/lulesh> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 8
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.43 sec.
+    Max Memory :                                 53 MB
+    Average Memory :                             52.46 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   198 sec.
+    Turnaround time :                            254 sec.
+
+The output (if any) is above this job summary.
+

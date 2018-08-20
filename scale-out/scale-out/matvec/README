@@ -1,0 +1,30 @@
+README for MATVEC.cu
+
+1. Generates two random matrices of input size and stroes them in a 1-D array in Row-major order. 
+2. The first matrix is divided into columns depending on the number of input processors and each part is sent to a separate GPU (MPI_Scatter)
+3. The second matrix (Matrix B) is broadcasted to all nodes and copied on all GPUs to perform computation. (MPI_Bcast)
+4. Each GPU computes its own part of the result matrix and sends the result back to the CPU
+5. The CPU gathers the result into a resultant matrix. (MPI_Gather)
+
+
+
+How to RUN:
+
+1. For a single host
+
+mpiexec -np [number of processors] ./executable a b x y [1/2] -v for verification and -p if printing values is required
+
+a=Number of Rows of Matrix 1
+b=Number of Coloumns of Matrix 1
+
+x=Number of Rows of Matrix 2
+y=Number of Columns of Matrix 2
+
+1 = Pinned memory
+2 = Unpinned memory 
+
+
+
+
+
+

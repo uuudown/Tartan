@@ -1,0 +1,2 @@
+OP,Packet,Bandwidth
+reduce_scatter_perf,67108864,12.57

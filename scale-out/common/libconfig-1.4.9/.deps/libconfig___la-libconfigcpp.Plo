@@ -1,0 +1,335 @@
+libconfig___la-libconfigcpp.lo: libconfigcpp.c++ \
+ /usr/include/stdc-predef.h libconfig.h++ /usr/include/stdio.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64-v2.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/lib/gcc/powerpc64le-none-linux-gnu/5.4.0/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/lib/gcc/powerpc64le-none-linux-gnu/5.4.0/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/exception \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/c++config.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/os_defines.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/cpu_defines.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/atomic_lockfree_defines.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/string \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stringfwd.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/memoryfwd.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/char_traits.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_algobase.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/functexcept.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/exception_defines.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/cpp_type_traits.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/type_traits.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/numeric_traits.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_pair.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/move.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/concept_check.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_iterator_base_types.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_iterator_base_funcs.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/debug/debug.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_iterator.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/ptr_traits.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/predefined_ops.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/postypes.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cwchar \
+ /usr/include/bits/wchar.h /usr/include/xlocale.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/allocator.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/c++allocator.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/new_allocator.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/new \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/localefwd.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/c++locale.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/clocale \
+ /usr/include/locale.h /usr/include/bits/locale.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/iosfwd \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cctype \
+ /usr/include/ctype.h /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/ostream_insert.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/cxxabi_forced.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_function.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/backward/binders.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/range_access.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/basic_string.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/atomicity.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/gthr.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/timex.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/atomic_word.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/alloc_traits.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/basic_string.tcc \
+ wincompat.h libconfig.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cstring \
+ /usr/include/string.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cstdlib \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/sstream \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/istream \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ios \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/ios_base.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/locale_classes.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/locale_classes.tcc \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/stdexcept \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/streambuf \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/streambuf.tcc \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/basic_ios.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/locale_facets.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cwctype \
+ /usr/include/wctype.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/ctype_base.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/streambuf_iterator.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/ctype_inline.h \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/locale_facets.tcc \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/basic_ios.tcc \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ostream \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/ostream.tcc \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/istream.tcc \
+ /autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/sstream.tcc
+
+/usr/include/stdc-predef.h:
+
+libconfig.h++:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64-v2.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/lib/gcc/powerpc64le-none-linux-gnu/5.4.0/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/lib/gcc/powerpc64le-none-linux-gnu/5.4.0/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/exception:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/c++config.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/os_defines.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/cpu_defines.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/atomic_lockfree_defines.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/string:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stringfwd.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/memoryfwd.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/char_traits.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_algobase.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/functexcept.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/exception_defines.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/cpp_type_traits.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/type_traits.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/numeric_traits.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_pair.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/move.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/concept_check.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_iterator_base_types.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_iterator_base_funcs.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/debug/debug.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_iterator.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/ptr_traits.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/predefined_ops.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/postypes.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cwchar:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/xlocale.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/allocator.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/c++allocator.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/new_allocator.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/new:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/localefwd.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/c++locale.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/iosfwd:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/ostream_insert.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/cxxabi_forced.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/stl_function.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/backward/binders.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/range_access.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/basic_string.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/atomicity.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/gthr.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/atomic_word.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ext/alloc_traits.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/basic_string.tcc:
+
+wincompat.h:
+
+libconfig.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cstring:
+
+/usr/include/string.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/sstream:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/istream:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ios:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/ios_base.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/locale_classes.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/locale_classes.tcc:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/stdexcept:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/streambuf:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/streambuf.tcc:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/basic_ios.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/locale_facets.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/cwctype:
+
+/usr/include/wctype.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/ctype_base.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/streambuf_iterator.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/powerpc64le-none-linux-gnu/bits/ctype_inline.h:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/locale_facets.tcc:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/basic_ios.tcc:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/ostream:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/ostream.tcc:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/istream.tcc:
+
+/autofs/nccs-svm1_sw/summitdev/gcc/5.4.0new/include/c++/5.4.0/bits/sstream.tcc:

@@ -1,0 +1,22 @@
+# This file created by conda-build 1.21.3
+# meta.yaml template originally from:
+# /media/sf_conda/conda-recipes/nlopt-static, last modified Fri Jun 24 22:44:02 2016
+# ------------------------------------------------
+
+package:
+    name: nlopt-static
+    version: 2.4.2
+source:
+    fn: nlopt-2.4.2.tar.gz
+    md5: d0b8f139a4acf29b76dbae69ade8ac54
+    url: http://ab-initio.mit.edu/nlopt/nlopt-2.4.2.tar.gz
+build: {}
+requirements:
+    build:
+        - gcc
+    run:
+        - libgcc
+about:
+    home: http://ab-initio.mit.edu/nlopt
+    license: GNU Lesser General Public License (LGPL)
+    summary: nonlinear optimization library

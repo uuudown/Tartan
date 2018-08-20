@@ -1,0 +1,141 @@
+[P2P (Peer-to-Peer) GPU Bandwidth Latency Test]
+Device: 0, Tesla P100-SXM2-16GB, pciBusID: 6, pciDeviceID: 0, pciDomainID:0
+Device: 1, Tesla P100-SXM2-16GB, pciBusID: 7, pciDeviceID: 0, pciDomainID:0
+Device: 2, Tesla P100-SXM2-16GB, pciBusID: a, pciDeviceID: 0, pciDomainID:0
+Device: 3, Tesla P100-SXM2-16GB, pciBusID: b, pciDeviceID: 0, pciDomainID:0
+Device: 4, Tesla P100-SXM2-16GB, pciBusID: 85, pciDeviceID: 0, pciDomainID:0
+Device: 5, Tesla P100-SXM2-16GB, pciBusID: 86, pciDeviceID: 0, pciDomainID:0
+Device: 6, Tesla P100-SXM2-16GB, pciBusID: 89, pciDeviceID: 0, pciDomainID:0
+Device: 7, Tesla P100-SXM2-16GB, pciBusID: 8a, pciDeviceID: 0, pciDomainID:0
+Device=0 CAN Access Peer Device=1
+Device=0 CAN Access Peer Device=2
+Device=0 CAN Access Peer Device=3
+Device=0 CAN Access Peer Device=4
+Device=0 CANNOT Access Peer Device=5
+Device=0 CANNOT Access Peer Device=6
+Device=0 CANNOT Access Peer Device=7
+Device=1 CAN Access Peer Device=0
+Device=1 CAN Access Peer Device=2
+Device=1 CAN Access Peer Device=3
+Device=1 CANNOT Access Peer Device=4
+Device=1 CAN Access Peer Device=5
+Device=1 CANNOT Access Peer Device=6
+Device=1 CANNOT Access Peer Device=7
+Device=2 CAN Access Peer Device=0
+Device=2 CAN Access Peer Device=1
+Device=2 CAN Access Peer Device=3
+Device=2 CANNOT Access Peer Device=4
+Device=2 CANNOT Access Peer Device=5
+Device=2 CAN Access Peer Device=6
+Device=2 CANNOT Access Peer Device=7
+Device=3 CAN Access Peer Device=0
+Device=3 CAN Access Peer Device=1
+Device=3 CAN Access Peer Device=2
+Device=3 CANNOT Access Peer Device=4
+Device=3 CANNOT Access Peer Device=5
+Device=3 CANNOT Access Peer Device=6
+Device=3 CAN Access Peer Device=7
+Device=4 CAN Access Peer Device=0
+Device=4 CANNOT Access Peer Device=1
+Device=4 CANNOT Access Peer Device=2
+Device=4 CANNOT Access Peer Device=3
+Device=4 CAN Access Peer Device=5
+Device=4 CAN Access Peer Device=6
+Device=4 CAN Access Peer Device=7
+Device=5 CANNOT Access Peer Device=0
+Device=5 CAN Access Peer Device=1
+Device=5 CANNOT Access Peer Device=2
+Device=5 CANNOT Access Peer Device=3
+Device=5 CAN Access Peer Device=4
+Device=5 CAN Access Peer Device=6
+Device=5 CAN Access Peer Device=7
+Device=6 CANNOT Access Peer Device=0
+Device=6 CANNOT Access Peer Device=1
+Device=6 CAN Access Peer Device=2
+Device=6 CANNOT Access Peer Device=3
+Device=6 CAN Access Peer Device=4
+Device=6 CAN Access Peer Device=5
+Device=6 CAN Access Peer Device=7
+Device=7 CANNOT Access Peer Device=0
+Device=7 CANNOT Access Peer Device=1
+Device=7 CANNOT Access Peer Device=2
+Device=7 CAN Access Peer Device=3
+Device=7 CAN Access Peer Device=4
+Device=7 CAN Access Peer Device=5
+Device=7 CAN Access Peer Device=6
+
+***NOTE: In case a device doesn't have P2P access to other one, it falls back to normal memcopy procedure.
+So you can see lesser Bandwidth (GB/s) in those cases.
+
+P2P Connectivity Matrix
+     D\D     0     1     2     3     4     5     6     7
+     0	     1     1     1     1     1     0     0     0
+     1	     1     1     1     1     0     1     0     0
+     2	     1     1     1     1     0     0     1     0
+     3	     1     1     1     1     0     0     0     1
+     4	     1     0     0     0     1     1     1     1
+     5	     0     1     0     0     1     1     1     1
+     6	     0     0     1     0     1     1     1     1
+     7	     0     0     0     1     1     1     1     1
+Unidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0      1      2      3      4      5      6      7 
+     0 500.90   9.84  10.76  10.77  10.63  10.62  10.65  10.65 
+     1   9.84 500.30  10.74  10.73  10.61  10.62  10.57  10.59 
+     2   9.77   9.78 499.86   9.17  10.05  10.03  10.07  10.09 
+     3   9.79   9.77   9.18 500.82  10.08  10.12  10.09  10.09 
+     4  10.06  10.07  10.06  10.05 500.80   9.19   9.77   9.77 
+     5  10.08  10.05  10.06  10.06   9.19 499.50   9.79   9.82 
+     6  10.07  10.06  10.05  10.03   9.78   9.77 500.82   9.19 
+     7  10.09  10.11  10.09  10.12   9.83   9.81   9.24 499.28 
+Unidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0      1      2      3      4      5      6      7 
+     0 502.65  18.41  18.41  18.41  18.41   9.19   9.19   9.19 
+     1  18.41 500.20  18.41  18.41   9.18  18.41   9.19   9.19 
+     2  18.41  18.41 499.40  18.41   9.19   9.19  18.41   9.18 
+     3  18.39  18.41  18.41 500.42   9.18   9.19   9.19  18.39 
+     4  18.41   9.19   9.18   9.19 500.22  18.41  18.41  18.41 
+     5   9.18  18.41   9.18   9.19  18.41 499.52  18.41  18.41 
+     6   9.19   9.18  18.41   9.19  18.41  18.41 500.34  18.41 
+     7   9.18   9.19   9.20  18.41  18.41  18.41  18.41 499.90 
+Bidirectional P2P=Disabled Bandwidth Matrix (GB/s)
+   D\D     0      1      2      3      4      5      6      7 
+     0 511.05  10.45  18.04  18.11  17.87  18.01  17.88  17.99 
+     1  10.47 507.80  17.13  17.38  17.24  17.29  17.17  17.29 
+     2  18.00  17.36 507.72   9.28  17.32  17.13  17.26  17.44 
+     3  18.02  17.56   9.37 507.82  17.56  17.08  17.56  17.48 
+     4  18.18  17.34  17.42  17.52 509.82   9.33  17.48  17.45 
+     5  18.00  17.33  17.01  17.04   9.37 507.82  16.92  16.81 
+     6  17.94  17.43  17.54  17.47  17.41  17.08 510.14   9.37 
+     7  18.18  17.56  17.56  17.30  17.40  17.10   9.37 507.62 
+Bidirectional P2P=Enabled Bandwidth Matrix (GB/s)
+   D\D     0      1      2      3      4      5      6      7 
+     0 509.36  36.82  36.79  36.80  36.83   9.19   9.19   9.19 
+     1  36.78 510.38  36.84  36.85   9.19  36.85   9.19   9.19 
+     2  36.83  36.85 508.85  36.83   9.19   9.19  36.85   9.19 
+     3  36.83  36.72  36.83 509.23   9.19   9.19   9.20  36.86 
+     4  36.81   9.19   9.19   9.19 510.92  36.80  36.80  36.82 
+     5   9.18  36.83   9.19   9.19  36.82 507.73  36.81  36.84 
+     6   9.19   9.19  36.81   9.19  36.82  36.80 509.16  36.76 
+     7   9.19   9.19   9.19  36.82  36.84  36.83  36.80 508.53 
+P2P=Disabled Latency Matrix (us)
+   D\D     0      1      2      3      4      5      6      7 
+     0   2.98  18.70  18.78  18.71  19.57  19.71  19.57  19.62 
+     1  18.80   2.93  18.77  18.76  19.63  19.61  19.55  19.63 
+     2  18.97  18.99   2.95  18.84  19.63  19.63  19.65  19.66 
+     3  18.74  18.68  18.61   2.94  19.51  19.48  19.41  19.56 
+     4  19.66  19.65  19.85  19.89   3.08  19.41  19.17  19.30 
+     5  19.79  19.74  19.72  19.74  19.55   3.06  19.31  19.56 
+     6  19.74  19.69  19.70  19.70  19.29  19.33   3.10  19.45 
+     7  19.66  19.62  19.70  19.63  19.26  19.09  19.12   3.04 
+P2P=Enabled Latency Matrix (us)
+   D\D     0      1      2      3      4      5      6      7 
+     0   3.03   9.88   9.52   9.19   9.43  22.73  25.03  23.91 
+     1   9.93   2.97   9.56   9.67  23.19   9.67  22.52  24.95 
+     2  10.28   9.91   3.04   9.86  24.47  25.87   9.83  24.94 
+     3   9.71   9.65   9.12   2.98  24.66  24.31  23.76   9.26 
+     4  10.19  22.75  22.25  22.50   3.11   9.18   9.71   9.48 
+     5  22.84  10.14  22.07  22.20   9.94   3.10   9.10   9.52 
+     6  23.33  23.11   9.79  22.50   9.52   9.57   3.08  10.01 
+     7  21.95  21.98  22.22   9.97   9.74   9.76   9.67   3.13 
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.

@@ -1,0 +1,59 @@
+myRank=0, setting CUDA device 0
+Running until t=0.010000, Problem size=64x64x64 
+Run completed:  
+   Elapsed Time        =  1.3630e+00 seconds
+   Problem size        =  64x64x64 
+   Iteration count     =  1747 
+   Final Origin Energy =  3.6040245826e+05 
+   Used Memory         =  395.0000 Mb
+Writing solution to file xyz_rank0.asc
+myRank=1, setting CUDA device 0
+Writing solution to file xyz_rank1.asc
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 266205: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n16>
+                            <20*summitdev-r0c0n18>
+</ccs/home/angli> was used as the home directory.
+</ccs/home/angli/tartan/Tartan/scale-out-rdma/lulesh> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 5
+#BSUB -nnodes 2
+module load cuda/8.0.54
+module load spectrum-mpi
+module load hdf5
+
+#export OMPI_MCA_pml_pami_enable_cuda=0 
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+
+jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.80 sec.
+    Max Memory :                                 43 MB
+    Average Memory :                             43.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1125 MB
+    Max Processes :                              1
+    Max Threads :                                23
+    Run time :                                   26 sec.
+    Turnaround time :                            55 sec.
+
+The output (if any) is above this job summary.
+

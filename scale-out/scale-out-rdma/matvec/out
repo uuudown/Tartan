@@ -1,0 +1,162 @@
+Resultant Matrix Number of Elements is 65536
+
+
+Matrix A initialized
+
+
+
+
+Matrix B initilized
+
+
+
+
+
+
+Processor with  rank 1 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Processor with  rank 0 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Resultant Matrix Number of Elements is 65536
+
+
+Matrix A initialized
+
+
+
+
+Matrix B initilized
+
+
+
+
+
+
+Processor with  rank 1 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Processor with  rank 0 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+
+
+ Computation Done .....
+ Exiting 
+
+
+
+ Computation Done .....
+ Exiting 
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 264973: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g2 -c1 -r1 ./run_2g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g2 -c1 -r1 ./run_2g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c2n01>
+                            <20*summitdev-r0c2n02>
+</ccs/home/angli> was used as the home directory.
+</ccs/home/angli/tartan/Tartan/scale-out-rdma/matvec> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 5
+#BSUB -nnodes 2
+module load cuda/8.0.54
+module load spectrum-mpi
+module load hdf5
+
+#export OMPI_MCA_pml_pami_enable_cuda=0 
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+
+jsrun -n2 -a1 -g2 -c1 -r1 ./run_2g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.80 sec.
+    Max Memory :                                 42 MB
+    Average Memory :                             42.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1125 MB
+    Max Processes :                              1
+    Max Threads :                                23
+    Run time :                                   55 sec.
+    Turnaround time :                            91 sec.
+
+The output (if any) is above this job summary.
+
+Resultant Matrix Number of Elements is 65536
+
+
+Matrix A initialized
+
+
+
+
+Matrix B initilized
+
+
+
+
+
+
+Processor with  rank 0 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+
+
+ Computation Done .....
+ Exiting 
+
+Processor with  rank 1 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 266218: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n13>
+                            <20*summitdev-r0c0n15>
+</ccs/home/angli> was used as the home directory.
+</ccs/home/angli/tartan/Tartan/scale-out-rdma/matvec> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 5
+#BSUB -nnodes 2
+module load cuda/8.0.54
+module load spectrum-mpi
+module load hdf5
+
+#export OMPI_MCA_pml_pami_enable_cuda=0 
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+
+jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.79 sec.
+    Max Memory :                                 42 MB
+    Average Memory :                             42.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1125 MB
+    Max Processes :                              1
+    Max Threads :                                23
+    Run time :                                   19 sec.
+    Turnaround time :                            73 sec.
+
+The output (if any) is above this job summary.
+

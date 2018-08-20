@@ -1,0 +1,5 @@
+{
+  "home": "http://ab-initio.mit.edu/nlopt",
+  "license": "GNU Lesser General Public License (LGPL)",
+  "summary": "nonlinear optimization library"
+}

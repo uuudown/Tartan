@@ -1,0 +1,10 @@
+prefix=/opt/anaconda1anaconda2anaconda3
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: NLopt
+Description: nonlinear optimization libary
+Version: 2.4.2
+Libs: -L${libdir} -lnlopt -lm
+Cflags: -I${includedir}

@@ -1,0 +1,256 @@
+
+Running Pagerank Benchmark with:
+
+Scale: 22 (4194304 vertices)
+Edge factor: 16 (67108864 edges)
+Number of processes: 8
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=22, edgef=16):
+	gen   time: 0.0090 secs
+	TOTAL time: 0.0090 secs (I/O: 0%), 7444.27 Medges/sec
+
+Kernel 1 (scale=22, edgef=16):
+	sort  time: 0.0564 secs
+	TOTAL time: 0.0564 secs (I/O: 0%), 1190.83 Medges/sec
+
+Kernel 2 (scale=22, edgef=16):
+	gen   time: 0.2195 secs
+	TOTAL time: 0.2195 secs (I/O: 0%), 305.68 Medges/sec
+
+Kernel 3 (scale=22, edgef=16, numiter=20, c=0.85, a=3.57628E-08, rhs=RND):
+	gen   time: 0.0001 secs
+	comp  time: 0.0332 secs
+		min/max  d2h: 0.0053/0.0053 secs
+		min/max  mpi: 0.0128/0.0136 secs
+		min/max  h2d: 0.0038/0.0038 secs
+		min/max spmv: 0.0231/0.0239 secs
+	TOTAL time: 0.0333 secs, 40253.69 Medges/sec, MFLOPS: 80507.3811
+
+PageRank sum: 1.285675E-04
+ExE_Time: 3.21
+
+Running Pagerank Benchmark with:
+
+Scale: 22 (4194304 vertices)
+Edge factor: 16 (67108864 edges)
+Number of processes: 8
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=22, edgef=16):
+	gen   time: 0.0089 secs
+	TOTAL time: 0.0089 secs (I/O: 0%), 7498.51 Medges/sec
+
+Kernel 1 (scale=22, edgef=16):
+	sort  time: 0.0585 secs
+	TOTAL time: 0.0585 secs (I/O: 0%), 1146.19 Medges/sec
+
+Kernel 2 (scale=22, edgef=16):
+	gen   time: 0.2201 secs
+	TOTAL time: 0.2201 secs (I/O: 0%), 304.96 Medges/sec
+
+Kernel 3 (scale=22, edgef=16, numiter=20, c=0.85, a=3.57628E-08, rhs=RND):
+	gen   time: 0.0001 secs
+	comp  time: 0.0334 secs
+		min/max  d2h: 0.0053/0.0053 secs
+		min/max  mpi: 0.0128/0.0139 secs
+		min/max  h2d: 0.0038/0.0038 secs
+		min/max spmv: 0.0231/0.0239 secs
+	TOTAL time: 0.0335 secs, 40068.75 Medges/sec, MFLOPS: 80137.4956
+
+PageRank sum: 1.285675E-04
+ExE_Time: 1.63
+
+Running Pagerank Benchmark with:
+
+Scale: 22 (4194304 vertices)
+Edge factor: 16 (67108864 edges)
+Number of processes: 8
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=22, edgef=16):
+	gen   time: 0.0090 secs
+	TOTAL time: 0.0090 secs (I/O: 0%), 7492.88 Medges/sec
+
+Kernel 1 (scale=22, edgef=16):
+	sort  time: 0.0557 secs
+	TOTAL time: 0.0557 secs (I/O: 0%), 1205.49 Medges/sec
+
+Kernel 2 (scale=22, edgef=16):
+	gen   time: 0.2100 secs
+	TOTAL time: 0.2100 secs (I/O: 0%), 319.63 Medges/sec
+
+Kernel 3 (scale=22, edgef=16, numiter=20, c=0.85, a=3.57628E-08, rhs=RND):
+	gen   time: 0.0001 secs
+	comp  time: 0.0332 secs
+		min/max  d2h: 0.0053/0.0053 secs
+		min/max  mpi: 0.0128/0.0137 secs
+		min/max  h2d: 0.0038/0.0039 secs
+		min/max spmv: 0.0232/0.0239 secs
+	TOTAL time: 0.0333 secs, 40277.24 Medges/sec, MFLOPS: 80554.4868
+
+PageRank sum: 1.285675E-04
+ExE_Time: 1.58
+
+Running Pagerank Benchmark with:
+
+Scale: 22 (4194304 vertices)
+Edge factor: 16 (67108864 edges)
+Number of processes: 8
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=22, edgef=16):
+	gen   time: 0.0090 secs
+	TOTAL time: 0.0090 secs (I/O: 0%), 7467.04 Medges/sec
+
+Kernel 1 (scale=22, edgef=16):
+	sort  time: 0.0571 secs
+	TOTAL time: 0.0571 secs (I/O: 0%), 1174.32 Medges/sec
+
+Kernel 2 (scale=22, edgef=16):
+	gen   time: 0.2171 secs
+	TOTAL time: 0.2171 secs (I/O: 0%), 309.18 Medges/sec
+
+Kernel 3 (scale=22, edgef=16, numiter=20, c=0.85, a=3.57628E-08, rhs=RND):
+	gen   time: 0.0001 secs
+	comp  time: 0.0331 secs
+		min/max  d2h: 0.0053/0.0053 secs
+		min/max  mpi: 0.0127/0.0136 secs
+		min/max  h2d: 0.0038/0.0038 secs
+		min/max spmv: 0.0232/0.0239 secs
+	TOTAL time: 0.0332 secs, 40390.92 Medges/sec, MFLOPS: 80781.8354
+
+PageRank sum: 1.285675E-04
+ExE_Time: 1.60
+
+Running Pagerank Benchmark with:
+
+Scale: 22 (4194304 vertices)
+Edge factor: 16 (67108864 edges)
+Number of processes: 8
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=22, edgef=16):
+	gen   time: 0.0090 secs
+	TOTAL time: 0.0090 secs (I/O: 0%), 7472.55 Medges/sec
+
+Kernel 1 (scale=22, edgef=16):
+	sort  time: 0.0560 secs
+	TOTAL time: 0.0560 secs (I/O: 0%), 1198.03 Medges/sec
+
+Kernel 2 (scale=22, edgef=16):
+	gen   time: 0.2168 secs
+	TOTAL time: 0.2168 secs (I/O: 0%), 309.58 Medges/sec
+
+Kernel 3 (scale=22, edgef=16, numiter=20, c=0.85, a=3.57628E-08, rhs=RND):
+	gen   time: 0.0001 secs
+	comp  time: 0.0329 secs
+		min/max  d2h: 0.0053/0.0053 secs
+		min/max  mpi: 0.0126/0.0135 secs
+		min/max  h2d: 0.0038/0.0038 secs
+		min/max spmv: 0.0231/0.0239 secs
+	TOTAL time: 0.0330 secs, 40661.98 Medges/sec, MFLOPS: 81323.9659
+
+PageRank sum: 1.285675E-04
+ExE_Time: 1.54
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 268124: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n15>
+                            <20*summitdev-r0c2n05>
+                            <20*summitdev-r0c2n06>
+                            <20*summitdev-r0c2n07>
+                            <20*summitdev-r0c1n01>
+                            <20*summitdev-r0c2n09>
+                            <20*summitdev-r0c1n02>
+                            <20*summitdev-r0c1n03>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out-pinned/prbench> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 8
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.31 sec.
+    Max Memory :                                 44 MB
+    Average Memory :                             44.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1317 MB
+    Max Processes :                              1
+    Max Threads :                                23
+    Run time :                                   33 sec.
+    Turnaround time :                            87 sec.
+
+The output (if any) is above this job summary.
+

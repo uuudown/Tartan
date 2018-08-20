@@ -1,0 +1,881 @@
+Mon Jan 29 22:09:37 2018: Starting Initialization
+
+
+Mini-Application Name    : mpicc
+Mini-Application Version : 1.1
+Platform:
+  hostname: summitdev-login1
+  kernel name: 'Linux'
+  kernel release: '3.10.0-514.21.2.el7.ppc64le'
+  processor: 'ppc64le'
+Build:
+  CC: gcc
+  compiler version: 'unknown'
+  CFLAGS: ''
+  LDFLAGS: ''
+  using MPI: true
+  Threading: none
+  Double Precision: true
+Run Date/Time: 2018-01-29, 22:09:37
+
+Command Line Parameters:
+  doeam: 1
+  potDir: pots
+  potName: Cu_u6.eam
+  potType: funcfl
+  nx: 40
+  ny: 40
+  nz: 40
+  xproc: 2
+  yproc: 2
+  zproc: 2
+  Lattice constant: -1 Angstroms
+  nSteps: 100
+  printRate: 10
+  Time step: 1 fs
+  Initial Temperature: 600 K
+  Initial Delta: 0 Angstroms
+
+  GPU async opt: 0
+  GPU profiling mode: 0
+  GPU method: thread_atom
+  Space-filling (Hilbert): 0
+
+Host summitdev-r0c1n10 using GPU 0: Tesla P100-SXM2-16GB
+
+Skin-Distance: 0.495000
+Simulation data: 
+  Total atoms        : 256000
+  Min global bounds  : [   0.0000000000,   0.0000000000,   0.0000000000 ]
+  Max global bounds  : [ 144.6000000000, 144.6000000000, 144.6000000000 ]
+
+Decomposition data: 
+  Processors         :      2,     2,     2
+  Local boxes        :     13,    13,    13 =     2197
+  Box size           : [   5.5615384615,   5.5615384615,   5.5615384615 ]
+  Box factor         : [   1.1235431235,   1.1235431235,   1.1235431235 ] 
+  Max Link Cell Occupancy: 32 of 64
+
+Potential data: 
+  Potential type  : EAM
+  Species name    : Cu
+  Atomic number   : 29
+  Mass            : 63.55 amu
+  Lattice type    : FCC
+  Lattice spacing : 3.615 Angstroms
+  Cutoff          : 4.95 Angstroms
+
+Memory data: 
+  Intrinsic atom footprint =   88 B/atom 
+  Total atom footprint     =  21.484 MB (  2.69 MB/node)
+  Link cell atom footprint =  11.800 MB/node
+  Link cell atom footprint =  18.127 MB/node (including halo cell data
+
+
+Initial energy : -3.379368453928, atom count : 256000 
+
+Mon Jan 29 22:09:37 2018: Initialization Finished
+
+Mon Jan 29 22:09:37 2018: Starting simulation
+
+#                                                                                         Performance
+#  Loop   Time(fs)       Total Energy   Potential Energy     Kinetic Energy  Temperature   (us/atom)     # Atoms
+      0       0.00    -3.379368453928    -3.456924445528     0.077555991600     600.0000     0.0000       256000
+     10      10.00    -3.379368098291    -3.449238423803     0.069870325512     540.5410     0.0612       256000
+     20      20.00    -3.379370009663    -3.430053142682     0.050683133019     392.1023     0.0641       256000
+     30      30.00    -3.379373851459    -3.409523622369     0.030149770909     233.2491     0.0636       256000
+     40      40.00    -3.379378386734    -3.398286606380     0.018908219646     146.2805     0.0637       256000
+     50      50.00    -3.379382719519    -3.399613454424     0.020230734906     156.5120     0.0641       256000
+     60      60.00    -3.379384602688    -3.407874861972     0.028490259284     220.4105     0.0631       256000
+     70      70.00    -3.379383391545    -3.415131939606     0.035748548061     276.5631     0.0634       256000
+     80      80.00    -3.379380626103    -3.417456384789     0.038075758686     294.5673     0.0631       256000
+     90      90.00    -3.379378004143    -3.416022268569     0.036644264426     283.4927     0.0631       256000
+    100     100.00    -3.379376351557    -3.414510097102     0.035133745545     271.8068     0.0629       256000
+Mon Jan 29 22:09:37 2018: Ending simulation
+
+
+
+Simulation Validation:
+  Initial energy  : -3.379368453928
+  Final energy    : -3.379376351557
+  eFinal/eInitial : 1.000002
+  Final atom count : 256000, no atoms lost
+
+
+Timings for Rank 0
+        Timer        # Calls    Avg/Call (s)   Total (s)    % Loop
+___________________________________________________________________
+total                      1       0.5773        0.5773      285.08
+loop                       1       0.2025        0.2025      100.00
+timestep                  10       0.0202        0.2023       99.92
+  position               100       0.0000        0.0006        0.28
+  velocity               200       0.0000        0.0011        0.55
+  redistribute           101       0.0011        0.1092       53.92
+    atomHalo             101       0.0003        0.0319       15.75
+  force                  101       0.0009        0.0888       43.86
+    eamHalo              101       0.0009        0.0870       42.94
+commHalo                 606       0.0000        0.0078        3.86
+commReduce                39       0.0000        0.0006        0.32
+
+Timing Statistics Across 8 Ranks:
+        Timer        Rank: Min(s)       Rank: Max(s)      Avg(s)    Stdev(s)
+_____________________________________________________________________________
+total                7:    0.5771       4:    0.5773      0.5773      0.0001
+loop                 6:    0.2025       1:    0.2025      0.2025      0.0000
+timestep             0:    0.2023       4:    0.2024      0.2024      0.0000
+  position           2:    0.0005       0:    0.0006      0.0005      0.0000
+  velocity           6:    0.0011       0:    0.0011      0.0011      0.0000
+  redistribute       3:    0.1091       2:    0.1098      0.1094      0.0003
+    atomHalo         0:    0.0319       6:    0.0333      0.0326      0.0005
+  force              6:    0.0883       0:    0.0888      0.0885      0.0002
+    eamHalo          6:    0.0864       4:    0.0870      0.0867      0.0002
+commHalo             0:    0.0078       5:    0.0099      0.0091      0.0007
+commReduce           0:    0.0006       1:    0.0022      0.0019      0.0005
+
+---------------------------------------------------
+ Average atom update rate:       0.06 us/atom/task
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average all atom update rate:   0.01 us/atom
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average atom rate:            126.49 atoms/us
+---------------------------------------------------
+
+Mon Jan 29 22:09:37 2018: CoMD Ending
+
+Host summitdev-r0c0n04 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n16 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n15 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c1n11 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n12 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n17 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c0n09 using GPU 0: Tesla P100-SXM2-16GB
+
+ExE_Time: 2.37
+Mon Jan 29 22:09:38 2018: Starting Initialization
+
+
+Mini-Application Name    : mpicc
+Mini-Application Version : 1.1
+Platform:
+  hostname: summitdev-login1
+  kernel name: 'Linux'
+  kernel release: '3.10.0-514.21.2.el7.ppc64le'
+  processor: 'ppc64le'
+Build:
+  CC: gcc
+  compiler version: 'unknown'
+  CFLAGS: ''
+  LDFLAGS: ''
+  using MPI: true
+  Threading: none
+  Double Precision: true
+Run Date/Time: 2018-01-29, 22:09:38
+
+Command Line Parameters:
+  doeam: 1
+  potDir: pots
+  potName: Cu_u6.eam
+  potType: funcfl
+  nx: 40
+  ny: 40
+  nz: 40
+  xproc: 2
+  yproc: 2
+  zproc: 2
+  Lattice constant: -1 Angstroms
+  nSteps: 100
+  printRate: 10
+  Time step: 1 fs
+  Initial Temperature: 600 K
+  Initial Delta: 0 Angstroms
+
+  GPU async opt: 0
+  GPU profiling mode: 0
+  GPU method: thread_atom
+  Space-filling (Hilbert): 0
+
+Host summitdev-r0c1n10 using GPU 0: Tesla P100-SXM2-16GB
+
+Skin-Distance: 0.495000
+Simulation data: 
+  Total atoms        : 256000
+  Min global bounds  : [   0.0000000000,   0.0000000000,   0.0000000000 ]
+  Max global bounds  : [ 144.6000000000, 144.6000000000, 144.6000000000 ]
+
+Decomposition data: 
+  Processors         :      2,     2,     2
+  Local boxes        :     13,    13,    13 =     2197
+  Box size           : [   5.5615384615,   5.5615384615,   5.5615384615 ]
+  Box factor         : [   1.1235431235,   1.1235431235,   1.1235431235 ] 
+  Max Link Cell Occupancy: 32 of 64
+
+Potential data: 
+  Potential type  : EAM
+  Species name    : Cu
+  Atomic number   : 29
+  Mass            : 63.55 amu
+  Lattice type    : FCC
+  Lattice spacing : 3.615 Angstroms
+  Cutoff          : 4.95 Angstroms
+
+Memory data: 
+  Intrinsic atom footprint =   88 B/atom 
+  Total atom footprint     =  21.484 MB (  2.69 MB/node)
+  Link cell atom footprint =  11.800 MB/node
+  Link cell atom footprint =  18.127 MB/node (including halo cell data
+
+
+Initial energy : -3.379368453928, atom count : 256000 
+
+Mon Jan 29 22:09:38 2018: Initialization Finished
+
+Mon Jan 29 22:09:38 2018: Starting simulation
+
+#                                                                                         Performance
+#  Loop   Time(fs)       Total Energy   Potential Energy     Kinetic Energy  Temperature   (us/atom)     # Atoms
+      0       0.00    -3.379368453928    -3.456924445528     0.077555991600     600.0000     0.0000       256000
+     10      10.00    -3.379368098291    -3.449238423803     0.069870325512     540.5410     0.0590       256000
+     20      20.00    -3.379370009663    -3.430053142682     0.050683133019     392.1023     0.0611       256000
+     30      30.00    -3.379373851459    -3.409523622369     0.030149770909     233.2491     0.0616       256000
+     40      40.00    -3.379378386734    -3.398286606380     0.018908219646     146.2805     0.0615       256000
+     50      50.00    -3.379382719519    -3.399613454424     0.020230734906     156.5120     0.0611       256000
+     60      60.00    -3.379384602688    -3.407874861972     0.028490259284     220.4105     0.0608       256000
+     70      70.00    -3.379383391545    -3.415131939606     0.035748548061     276.5631     0.0609       256000
+     80      80.00    -3.379380626103    -3.417456384789     0.038075758686     294.5673     0.0718       256000
+     90      90.00    -3.379378004143    -3.416022268569     0.036644264426     283.4927     0.0613       256000
+    100     100.00    -3.379376351557    -3.414510097102     0.035133745545     271.8068     0.0613       256000
+Mon Jan 29 22:09:38 2018: Ending simulation
+
+
+
+Simulation Validation:
+  Initial energy  : -3.379368453928
+  Final energy    : -3.379376351557
+  eFinal/eInitial : 1.000002
+  Final atom count : 256000, no atoms lost
+
+
+Timings for Rank 0
+        Timer        # Calls    Avg/Call (s)   Total (s)    % Loop
+___________________________________________________________________
+total                      1       0.3288        0.3288      165.46
+loop                       1       0.1987        0.1987      100.00
+timestep                  10       0.0199        0.1985       99.91
+  position               100       0.0000        0.0006        0.28
+  velocity               200       0.0000        0.0011        0.57
+  redistribute           101       0.0011        0.1093       55.02
+    atomHalo             101       0.0003        0.0314       15.82
+  force                  101       0.0008        0.0847       42.64
+    eamHalo              101       0.0008        0.0829       41.72
+commHalo                 606       0.0000        0.0073        3.66
+commReduce                39       0.0000        0.0008        0.39
+
+Timing Statistics Across 8 Ranks:
+        Timer        Rank: Min(s)       Rank: Max(s)      Avg(s)    Stdev(s)
+_____________________________________________________________________________
+total                7:    0.3288       1:    0.3288      0.3288      0.0000
+loop                 7:    0.1987       1:    0.1987      0.1987      0.0000
+timestep             0:    0.1985       4:    0.1986      0.1986      0.0000
+  position           5:    0.0005       0:    0.0006      0.0005      0.0000
+  velocity           3:    0.0011       6:    0.0011      0.0011      0.0000
+  redistribute       4:    0.1061       0:    0.1093      0.1066      0.0010
+    atomHalo         0:    0.0314       1:    0.0326      0.0321      0.0003
+  force              0:    0.0847       4:    0.0882      0.0876      0.0011
+    eamHalo          0:    0.0829       4:    0.0864      0.0858      0.0011
+commHalo             0:    0.0073       1:    0.0124      0.0113      0.0016
+commReduce           0:    0.0008       5:    0.0013      0.0011      0.0002
+
+---------------------------------------------------
+ Average atom update rate:       0.06 us/atom/task
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average all atom update rate:   0.01 us/atom
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average atom rate:            128.92 atoms/us
+---------------------------------------------------
+
+Mon Jan 29 22:09:38 2018: CoMD Ending
+
+Host summitdev-r0c2n16 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c0n09 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n12 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n17 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c0n04 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c1n11 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n15 using GPU 0: Tesla P100-SXM2-16GB
+
+ExE_Time: 1.05
+Mon Jan 29 22:09:39 2018: Starting Initialization
+
+
+Mini-Application Name    : mpicc
+Mini-Application Version : 1.1
+Platform:
+  hostname: summitdev-login1
+  kernel name: 'Linux'
+  kernel release: '3.10.0-514.21.2.el7.ppc64le'
+  processor: 'ppc64le'
+Build:
+  CC: gcc
+  compiler version: 'unknown'
+  CFLAGS: ''
+  LDFLAGS: ''
+  using MPI: true
+  Threading: none
+  Double Precision: true
+Run Date/Time: 2018-01-29, 22:09:39
+
+Command Line Parameters:
+  doeam: 1
+  potDir: pots
+  potName: Cu_u6.eam
+  potType: funcfl
+  nx: 40
+  ny: 40
+  nz: 40
+  xproc: 2
+  yproc: 2
+  zproc: 2
+  Lattice constant: -1 Angstroms
+  nSteps: 100
+  printRate: 10
+  Time step: 1 fs
+  Initial Temperature: 600 K
+  Initial Delta: 0 Angstroms
+
+  GPU async opt: 0
+  GPU profiling mode: 0
+  GPU method: thread_atom
+  Space-filling (Hilbert): 0
+
+Host summitdev-r0c1n10 using GPU 0: Tesla P100-SXM2-16GB
+
+Skin-Distance: 0.495000
+Simulation data: 
+  Total atoms        : 256000
+  Min global bounds  : [   0.0000000000,   0.0000000000,   0.0000000000 ]
+  Max global bounds  : [ 144.6000000000, 144.6000000000, 144.6000000000 ]
+
+Decomposition data: 
+  Processors         :      2,     2,     2
+  Local boxes        :     13,    13,    13 =     2197
+  Box size           : [   5.5615384615,   5.5615384615,   5.5615384615 ]
+  Box factor         : [   1.1235431235,   1.1235431235,   1.1235431235 ] 
+  Max Link Cell Occupancy: 32 of 64
+
+Potential data: 
+  Potential type  : EAM
+  Species name    : Cu
+  Atomic number   : 29
+  Mass            : 63.55 amu
+  Lattice type    : FCC
+  Lattice spacing : 3.615 Angstroms
+  Cutoff          : 4.95 Angstroms
+
+Memory data: 
+  Intrinsic atom footprint =   88 B/atom 
+  Total atom footprint     =  21.484 MB (  2.69 MB/node)
+  Link cell atom footprint =  11.800 MB/node
+  Link cell atom footprint =  18.127 MB/node (including halo cell data
+
+
+Initial energy : -3.379368453928, atom count : 256000 
+
+Mon Jan 29 22:09:39 2018: Initialization Finished
+
+Mon Jan 29 22:09:39 2018: Starting simulation
+
+#                                                                                         Performance
+#  Loop   Time(fs)       Total Energy   Potential Energy     Kinetic Energy  Temperature   (us/atom)     # Atoms
+      0       0.00    -3.379368453928    -3.456924445528     0.077555991600     600.0000     0.0000       256000
+     10      10.00    -3.379368098291    -3.449238423803     0.069870325512     540.5410     0.0588       256000
+     20      20.00    -3.379370009663    -3.430053142682     0.050683133019     392.1023     0.0611       256000
+     30      30.00    -3.379373851459    -3.409523622369     0.030149770909     233.2491     0.0614       256000
+     40      40.00    -3.379378386734    -3.398286606380     0.018908219646     146.2805     0.0609       256000
+     50      50.00    -3.379382719519    -3.399613454424     0.020230734906     156.5120     0.0610       256000
+     60      60.00    -3.379384602688    -3.407874861972     0.028490259284     220.4105     0.0612       256000
+     70      70.00    -3.379383391545    -3.415131939606     0.035748548061     276.5631     0.0610       256000
+     80      80.00    -3.379380626103    -3.417456384789     0.038075758686     294.5673     0.0609       256000
+     90      90.00    -3.379378004143    -3.416022268569     0.036644264426     283.4927     0.0607       256000
+    100     100.00    -3.379376351557    -3.414510097102     0.035133745545     271.8068     0.0612       256000
+Mon Jan 29 22:09:39 2018: Ending simulation
+
+
+
+Simulation Validation:
+  Initial energy  : -3.379368453928
+  Final energy    : -3.379376351557
+  eFinal/eInitial : 1.000002
+  Final atom count : 256000, no atoms lost
+
+
+Timings for Rank 0
+        Timer        # Calls    Avg/Call (s)   Total (s)    % Loop
+___________________________________________________________________
+total                      1       0.3253        0.3253      166.97
+loop                       1       0.1948        0.1948      100.00
+timestep                  10       0.0195        0.1946       99.91
+  position               100       0.0000        0.0005        0.28
+  velocity               200       0.0000        0.0011        0.58
+  redistribute           101       0.0010        0.1059       54.36
+    atomHalo             101       0.0003        0.0320       16.44
+  force                  101       0.0008        0.0844       43.32
+    eamHalo              101       0.0008        0.0826       42.38
+commHalo                 606       0.0000        0.0082        4.19
+commReduce                39       0.0000        0.0007        0.34
+
+Timing Statistics Across 8 Ranks:
+        Timer        Rank: Min(s)       Rank: Max(s)      Avg(s)    Stdev(s)
+_____________________________________________________________________________
+total                3:    0.3253       0:    0.3253      0.3253      0.0000
+loop                 7:    0.1948       1:    0.1948      0.1948      0.0000
+timestep             0:    0.1946       4:    0.1947      0.1947      0.0000
+  position           5:    0.0005       6:    0.0006      0.0005      0.0000
+  velocity           3:    0.0011       6:    0.0011      0.0011      0.0000
+  redistribute       0:    0.1059       2:    0.1064      0.1061      0.0002
+    atomHalo         7:    0.0320       2:    0.0326      0.0322      0.0002
+  force              2:    0.0842       1:    0.0844      0.0843      0.0001
+    eamHalo          2:    0.0823       1:    0.0826      0.0825      0.0001
+commHalo             7:    0.0081       1:    0.0093      0.0085      0.0004
+commReduce           0:    0.0007       1:    0.0012      0.0010      0.0001
+
+---------------------------------------------------
+ Average atom update rate:       0.06 us/atom/task
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average all atom update rate:   0.01 us/atom
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average atom rate:            131.50 atoms/us
+---------------------------------------------------
+
+Mon Jan 29 22:09:39 2018: CoMD Ending
+
+Host summitdev-r0c2n16 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n15 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n12 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n17 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c0n09 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c1n11 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c0n04 using GPU 0: Tesla P100-SXM2-16GB
+
+ExE_Time: 1.08
+Mon Jan 29 22:09:40 2018: Starting Initialization
+
+
+Mini-Application Name    : mpicc
+Mini-Application Version : 1.1
+Platform:
+  hostname: summitdev-login1
+  kernel name: 'Linux'
+  kernel release: '3.10.0-514.21.2.el7.ppc64le'
+  processor: 'ppc64le'
+Build:
+  CC: gcc
+  compiler version: 'unknown'
+  CFLAGS: ''
+  LDFLAGS: ''
+  using MPI: true
+  Threading: none
+  Double Precision: true
+Run Date/Time: 2018-01-29, 22:09:40
+
+Command Line Parameters:
+  doeam: 1
+  potDir: pots
+  potName: Cu_u6.eam
+  potType: funcfl
+  nx: 40
+  ny: 40
+  nz: 40
+  xproc: 2
+  yproc: 2
+  zproc: 2
+  Lattice constant: -1 Angstroms
+  nSteps: 100
+  printRate: 10
+  Time step: 1 fs
+  Initial Temperature: 600 K
+  Initial Delta: 0 Angstroms
+
+  GPU async opt: 0
+  GPU profiling mode: 0
+  GPU method: thread_atom
+  Space-filling (Hilbert): 0
+
+Host summitdev-r0c1n10 using GPU 0: Tesla P100-SXM2-16GB
+
+Skin-Distance: 0.495000
+Simulation data: 
+  Total atoms        : 256000
+  Min global bounds  : [   0.0000000000,   0.0000000000,   0.0000000000 ]
+  Max global bounds  : [ 144.6000000000, 144.6000000000, 144.6000000000 ]
+
+Decomposition data: 
+  Processors         :      2,     2,     2
+  Local boxes        :     13,    13,    13 =     2197
+  Box size           : [   5.5615384615,   5.5615384615,   5.5615384615 ]
+  Box factor         : [   1.1235431235,   1.1235431235,   1.1235431235 ] 
+  Max Link Cell Occupancy: 32 of 64
+
+Potential data: 
+  Potential type  : EAM
+  Species name    : Cu
+  Atomic number   : 29
+  Mass            : 63.55 amu
+  Lattice type    : FCC
+  Lattice spacing : 3.615 Angstroms
+  Cutoff          : 4.95 Angstroms
+
+Memory data: 
+  Intrinsic atom footprint =   88 B/atom 
+  Total atom footprint     =  21.484 MB (  2.69 MB/node)
+  Link cell atom footprint =  11.800 MB/node
+  Link cell atom footprint =  18.127 MB/node (including halo cell data
+
+
+Initial energy : -3.379368453928, atom count : 256000 
+
+Mon Jan 29 22:09:40 2018: Initialization Finished
+
+Mon Jan 29 22:09:40 2018: Starting simulation
+
+#                                                                                         Performance
+#  Loop   Time(fs)       Total Energy   Potential Energy     Kinetic Energy  Temperature   (us/atom)     # Atoms
+      0       0.00    -3.379368453928    -3.456924445528     0.077555991600     600.0000     0.0000       256000
+     10      10.00    -3.379368098291    -3.449238423803     0.069870325512     540.5410     0.0587       256000
+     20      20.00    -3.379370009663    -3.430053142682     0.050683133019     392.1023     0.0611       256000
+     30      30.00    -3.379373851459    -3.409523622369     0.030149770909     233.2491     0.0613       256000
+     40      40.00    -3.379378386734    -3.398286606380     0.018908219646     146.2805     0.0612       256000
+     50      50.00    -3.379382719519    -3.399613454424     0.020230734906     156.5120     0.0609       256000
+     60      60.00    -3.379384602688    -3.407874861972     0.028490259284     220.4105     0.0611       256000
+     70      70.00    -3.379383391545    -3.415131939606     0.035748548061     276.5631     0.0611       256000
+     80      80.00    -3.379380626103    -3.417456384789     0.038075758686     294.5673     0.0645       256000
+     90      90.00    -3.379378004143    -3.416022268569     0.036644264426     283.4927     0.0611       256000
+    100     100.00    -3.379376351557    -3.414510097102     0.035133745545     271.8068     0.0612       256000
+Mon Jan 29 22:09:41 2018: Ending simulation
+
+
+
+Simulation Validation:
+  Initial energy  : -3.379368453928
+  Final energy    : -3.379376351557
+  eFinal/eInitial : 1.000002
+  Final atom count : 256000, no atoms lost
+
+
+Timings for Rank 0
+        Timer        # Calls    Avg/Call (s)   Total (s)    % Loop
+___________________________________________________________________
+total                      1       0.3266        0.3266      166.60
+loop                       1       0.1961        0.1961      100.00
+timestep                  10       0.0196        0.1959       99.92
+  position               100       0.0000        0.0005        0.28
+  velocity               200       0.0000        0.0011        0.57
+  redistribute           101       0.0011        0.1068       54.50
+    atomHalo             101       0.0003        0.0330       16.81
+  force                  101       0.0008        0.0848       43.24
+    eamHalo              101       0.0008        0.0829       42.31
+commHalo                 606       0.0000        0.0096        4.91
+commReduce                39       0.0000        0.0009        0.45
+
+Timing Statistics Across 8 Ranks:
+        Timer        Rank: Min(s)       Rank: Max(s)      Avg(s)    Stdev(s)
+_____________________________________________________________________________
+total                6:    0.3266       7:    0.3268      0.3267      0.0001
+loop                 0:    0.1961       1:    0.1961      0.1961      0.0000
+timestep             0:    0.1959       4:    0.1959      0.1959      0.0000
+  position           7:    0.0005       4:    0.0006      0.0005      0.0000
+  velocity           2:    0.0011       5:    0.0012      0.0011      0.0000
+  redistribute       5:    0.1068       4:    0.1071      0.1069      0.0001
+    atomHalo         4:    0.0327       1:    0.0332      0.0330      0.0001
+  force              4:    0.0847       6:    0.0849      0.0848      0.0001
+    eamHalo          4:    0.0828       6:    0.0831      0.0830      0.0001
+commHalo             4:    0.0086       1:    0.0103      0.0097      0.0005
+commReduce           0:    0.0009       1:    0.0013      0.0011      0.0001
+
+---------------------------------------------------
+ Average atom update rate:       0.06 us/atom/task
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average all atom update rate:   0.01 us/atom
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average atom rate:            130.66 atoms/us
+---------------------------------------------------
+
+Mon Jan 29 22:09:41 2018: CoMD Ending
+
+Host summitdev-r0c1n11 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n16 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n12 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n17 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n15 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c0n09 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c0n04 using GPU 0: Tesla P100-SXM2-16GB
+
+ExE_Time: 1.15
+Mon Jan 29 22:09:41 2018: Starting Initialization
+
+
+Mini-Application Name    : mpicc
+Mini-Application Version : 1.1
+Platform:
+  hostname: summitdev-login1
+  kernel name: 'Linux'
+  kernel release: '3.10.0-514.21.2.el7.ppc64le'
+  processor: 'ppc64le'
+Build:
+  CC: gcc
+  compiler version: 'unknown'
+  CFLAGS: ''
+  LDFLAGS: ''
+  using MPI: true
+  Threading: none
+  Double Precision: true
+Run Date/Time: 2018-01-29, 22:09:41
+
+Command Line Parameters:
+  doeam: 1
+  potDir: pots
+  potName: Cu_u6.eam
+  potType: funcfl
+  nx: 40
+  ny: 40
+  nz: 40
+  xproc: 2
+  yproc: 2
+  zproc: 2
+  Lattice constant: -1 Angstroms
+  nSteps: 100
+  printRate: 10
+  Time step: 1 fs
+  Initial Temperature: 600 K
+  Initial Delta: 0 Angstroms
+
+  GPU async opt: 0
+  GPU profiling mode: 0
+  GPU method: thread_atom
+  Space-filling (Hilbert): 0
+
+Host summitdev-r0c1n10 using GPU 0: Tesla P100-SXM2-16GB
+
+Skin-Distance: 0.495000
+Simulation data: 
+  Total atoms        : 256000
+  Min global bounds  : [   0.0000000000,   0.0000000000,   0.0000000000 ]
+  Max global bounds  : [ 144.6000000000, 144.6000000000, 144.6000000000 ]
+
+Decomposition data: 
+  Processors         :      2,     2,     2
+  Local boxes        :     13,    13,    13 =     2197
+  Box size           : [   5.5615384615,   5.5615384615,   5.5615384615 ]
+  Box factor         : [   1.1235431235,   1.1235431235,   1.1235431235 ] 
+  Max Link Cell Occupancy: 32 of 64
+
+Potential data: 
+  Potential type  : EAM
+  Species name    : Cu
+  Atomic number   : 29
+  Mass            : 63.55 amu
+  Lattice type    : FCC
+  Lattice spacing : 3.615 Angstroms
+  Cutoff          : 4.95 Angstroms
+
+Memory data: 
+  Intrinsic atom footprint =   88 B/atom 
+  Total atom footprint     =  21.484 MB (  2.69 MB/node)
+  Link cell atom footprint =  11.800 MB/node
+  Link cell atom footprint =  18.127 MB/node (including halo cell data
+
+
+Initial energy : -3.379368453928, atom count : 256000 
+
+Mon Jan 29 22:09:41 2018: Initialization Finished
+
+Mon Jan 29 22:09:41 2018: Starting simulation
+
+#                                                                                         Performance
+#  Loop   Time(fs)       Total Energy   Potential Energy     Kinetic Energy  Temperature   (us/atom)     # Atoms
+      0       0.00    -3.379368453928    -3.456924445528     0.077555991600     600.0000     0.0000       256000
+     10      10.00    -3.379368098291    -3.449238423803     0.069870325512     540.5410     0.0588       256000
+     20      20.00    -3.379370009663    -3.430053142682     0.050683133019     392.1023     0.0612       256000
+     30      30.00    -3.379373851459    -3.409523622369     0.030149770909     233.2491     0.0614       256000
+     40      40.00    -3.379378386734    -3.398286606380     0.018908219646     146.2805     0.0617       256000
+     50      50.00    -3.379382719519    -3.399613454424     0.020230734906     156.5120     0.0612       256000
+     60      60.00    -3.379384602688    -3.407874861972     0.028490259284     220.4105     0.0608       256000
+     70      70.00    -3.379383391545    -3.415131939606     0.035748548061     276.5631     0.0606       256000
+     80      80.00    -3.379380626103    -3.417456384789     0.038075758686     294.5673     0.0610       256000
+     90      90.00    -3.379378004143    -3.416022268569     0.036644264426     283.4927     0.0606       256000
+    100     100.00    -3.379376351557    -3.414510097102     0.035133745545     271.8068     0.0617       256000
+Mon Jan 29 22:09:42 2018: Ending simulation
+
+
+
+Simulation Validation:
+  Initial energy  : -3.379368453928
+  Final energy    : -3.379376351557
+  eFinal/eInitial : 1.000002
+  Final atom count : 256000, no atoms lost
+
+
+Timings for Rank 0
+        Timer        # Calls    Avg/Call (s)   Total (s)    % Loop
+___________________________________________________________________
+total                      1       0.3246        0.3246      166.41
+loop                       1       0.1950        0.1950      100.00
+timestep                  10       0.0195        0.1949       99.91
+  position               100       0.0000        0.0006        0.28
+  velocity               200       0.0000        0.0011        0.58
+  redistribute           101       0.0010        0.1060       54.36
+    atomHalo             101       0.0003        0.0322       16.49
+  force                  101       0.0008        0.0842       43.19
+    eamHalo              101       0.0008        0.0824       42.26
+commHalo                 606       0.0000        0.0084        4.28
+commReduce                39       0.0000        0.0010        0.53
+
+Timing Statistics Across 8 Ranks:
+        Timer        Rank: Min(s)       Rank: Max(s)      Avg(s)    Stdev(s)
+_____________________________________________________________________________
+total                1:    0.3244       0:    0.3246      0.3245      0.0000
+loop                 0:    0.1950       2:    0.1950      0.1950      0.0000
+timestep             0:    0.1949       4:    0.1949      0.1949      0.0000
+  position           1:    0.0005       4:    0.0006      0.0005      0.0000
+  velocity           6:    0.0011       4:    0.0011      0.0011      0.0000
+  redistribute       0:    0.1060       2:    0.1066      0.1064      0.0002
+    atomHalo         0:    0.0322       1:    0.0329      0.0325      0.0003
+  force              6:    0.0840       3:    0.0845      0.0843      0.0001
+    eamHalo          6:    0.0822       3:    0.0827      0.0824      0.0001
+commHalo             0:    0.0084       1:    0.0096      0.0088      0.0004
+commReduce           7:    0.0008       2:    0.0012      0.0011      0.0001
+
+---------------------------------------------------
+ Average atom update rate:       0.06 us/atom/task
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average all atom update rate:   0.01 us/atom
+---------------------------------------------------
+
+
+---------------------------------------------------
+ Average atom rate:            131.35 atoms/us
+---------------------------------------------------
+
+Mon Jan 29 22:09:42 2018: CoMD Ending
+
+Host summitdev-r0c2n16 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n12 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c0n09 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c1n11 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n15 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c2n17 using GPU 0: Tesla P100-SXM2-16GB
+
+Host summitdev-r0c0n04 using GPU 0: Tesla P100-SXM2-16GB
+
+ExE_Time: 1.08
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 267793: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n04>
+                            <20*summitdev-r0c0n09>
+                            <20*summitdev-r0c2n12>
+                            <20*summitdev-r0c2n15>
+                            <20*summitdev-r0c2n16>
+                            <20*summitdev-r0c2n17>
+                            <20*summitdev-r0c1n10>
+                            <20*summitdev-r0c1n11>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out/comd> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 8
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.27 sec.
+    Max Memory :                                 52 MB
+    Average Memory :                             52.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              1
+    Max Threads :                                23
+    Run time :                                   17 sec.
+    Turnaround time :                            72 sec.
+
+The output (if any) is above this job summary.
+

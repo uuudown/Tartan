@@ -1,0 +1,7 @@
+include/nlopt.f
+include/nlopt.h
+include/nlopt.hpp
+lib/libnlopt_cxx.a
+lib/libnlopt_cxx.la
+lib/pkgconfig/nlopt.pc
+share/man/man3/nlopt.3

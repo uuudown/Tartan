@@ -1,0 +1,109 @@
+
+version 3.0:
+    - Fixed several bugs.
+    - CUDA PRNG has been dropped. Now trueke uses a custom GPU-version of Melissa Oneill's PCG which is very fasy and has good quality.
+
+version 2.9:
+    - Fixed several bugs.
+    - Code redesign for multi-GPU has been complete.
+
+version 2.8:
+    - new feature: adaptative temperatures
+    - the code is under a re-design process, aimed to work better in multi-GPU environments, both workstation and cluster.
+    - fixed a bug where the random number generators were not unique among replicas.
+    - minor improvements to the code
+
+version 2.7:
+	- specific heat and susceptibility are now computed at the end of all simulation, their cost is now O(1) instead of O(rea).
+	- The corresponding error bars for C, X and Binder are computed properly for the new scheme.
+
+version 2.6:
+	- the measure zone now can have a period of steps to skip between each measurement.
+	- fixed a bug where exchange rate was showing less that what actually was.
+
+version 2.5:
+	- the exchange process now alternates between odd and even replicas.
+	- the measure zone is no longer sqrt(ptsteps), now is in all ptsteps.
+
+version 2.4:
+	- went back to adaptation using T, worked better than Beta.
+	- fixed an error where error bars for observables were not saved correctly in the output file.
+
+version 2.3:
+	- adaptation now uses Beta array instead of T array.
+
+version 2.2:
+	- fixed a critical problem that made swapping to be incorrectly done, caused by the changes needed for dynamic dt.
+
+
+version 2.1:
+	- fixed bug that caused T1 = T2 for dynamic temperature adaptation.
+	- added independant parameters for adaptation. We introduce the "-a" option for adaptation.
+
+
+version 2.0:
+	- version 2.0 brings a new feature, dynamic dt adaptation as a pre-processing method. This strategy improves the exchange ratio between replicas.
+	- added dynamic temperature adaptation.
+
+
+
+version 1.10:
+	- Fixed a problem where correlation length was 'NaN' for temperatures above Tc, specially when using a high number of realizations.
+
+
+
+version 1.9:
+	- Fixed a possible race condition when accumulating mcmc statistics by reading in replica order and writeing in temp order using a index maps.
+	- Fixed a critical bug in the replica swap function.
+	- Added a missing cudaDeviceSynchronize() for safety reasons. 
+
+
+version 1.8:
+	- Correlation length is computed using the realization SQM and realization F
+
+
+version 1.7:
+	- Improved the quality of the results for specific heat (C), susceptibility (X) and binderQF curves.
+	- Fixed a bug where realization statistical error bars were incorrect for some observales.
+	- Removed block error bars for specific heat (C), susceptibility (X) and binderQF curves.
+
+
+version 1.6:
+	- Multi-GPU working properly.
+	- Fixed a large number of bugs.
+	- Temperature swap
+
+
+version 1.5:
+	- The code of the program has been re-structured and commented so it is more efficient and easier to read.
+	- Multi-GPU prepared, still not working properly.
+	- Measurement reductions streamed on GPU for better concurrent performance.
+
+	
+version 1.4:
+	- We now compute two versions of the binder factor. (1) averaged from its formula and (2) formula evaluation using the mean of <sqM>, <quadM> values.
+
+
+version 1.3:
+	- fixed a bug where simulation for h != 0 was giving always bad results.
+	- cleaned the code just a little, there is much to do regarding this aspect.
+
+
+version 1.2:
+	- this new version provides up to 4X, 14X and 90X speedup for L=32, 64 and 128, respectively, when compared to version 1.0.
+	- all observables are computed on GPU by separate reduction kernels.
+	- metropolis simulation no longer includes partial reductions, they are done deparately.
+	- the measurement steps are now done on sqrt(ptsteps) steps.
+	- random numbers are much faster and initialized only once per realization.
+
+
+version 1.1:
+	- metropolis process now uses the double checkerboard technique in GPU shared memory.
+	- observables still computed on CPU.
+	- on the exchange phase, only pointers are exchanged instead of transferring the whole array spin by spin.
+	- the overall performance has increased at least by 30% on the smallest lattices, L=32.
+	- overall performance should be higher for L > 32.
+	- we can confirm that one of the main bottlenecks is the measurement of observables. Next version will focus on this performance bottleneck.
+
+version 1.0:
+	- first release.

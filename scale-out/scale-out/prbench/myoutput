@@ -1,0 +1,202 @@
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+
+Running Pagerank Benchmark with:
+
+Scale: 21 (2097152 vertices)
+Edge factor: 16 (33554432 edges)
+Number of processes: 4
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=21, edgef=16):
+	gen   time: 0.0089 secs
+	TOTAL time: 0.0089 secs (I/O: 0%), 3757.04 Medges/sec
+
+Kernel 1 (scale=21, edgef=16):
+	sort  time: 0.0547 secs
+	TOTAL time: 0.0547 secs (I/O: 0%), 613.88 Medges/sec
+
+ExE_Time: 3.57
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+
+Running Pagerank Benchmark with:
+
+Scale: 21 (2097152 vertices)
+Edge factor: 16 (33554432 edges)
+Number of processes: 4
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=21, edgef=16):
+	gen   time: 0.0089 secs
+	TOTAL time: 0.0089 secs (I/O: 0%), 3751.74 Medges/sec
+
+Kernel 1 (scale=21, edgef=16):
+	sort  time: 0.0533 secs
+	TOTAL time: 0.0533 secs (I/O: 0%), 629.26 Medges/sec
+
+ExE_Time: 1.08
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+
+Running Pagerank Benchmark with:
+
+Scale: 21 (2097152 vertices)
+Edge factor: 16 (33554432 edges)
+Number of processes: 4
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=21, edgef=16):
+	gen   time: 0.0089 secs
+	TOTAL time: 0.0089 secs (I/O: 0%), 3757.15 Medges/sec
+
+Kernel 1 (scale=21, edgef=16):
+	sort  time: 0.0531 secs
+	TOTAL time: 0.0531 secs (I/O: 0%), 632.41 Medges/sec
+
+ExE_Time: 1.05
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+
+Running Pagerank Benchmark with:
+
+Scale: 21 (2097152 vertices)
+Edge factor: 16 (33554432 edges)
+Number of processes: 4
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=21, edgef=16):
+	gen   time: 0.0089 secs
+	TOTAL time: 0.0089 secs (I/O: 0%), 3763.35 Medges/sec
+
+Kernel 1 (scale=21, edgef=16):
+	sort  time: 0.0541 secs
+	TOTAL time: 0.0541 secs (I/O: 0%), 620.27 Medges/sec
+
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+ExE_Time: 1.01
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+Cuda error in file 'main.cpp' in line 1125 : invalid argument.
+
+Running Pagerank Benchmark with:
+
+Scale: 21 (2097152 vertices)
+Edge factor: 16 (33554432 edges)
+Number of processes: 4
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=21, edgef=16):
+	gen   time: 0.0090 secs
+	TOTAL time: 0.0090 secs (I/O: 0%), 3748.31 Medges/sec
+
+Kernel 1 (scale=21, edgef=16):
+	sort  time: 0.0518 secs
+	TOTAL time: 0.0518 secs (I/O: 0%), 647.59 Medges/sec
+
+ExE_Time: 0.98
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 305189: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 4;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh> in cluster <summitdev> Exited
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 4;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c2n10>
+                            <20*summitdev-r0c2n11>
+                            <20*summitdev-r0c2n14>
+                            <20*summitdev-r0c1n16>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out/prbench> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 4
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.33 sec.
+    Max Memory :                                 51 MB
+    Average Memory :                             51.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   10 sec.
+    Turnaround time :                            502668 sec.
+
+The output (if any) is above this job summary.
+

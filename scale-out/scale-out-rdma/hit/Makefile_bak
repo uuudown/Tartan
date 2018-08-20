@@ -1,0 +1,33 @@
+include ../../shared.mk
+
+MPICXX_FLAGS = -O3 
+PATHS = $(NVCC_INCLUDE)
+LIBS = -lcudart -lcufft -lcublas -lcuda  -lstdc++ -lm -lhdf5  -lhdf5 -lhdf5_hl -lconfig
+
+
+NSS:= $(shell python stripNSS.py)
+RES:= $(shell python stripRES.py)
+SIZE = -DNSS=${NSS} -DRES=${RES}
+GPU_SOURCES = $(wildcard src/*.cu)
+CPU_SOURCES = $(wildcard src/*.c)
+GPU_OBJECTS = $(GPU_SOURCES:.cu=.o)
+CPU_OBJECTS = $(CPU_SOURCES:.c=.o)
+
+
+all: $(GPU_OBJECTS) $(CPU_OBJECTS)
+	$(MPICXX) -o hit $(CPU_OBJECTS) $(GPU_OBJECTS) $(LINK_FLAG) $(LIBS)
+
+$(CPU_OBJECTS): src/%.o: src/%.c
+	$(MPICXX) -c $(MPICXX_FLAGS) $(NVCC_INCLUDE) $(SIZE) $< -o $@
+
+$(GPU_OBJECTS): src/%.o: src/%.cu
+	$(NVCC) $(NVCC_FLAGS) -c $(NVCC_INCLUDE) $(SIZE) $< -o $@
+
+tools: biggerbox.o
+	$(MPICXX) $(MPICXX_FLAGS) $(PATHS) $(LIBS) tools/biggerbox.o -o biggerbox.bin
+
+biggerbox.o:
+	$(MPICXX) $(MPICXX_FLAGS) $(NVCC_INCLUDE)  $(SIZE) -c tools/biggerbox.c -o tools/biggerbox.o
+
+clean:
+	rm src/*.o hit

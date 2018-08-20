@@ -1,0 +1,8 @@
+OP,GPU,Bandwidth
+all_gather_perf,2,10.49
+all_gather_perf,3,4.86
+all_gather_perf,4,11.46
+all_gather_perf,5,5.09
+all_gather_perf,6,12.12
+all_gather_perf,7,12.14
+all_gather_perf,8,11.84

@@ -1,0 +1,66 @@
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 5.93
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 5.05
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 5.02
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 5.05
+arguments received, where: B2R_R = 4, BLOCK_DIM_X = 2, BLOCK_DIM_Y = 2, BLOCK_DIM_Z = 2
+ExE_Time: 4.99
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 268192: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c2n06>
+                            <20*summitdev-r0c2n07>
+                            <20*summitdev-r0c1n01>
+                            <20*summitdev-r0c2n09>
+                            <20*summitdev-r0c1n02>
+                            <20*summitdev-r0c1n03>
+                            <20*summitdev-r0c1n05>
+                            <20*summitdev-r0c1n06>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out-rdma/b2reqwp> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 8
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.28 sec.
+    Max Memory :                                 40 MB
+    Average Memory :                             40.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   83 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   28 sec.
+    Turnaround time :                            72 sec.
+
+The output (if any) is above this job summary.
+

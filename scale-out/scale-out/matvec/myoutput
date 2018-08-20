@@ -1,0 +1,241 @@
+Resultant Matrix Number of Elements is 65536
+
+
+Matrix A initialized
+
+
+
+
+Matrix B initilized
+
+
+
+
+
+
+Processor with  rank 0 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+
+
+ Computation Done .....
+ Exiting 
+
+Processor with  rank 2 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 5 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 6 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 3 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 1 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 7 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 4 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+ExE_Time: 2.38
+Resultant Matrix Number of Elements is 65536
+
+
+Matrix A initialized
+
+
+
+
+Matrix B initilized
+
+
+
+
+
+
+Processor with  rank 0 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+
+
+ Computation Done .....
+ Exiting 
+
+Processor with  rank 6 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 4 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 1 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 2 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 5 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 7 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 3 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+ExE_Time: 1.49
+Resultant Matrix Number of Elements is 65536
+
+
+Matrix A initialized
+
+
+
+
+Matrix B initilized
+
+
+
+
+
+
+Processor with  rank 0 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+
+
+ Computation Done .....
+ Exiting 
+
+Processor with  rank 5 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 2 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 1 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 4 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 7 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 6 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 3 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+ExE_Time: 1.57
+Resultant Matrix Number of Elements is 65536
+
+
+Matrix A initialized
+
+
+
+
+Matrix B initilized
+
+
+
+
+
+
+Processor with  rank 0 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+
+
+ Computation Done .....
+ Exiting 
+
+Processor with  rank 5 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 2 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 1 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 7 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 3 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 6 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 4 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+ExE_Time: 1.47
+Resultant Matrix Number of Elements is 65536
+
+
+Matrix A initialized
+
+
+
+
+Matrix B initilized
+
+
+
+
+
+
+Processor with  rank 0 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+
+
+ Computation Done .....
+ Exiting 
+
+Processor with  rank 5 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 7 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 4 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 6 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 1 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 2 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+Processor with  rank 3 has the Device by name Tesla P100-SXM2-16GB and computation is done on this device 
+Pinned mode
+ExE_Time: 1.47
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 267863: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c2n10>
+                            <20*summitdev-r0c2n11>
+                            <20*summitdev-r0c2n12>
+                            <20*summitdev-r0c2n13>
+                            <20*summitdev-r0c2n14>
+                            <20*summitdev-r0c2n15>
+                            <20*summitdev-r0c2n16>
+                            <20*summitdev-r0c1n15>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out/matvec> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 8
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.27 sec.
+    Max Memory :                                 52 MB
+    Average Memory :                             52.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              1
+    Max Threads :                                23
+    Run time :                                   18 sec.
+    Turnaround time :                            74 sec.
+
+The output (if any) is above this job summary.
+

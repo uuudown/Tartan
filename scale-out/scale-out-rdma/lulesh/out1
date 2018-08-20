@@ -1,0 +1,85 @@
+myRank=1, setting CUDA device 0
+myRank=0, setting CUDA device 0
+[summitdev-r0c0n15:121474:0] Caught signal 11 (Segmentation fault)
+==== backtrace ====
+ 2 0x0000000000073264 mxm_handle_error()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/util/debug/debug.c:641
+ 3 0x00000000000739a4 mxm_error_signal_handler()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/util/debug/debug.c:616
+ 4 0x000000000008797c mxm_ud_channel_progress_send_op()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_send.c:404
+ 5 0x000000000008797c mxm_ud_channel_progress_sends()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_send.c:421
+ 6 0x000000000008797c mxm_ud_verbs_ep_tx_post()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_send.c:497
+ 7 0x00000000000880cc mxm_ud_verbs_channel_send()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_send.c:568
+ 8 0x0000000000057df0 mxm_proto_conn_switch_to_next_channel_finalize()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/proto/proto_conn.c:168
+ 9 0x0000000000057df0 mxm_proto_conn_switch_to_next_channel()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/proto/proto_conn.c:233
+10 0x0000000000066d70 mxm_proto_conn_process_conn_estbh()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/proto/proto_recv.c:849
+11 0x0000000000068a34 mxm_proto_conn_process_receive()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/proto/proto_recv.c:1054
+12 0x000000000008678c mxm_ud_channel_complete_rx()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_channel.inl:242
+13 0x000000000008678c mxm_ud_ep_handle_rx()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_recv.c:215
+14 0x000000000008678c mxm_ud_verbs_ep_rx_poll()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_recv.c:527
+15 0x000000000008678c mxm_ud_verbs_ep_progress()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_recv.c:540
+16 0x0000000000055714 mxm_notifier_chain_call()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/./mxm/util/datatype/callback.h:74
+17 0x0000000000055714 mxm_progress_internal()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/core/mxm.c:64
+18 0x0000000000055714 mxm_progress()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/core/mxm.c:346
+19 0x0000000000003744 mca_pml_yalla_progress()  ??:0
+20 0x000000000002bb00 opal_progress()  ??:0
+21 0x000000000006f9c4 ompi_request_default_wait()  ??:0
+22 0x00000000000b33d0 MPI_Wait()  ??:0
+23 0x0000000010019db0 _Z7CommSBNP6DomainiPPd()  ??:0
+24 0x0000000010006230 main()  ??:0
+25 0x0000000000024700 generic_start_main.isra.0()  libc-start.c:0
+26 0x00000000000248f4 __libc_start_main()  ??:0
+===================
+./run_2g_weak.sh: line 1: 121474 Segmentation fault      ./lulesh 64
+User defined signal 2
+Lost connection to pmix_server after reading 0/1344 bytes Success
+Failed to send signal to pmix server
+Failed to send signal to pmix server
+Could not send js_detach request to pmix server
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 266206: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; export OMPI_MCA_pml_pami_enable_cuda=0 ;#source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> in cluster <summitdev> Exited
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; export OMPI_MCA_pml_pami_enable_cuda=0 ;#source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n13>
+                            <20*summitdev-r0c0n15>
+</ccs/home/angli> was used as the home directory.
+</ccs/home/angli/tartan/Tartan/scale-out-rdma/lulesh> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 5
+#BSUB -nnodes 2
+module load cuda/8.0.54
+module load spectrum-mpi
+module load hdf5
+
+export OMPI_MCA_pml_pami_enable_cuda=0 
+#source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+
+jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh
+
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 140.
+
+Resource usage summary:
+
+    CPU time :                                   1.26 sec.
+    Max Memory :                                 51 MB
+    Average Memory :                             50.18 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1171 MB
+    Max Processes :                              6
+    Max Threads :                                30
+    Run time :                                   302 sec.
+    Turnaround time :                            358 sec.
+
+The output (if any) is above this job summary.
+

@@ -1,0 +1,79 @@
+MPI task 0 starts on hosts summitdev-r0c2n14
+MPI task 1 starts on hosts summitdev-r0c2n13
+4 BW : 0.000289101
+8 BW : 0.000582411
+16 BW : 0.00116491
+32 BW : 0.00234449
+64 BW : 0.00466506
+128 BW : 0.0092949
+256 BW : 0.0184771
+512 BW : 0.0367236
+1024 BW : 0.073951
+2048 BW : 0.145475
+4096 BW : 0.278734
+8192 BW : 0.522716
+16384 BW : 0.938804
+32768 BW : 1.65948
+65536 BW : 2.80248
+131072 BW : 4.18921
+262144 BW : 3.51028
+524288 BW : 4.46427
+1048576 BW : 5.18776
+2097152 BW : 5.95841
+4194304 BW : 6.26978
+8388608 BW : 5.83046
+16777216 BW : 5.54367
+33554432 BW : 5.5817
+67108864 BW : 5.55119
+134217728 BW : 5.4572
+268435456 BW : 5.45573
+536870912 BW : 5.45475
+1073741824 BW : 5.46022
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 233863: <#!/bin/bash;#BSUB -P CSC249ADCD502 ;#BSUB -W 4;#BSUB -nnodes 2; module load cuda/8.0.54;module load spectrum-mpi; export LD_LIBRARY_PATH=/sw/summitdev/cuda/8.0.54/lib64/:$LD_LIBRARY_PATH;#source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./mpibw 0 0 20 268435456 device> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502 ;#BSUB -W 4;#BSUB -nnodes 2; module load cuda/8.0.54;module load spectrum-mpi; export LD_LIBRARY_PATH=/sw/summitdev/cuda/8.0.54/lib64/:$LD_LIBRARY_PATH;#source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./mpibw 0 0 20 268435456 device> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c2n13>
+                            <20*summitdev-r0c2n14>
+</ccs/home/angli> was used as the home directory.
+</ccs/home/angli/tartan/MPI-GPU-BW> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502 
+#BSUB -W 4
+#BSUB -nnodes 2
+
+module load cuda/8.0.54
+module load spectrum-mpi
+
+export LD_LIBRARY_PATH=/sw/summitdev/cuda/8.0.54/lib64/:$LD_LIBRARY_PATH
+#source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+
+jsrun -n2 -a1 -g1 -c1 -r1 ./mpibw 0 0 20 268435456 device
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.50 sec.
+    Max Memory :                                 50 MB
+    Average Memory :                             50.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1170 MB
+    Max Processes :                              1
+    Max Threads :                                23
+    Run time :                                   14 sec.
+    Turnaround time :                            39 sec.
+
+The output (if any) is above this job summary.
+

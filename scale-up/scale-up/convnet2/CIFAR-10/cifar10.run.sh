@@ -1,0 +1,1 @@
+python convnet.py --data-provider cifar --test-range 6 --train-range 1-5 --data-path /usr/local/storage/akrizhevsky/cifar-10-py-colmajor --inner-size 24 --save-path /usr/local/storage/akrizhevsky/ --gpu 0 --layer-def layers/layers-cifar10-11pct.cfg --layer-params layers/layer-params-cifar10-11pct.cfg

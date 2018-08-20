@@ -1,0 +1,58 @@
+Connection request to PMIx server timed out.
+Error: No such file or directory
+Error initializing RM connection. Exiting.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 238128: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 8;module load gcc/5.4.0;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n8 -a1 -g1 -c1 -r1 ./b2r 4 2 2 2> in cluster <summitdev> Exited
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 8;module load gcc/5.4.0;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n8 -a1 -g1 -c1 -r1 ./b2r 4 2 2 2> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c2n04>
+                            <20*summitdev-r0c2n05>
+                            <20*summitdev-r0c2n06>
+                            <20*summitdev-r0c2n07>
+                            <20*summitdev-r0c2n08>
+                            <20*summitdev-r0c1n01>
+                            <20*summitdev-r0c2n09>
+                            <20*summitdev-r0c1n02>
+</ccs/home/angli> was used as the home directory.
+</ccs/home/angli/tartan/Tartan_summitdev/scale-out-pinned/b2reqwp> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 5
+#BSUB -nnodes 8
+module load gcc/5.4.0
+module load cuda/8.0.54
+module load spectrum-mpi
+module load hdf5
+
+#export OMPI_MCA_pml_pami_enable_cuda=0 
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+
+jsrun -n8 -a1 -g1 -c1 -r1 ./b2r 4 2 2 2
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   1.66 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   8 sec.
+    Turnaround time :                            39 sec.
+
+The output (if any) is above this job summary.
+

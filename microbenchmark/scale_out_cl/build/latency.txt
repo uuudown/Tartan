@@ -1,0 +1,8 @@
+OP,GPU,Latency
+all_gather_perf,2,0.025
+all_gather_perf,3,0.012
+all_gather_perf,4,0.012
+all_gather_perf,5,0.012
+all_gather_perf,6,0.013
+all_gather_perf,7,0.012
+all_gather_perf,8,0.013

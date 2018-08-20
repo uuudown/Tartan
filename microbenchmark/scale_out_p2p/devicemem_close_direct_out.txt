@@ -1,0 +1,23 @@
+MPI task 1 starts on hosts summitdev-r0c2n13
+MPI task 0 starts on hosts summitdev-r0c2n14
+[summitdev-r0c2n14:152632:0] Caught signal 11 (Segmentation fault)
+==== backtrace ====
+ 2 0x0000000000073264 mxm_handle_error()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/util/debug/debug.c:641
+ 3 0x00000000000739a4 mxm_error_signal_handler()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/util/debug/debug.c:616
+ 4 0x0000000000087a5c mxm_ud_channel_progress_send_op()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_send.c:331
+ 5 0x0000000000087a5c mxm_ud_channel_progress_sends()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_send.c:421
+ 6 0x0000000000087a5c mxm_ud_verbs_ep_tx_post()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_send.c:497
+ 7 0x00000000000880cc mxm_ud_verbs_channel_send()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/tl/ud/ud_send.c:568
+ 8 0x000000000006a33c mxm_proto_conn_send_op()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/proto/proto_send.c:47
+ 9 0x000000000006a33c mxm_req_send()  /var/tmp/OFED_topdir/BUILD/mxm-3.5.3093/src/mxm/proto/proto_send.c:467
+10 0x0000000000006b20 mca_pml_yalla_send()  ??:0
+11 0x00000000000a9bf8 MPI_Send()  ??:0
+12 0x00000000100014a8 main()  ??:0
+13 0x0000000000024700 generic_start_main.isra.0()  libc-start.c:0
+14 0x00000000000248f4 __libc_start_main()  ??:0
+===================
+User defined signal 2
+Lost connection to pmix_server after reading 0/1344 bytes Success
+Failed to send signal to pmix server
+Failed to send signal to pmix server
+Could not send js_detach request to pmix server

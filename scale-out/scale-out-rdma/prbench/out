@@ -1,0 +1,87 @@
+
+Running Pagerank Benchmark with:
+
+Scale: 20 (1048576 vertices)
+Edge factor: 16 (16777216 edges)
+Number of processes: 2
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+	seed: 0
+	clip'n'flip: yes
+	vertex permutation: yes
+
+Kernel 0 (scale=20, edgef=16):
+	gen   time: 0.0089 secs
+	TOTAL time: 0.0089 secs (I/O: 0%), 1883.90 Medges/sec
+
+Kernel 1 (scale=20, edgef=16):
+	sort  time: 0.0489 secs
+	TOTAL time: 0.0489 secs (I/O: 0%), 342.76 Medges/sec
+
+Kernel 2 (scale=20, edgef=16):
+	gen   time: 0.0479 secs
+	TOTAL time: 0.0479 secs (I/O: 0%), 349.89 Medges/sec
+
+Kernel 3 (scale=20, edgef=16, numiter=20, c=0.85, a=1.43051E-07, rhs=RND):
+	gen   time: 0.0001 secs
+	comp  time: 0.0205 secs
+		min/max  d2h: 0.0004/0.0004 secs
+		min/max  mpi: 0.0084/0.0086 secs
+		min/max  h2d: 0.0017/0.0018 secs
+		min/max spmv: 0.0142/0.0144 secs
+	TOTAL time: 0.0206 secs, 16321.72 Medges/sec, MFLOPS: 32643.4301
+
+PageRank sum: 1.801916E-04
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 266226: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n16>
+                            <20*summitdev-r0c0n18>
+</ccs/home/angli> was used as the home directory.
+</ccs/home/angli/tartan/Tartan/scale-out-rdma/prbench> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 5
+#BSUB -nnodes 2
+module load cuda/8.0.54
+module load spectrum-mpi
+module load hdf5
+
+#export OMPI_MCA_pml_pami_enable_cuda=0 
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+
+jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.79 sec.
+    Max Memory :                                 42 MB
+    Average Memory :                             42.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1125 MB
+    Max Processes :                              1
+    Max Threads :                                23
+    Run time :                                   24 sec.
+    Turnaround time :                            58 sec.
+
+The output (if any) is above this job summary.
+

@@ -1,0 +1,142 @@
+This code requires the Nvidia CUB sources, which can be downloaded at this
+address:
+
+https://nvlabs.github.io/cub/
+
+To compile, you'll first need to set the following variables in the Makefile
+to the root installation paths of each library:
+
+CUDA_HOME
+MPI_HOME
+CUB_HOME
+
+and selecting the right GPU architecture by setting the CUDA_ARCH variable
+(currently set to sm_35). 
+At this point you can run 'make' to build the 'prbench' binary.  
+Running 'prbench -h' gives you a list of all the option accepted by the program
+with a brief explanation.  An example of run with four processes is:
+
+-------------------------------------------------------------------------------
+$> mpirun -np 4 ./prbench -S 21 -E 16 -f
+
+Running Pagerank Benchmark with:
+
+Scale: 21 (2097152 vertices)
+Edge factor: 16 (33554432 edges)
+Number of processes: 4
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+        seed: 0
+        clip'n'flip: yes
+        vertex permutation: yes
+
+Kernel 0 (scale=21, edgef=16):
+        gen   time: 0.0105 secs
+        TOTAL time: 0.0105 secs (I/O: 0%), 3184.14 Medges/sec
+
+Kernel 1 (scale=21, edgef=16):
+        sort  time: 0.1521 secs
+        TOTAL time: 0.1521 secs (I/O: 0%), 220.54 Medges/sec
+
+Kernel 2 (scale=21, edgef=16):
+        gen   time: 0.1410 secs
+        TOTAL time: 0.1410 secs (I/O: 0%), 238.00 Medges/sec
+
+Kernel 3 (scale=21, edgef=16, numiter=20, c=0.85, a=7.15256E-08, rhs=RND):
+        gen   time: 0.0001 secs
+        comp  time: 0.0392 secs
+                min/max  d2h: 0.0050/0.0056 secs
+                min/max  mpi: 0.0186/0.0194 secs
+                min/max  h2d: 0.0051/0.0053 secs
+                min/max spmv: 0.0285/0.0292 secs
+        TOTAL time: 0.0394 secs, 17043.52 Medges/sec, MFLOPS: 34087.0415
+
+PageRank sum: 1.354529E-04
+-------------------------------------------------------------------------------
+
+Here's the list of options accepted by the program
+
+prbench [basic options] [advanced options]
+Basic options:
+	-S <scale>
+	--scale <scale>
+		Specifies the problem scale (2^scale vertices).
+		Default value: 21.
+
+	-E <edge_factor>
+	--edgef <edge_factor>
+		Specifies the average number of edges  per  vertex  (2^scale*edge_factor
+		total edges).
+		Default value: 16.
+
+	-i <niter>
+	--iter <niter>
+		Specifies how  many  iterations  of  the  PageRank  algorithm  will  be
+		performed.
+		Default: 20.
+
+	-k <kernel>
+	--kstart <kernel>
+		Specifies from the kernel from which the benchmark will start (0, 1  or
+		2).  Input files for the kernel must be present int the current working
+		directory.  This option is useful to test a kernels on specific inputs.
+		Default: 0.
+
+	-r <val>
+	--rhs <val>
+		Specifies the type of r vector to be used for  the  PageRank  algorithm
+		(kernel 3).  If this option is not specified the  vector  will	set  to
+		normalized random values (as required by  the  benchmark).   Otherwise,
+		type can be either a floating point number of  a  file	name.	In  the
+		former case all elements of r will be  set  to	"val"  while	in  the
+		latter	 the   values	 will	 be    read    from    file    "val".
+		Default: random.
+
+	-c <damp_fact>
+	--cfact <damp_fact>
+		Specifies the damping factor associated with  the  PageRank  algorithm.
+		Default: 0.15.
+
+	-a <damp_vect>
+	--avect <damp_vect>
+		Specifies the damping vector associated with  the  PageRank  algorithm.
+		Default: [1.0]*(1-damp_fact)/(2^scale).
+
+	-f
+	--fast
+		Enables fast mode (skips disk I/O operations).
+		Default: false.
+
+	-h
+	--help
+		Shows this help.
+
+Advanced options:
+	-s <seed>
+	--seed <value>
+		Specify the value used to seed the generation of the kronecker graph.
+		Default: 0.
+
+	--no-krcf
+		Disables clip and flip on the generated graph.
+		Default: enabled.
+
+	--no-krpm
+		Disables vertex permutation on the generated graph.
+		Default: enabled.
+
+	-g <file>
+	--graph <file>
+		This option is used to perform the  benchmark  on  a  graph  read  from
+		'file' rather than on a synthetic  one.   The  file  must  contain  one
+		edge per line represented as a pair of separated numeric strings in the
+		range [0:2^scale].  Edges do not need to be sorted.  Please  note  that
+		this  option  causes the -s,  --krcf  and  --krpm options to be ignored.
+		Moreover it cannot be used together with -k specifying a kernel greater
+		than 0.
+		Default: disabled.

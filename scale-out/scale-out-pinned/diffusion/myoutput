@@ -1,0 +1,1063 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 268056: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 4;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh> in cluster <summitdev> Exited
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 4;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n13>
+                            <20*summitdev-r0c0n15>
+                            <20*summitdev-r0c2n05>
+                            <20*summitdev-r0c2n06>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out-pinned/diffusion> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 4
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_weak.sh
+
+------------------------------------------------------------
+
+Exited with exit code 134.
+
+Resource usage summary:
+
+    CPU time :                                   1.36 sec.
+    Max Memory :                                 52 MB
+    Average Memory :                             51.60 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   115 sec.
+    Turnaround time :                            178 sec.
+
+The output (if any) is above this job summary.
+
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+dt: 1.67224e-06, iterations: 1001, final time: 0.00167391
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  8.561391 seconds
+Data transfer(s) HtD                         :  0.004220 seconds
+Data transfer(s) DtH                         :  0.004399 seconds
+===================================================================
+Total effective GFLOPs                       :  361.872864
+===================================================================
+3D Grid Size                                 :  400 x 400 x 806
+Iterations                                   :  1001 x 3 RK steps
+===================================================================
+[summitdev-r0c2n09:138805] *** Process received signal ***
+[summitdev-r0c2n09:138805] Signal: Aborted (6)
+[summitdev-r0c2n09:138805] Signal code:  (-6)
+[summitdev-r0c2n09:138805] [ 0] [0x100000050478]
+[summitdev-r0c2n09:138805] [ 1] /lib64/libc.so.6(abort+0x280)[0x100001330d70]
+[summitdev-r0c2n09:138805] [ 2] /lib64/libc.so.6(+0x348a4)[0x1000013248a4]
+[summitdev-r0c2n09:138805] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x100001324994]
+[summitdev-r0c2n09:138805] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x100000076b20]
+[summitdev-r0c2n09:138805] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x1000000735a0]
+[summitdev-r0c2n09:138805] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x1000010a08a0]
+[summitdev-r0c2n09:138805] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x1000010d99d4]
+[summitdev-r0c2n09:138805] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c2n09:138805] [ 9] /lib64/libc.so.6(+0x24700)[0x100001314700]
+[summitdev-r0c2n09:138805] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x1000013148f4]
+[summitdev-r0c2n09:138805] *** End of error message ***
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n03:139790] *** Process received signal ***
+[summitdev-r0c1n03:139790] Signal: Aborted (6)
+[summitdev-r0c1n03:139790] Signal code:  (-6)
+[summitdev-r0c1n03:139790] [ 0] [0x3fffaf000478]
+[summitdev-r0c1n03:139790] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fffadbe0d70]
+[summitdev-r0c1n03:139790] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffadbd48a4]
+[summitdev-r0c1n03:139790] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffadbd4994]
+[summitdev-r0c1n03:139790] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffaefd6b20]
+[summitdev-r0c1n03:139790] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffaefd35a0]
+[summitdev-r0c1n03:139790] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffadf608a0]
+[summitdev-r0c1n03:139790] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffadf999d4]
+[summitdev-r0c1n03:139790] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n03:139790] [ 9] /lib64/libc.so.6(+0x24700)[0x3fffadbc4700]
+[summitdev-r0c1n03:139790] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffadbc48f4]
+[summitdev-r0c1n03:139790] *** End of error message ***
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 6 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 4 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n02:16996] *** Process received signal ***
+[summitdev-r0c1n02:16996] Signal: Aborted (6)
+[summitdev-r0c1n02:16996] Signal code:  (-6)
+[summitdev-r0c1n02:16996] [ 0] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[0x3fffadde0478]
+[summitdev-r0c1n02:16996] [ 1] Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c2n07:140499] *** Process received signal ***
+[summitdev-r0c2n07:140499] Signal: Aborted (6)
+[summitdev-r0c2n07:140499] Signal code:  (-6)
+[summitdev-r0c2n07:140499] Process 5 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+/lib64/libc.so.6(abort+0x280)[0x3fffac9c0d70]
+[summitdev-r0c1n02:16996] [ 2] Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n01:61994] *** Process received signal ***
+[summitdev-r0c1n01:61994] Signal: Aborted (6)
+[summitdev-r0c1n01:61994] Signal code:  (-6)
+[ 0] [0x3fff9b920478]
+[summitdev-r0c2n07:140499] [ 1] [summitdev-r0c1n06:156392] *** Process received signal ***
+[summitdev-r0c1n06:156392] Signal: Aborted (6)
+[summitdev-r0c1n06:156392] Signal code:  (-6)
+[summitdev-r0c1n06:156392] [ 0] Process 7 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n05:97227] *** Process received signal ***
+[summitdev-r0c1n05:97227] Signal: Aborted (6)
+[summitdev-r0c1n05:97227] Signal code:  (-6)
+[summitdev-r0c1n05:97227] [ 0] [0x3fff92d50478]
+[summitdev-r0c1n01:61994] [ 0] [0x3fff94d30478]
+[summitdev-r0c1n01:61994] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff9a500d70]
+[summitdev-r0c2n07:140499] [ 2] [0x3fff944c0478]
+[summitdev-r0c1n06:156392] [ 1] /lib64/libc.so.6(+0x348a4)[0x3fffac9b48a4]
+[summitdev-r0c1n02:16996] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffac9b4994]
+[summitdev-r0c1n02:16996] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffaddb6b20]
+[summitdev-r0c1n02:16996] [ 5] [summitdev-r0c1n05:97227] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff93910d70]
+[summitdev-r0c1n01:61994] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff9a4f48a4]
+[summitdev-r0c2n07:140499] [ 3] /lib64/libc.so.6(abort+0x280)[0x3fff930a0d70]
+[summitdev-r0c1n06:156392] [ 2] /lib64/libc.so.6(abort+0x280)[0x3fff91930d70]
+[summitdev-r0c1n05:97227] [ 2] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff9a4f4994]
+[summitdev-r0c2n07:140499] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff9b8f6b20]
+[summitdev-r0c2n07:140499] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff9b8f35a0]
+[summitdev-r0c2n07:140499] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff9a8808a0]
+[summitdev-r0c2n07:140499] [ 7] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffaddb35a0]
+[summitdev-r0c1n02:16996] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffacd408a0]
+[summitdev-r0c1n02:16996] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffacd799d4]
+[summitdev-r0c1n02:16996] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n02:16996] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n07:86254] *** Process received signal ***
+[summitdev-r0c1n07:86254] Signal: Aborted (6)
+[summitdev-r0c1n07:86254] Signal code:  (-6)
+[summitdev-r0c1n07:86254] [ 0] [0x3fffad880478]
+[summitdev-r0c1n07:86254] [ 1] /lib64/libc.so.6(+0x348a4)[0x3fff919248a4]
+[summitdev-r0c1n05:97227] [ 3] /lib64/libc.so.6(+0x348a4)[0x3fff939048a4]
+[summitdev-r0c1n01:61994] [ 3] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff9a8b99d4]
+[summitdev-r0c2n07:140499] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c2n07:140499] [ 9] /lib64/libc.so.6(+0x348a4)[0x3fff930948a4]
+[summitdev-r0c1n06:156392] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff93094994]
+[summitdev-r0c1n06:156392] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff94496b20]
+[summitdev-r0c1n06:156392] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff944935a0]
+[summitdev-r0c1n06:156392] [ 6] [ 9] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff91924994]
+[summitdev-r0c1n05:97227] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff92d26b20]
+[summitdev-r0c1n05:97227] [ 5] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff93904994]
+[summitdev-r0c1n01:61994] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff94d06b20]
+[summitdev-r0c1n01:61994] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff94d035a0]
+[summitdev-r0c1n01:61994] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff93c908a0]
+[summitdev-r0c1n01:61994] /lib64/libc.so.6(+0x24700)[0x3fffac9a4700]
+[summitdev-r0c1n02:16996] [10] /lib64/libc.so.6(abort+0x280)[0x3fffac460d70]
+[summitdev-r0c1n07:86254] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffac4548a4]
+[summitdev-r0c1n07:86254] [ 3] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff93cc99d4]
+[summitdev-r0c1n01:61994] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n01:61994] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff9a4e4700]
+[summitdev-r0c2n07:140499] [10] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff934208a0]
+[summitdev-r0c1n06:156392] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff934599d4]
+[summitdev-r0c1n06:156392] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n06:156392] [ 9] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffac9a48f4]
+[summitdev-r0c1n02:16996] *** End of error message ***
+/lib64/libc.so.6(__assert_fail+0x64)[0x3fffac454994]
+[summitdev-r0c1n07:86254] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffad856b20]
+[summitdev-r0c1n07:86254] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff92d235a0]
+[summitdev-r0c1n05:97227] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff91cb08a0]
+[summitdev-r0c1n05:97227] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff91ce99d4]
+[summitdev-r0c1n05:97227] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n05:97227] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff938f4700]
+[summitdev-r0c1n01:61994] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff9a4e48f4]
+[summitdev-r0c2n07:140499] *** End of error message ***
+/lib64/libc.so.6(+0x24700)[0x3fff93084700]
+[summitdev-r0c1n06:156392] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff930848f4]
+[summitdev-r0c1n06:156392] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff938f48f4]
+[summitdev-r0c1n01:61994] *** End of error message ***
+/autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffad8535a0]
+[summitdev-r0c1n07:86254] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffac7e08a0]
+[summitdev-r0c1n07:86254] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffac8199d4]
+[summitdev-r0c1n07:86254] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n07:86254] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff91914700]
+[summitdev-r0c1n05:97227] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff919148f4]
+[summitdev-r0c1n05:97227] *** End of error message ***
+/lib64/libc.so.6(+0x24700)[0x3fffac444700]
+[summitdev-r0c1n07:86254] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffac4448f4]
+[summitdev-r0c1n07:86254] *** End of error message ***
+./run_8g_weak.sh: line 1: 156392 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 140499 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 61994 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 86254 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 16996 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 97227 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 138805 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 139790 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+ExE_Time: 62.94
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+dt: 1.67224e-06, iterations: 1001, final time: 0.00167391
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  8.556979 seconds
+Data transfer(s) HtD                         :  0.004213 seconds
+Data transfer(s) DtH                         :  0.004599 seconds
+===================================================================
+Total effective GFLOPs                       :  362.059448
+===================================================================
+3D Grid Size                                 :  400 x 400 x 806
+Iterations                                   :  1001 x 3 RK steps
+===================================================================
+[summitdev-r0c2n09:138815] *** Process received signal ***
+[summitdev-r0c2n09:138815] Signal: Aborted (6)
+[summitdev-r0c2n09:138815] Signal code:  (-6)
+[summitdev-r0c2n09:138815] [ 0] [0x100000050478]
+[summitdev-r0c2n09:138815] [ 1] /lib64/libc.so.6(abort+0x280)[0x100001330d70]
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c2n09:138815] [ 2] /lib64/libc.so.6(+0x348a4)[0x1000013248a4]
+[summitdev-r0c1n03:139800] *** Process received signal ***
+[summitdev-r0c1n03:139800] Signal: Aborted (6)
+[summitdev-r0c1n03:139800] Signal code:  (-6)
+[summitdev-r0c1n03:139800] [ 0] [0x3fffae6b0478]
+[summitdev-r0c1n03:139800] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fffad290d70]
+[summitdev-r0c1n03:139800] [ 2] [summitdev-r0c2n09:138815] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x100001324994]
+[summitdev-r0c2n09:138815] /lib64/libc.so.6(+0x348a4)[0x3fffad2848a4]
+[summitdev-r0c1n03:139800] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffad284994]
+[summitdev-r0c1n03:139800] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffae686b20]
+[summitdev-r0c1n03:139800] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffae6835a0]
+[summitdev-r0c1n03:139800] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffad6108a0]
+[summitdev-r0c1n03:139800] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffad6499d4]
+[summitdev-r0c1n03:139800] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n03:139800] [ 9] /lib64/libc.so.6(+0x24700)[0x3fffad274700]
+[summitdev-r0c1n03:139800] [10] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x100000076b20]
+[summitdev-r0c2n09:138815] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x1000000735a0]
+[summitdev-r0c2n09:138815] [ 6] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffad2748f4]
+[summitdev-r0c1n03:139800] *** End of error message ***
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+/sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x1000010a08a0]
+[summitdev-r0c2n09:138815] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x1000010d99d4]
+[summitdev-r0c2n09:138815] Process 5 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n06:156404] *** Process received signal ***
+[summitdev-r0c1n06:156404] Signal: Aborted (6)
+[summitdev-r0c1n06:156404] Signal code:  (-6)
+[summitdev-r0c1n06:156404] [ 0] [0x3fffb4e30478]
+[summitdev-r0c1n06:156404] [ 1] Process 7 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n07:86264] *** Process received signal ***
+[summitdev-r0c1n07:86264] Signal: Aborted (6)
+[summitdev-r0c1n07:86264] Signal code:  (-6)
+[summitdev-r0c1n07:86264] [ 0] [0x3fff87690478]
+[summitdev-r0c1n07:86264] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff86270d70]
+[summitdev-r0c1n07:86264] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff862648a4]
+[summitdev-r0c1n07:86264] [ 3] [ 8] ./diffusion[0x100024ac]
+Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n05:97239] *** Process received signal ***
+[summitdev-r0c1n05:97239] Signal: Aborted (6)
+[summitdev-r0c1n05:97239] Signal code:  (-6)
+[summitdev-r0c1n05:97239] [ 0] [0x3fff7b8d0478]
+[summitdev-r0c1n05:97239] [ 1] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n01:62004] *** Process received signal ***
+[summitdev-r0c1n01:62004] Signal: Aborted (6)
+[summitdev-r0c1n01:62004] Signal code:  (-6)
+[summitdev-r0c1n01:62004] [ 0] [0x3fffab5b0478]
+[summitdev-r0c1n01:62004] [ 1] Process 4 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c2n07:140509] *** Process received signal ***
+[summitdev-r0c2n07:140509] Signal: Aborted (6)
+[summitdev-r0c2n07:140509] Signal code:  (-6)
+[summitdev-r0c2n07:140509] [ 0] [0x3fff7c170478]
+[summitdev-r0c2n07:140509] [ 1] Process 6 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c2n09:138815] [ 9] /lib64/libc.so.6(+0x24700)[0x100001314700]
+[summitdev-r0c2n09:138815] /lib64/libc.so.6(abort+0x280)[0x3fff7a4b0d70]
+[summitdev-r0c1n05:97239] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff7a4a48a4]
+[summitdev-r0c1n05:97239] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff7a4a4994]
+[summitdev-r0c1n05:97239] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff7b8a6b20]
+[summitdev-r0c1n05:97239] [ 5] /lib64/libc.so.6(abort+0x280)[0x3fffaa190d70]
+[summitdev-r0c1n01:62004] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffaa1848a4]
+[summitdev-r0c1n01:62004] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffaa184994]
+[summitdev-r0c1n01:62004] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffab586b20]
+[summitdev-r0c1n01:62004] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffab5835a0]
+[summitdev-r0c1n01:62004] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffaa5108a0]
+[summitdev-r0c1n01:62004] [ 7] /lib64/libc.so.6(abort+0x280)[0x3fff7ad50d70]
+[summitdev-r0c2n07:140509] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff7ad448a4]
+[summitdev-r0c2n07:140509] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff7ad44994]
+[summitdev-r0c2n07:140509] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff7c146b20]
+[summitdev-r0c2n07:140509] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff7c1435a0]
+[summitdev-r0c2n07:140509] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff7b0d08a0]
+[summitdev-r0c2n07:140509] [ 7] /lib64/libc.so.6(abort+0x280)[0x3fffb3a10d70]
+[summitdev-r0c1n06:156404] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffb3a048a4]
+[summitdev-r0c1n06:156404] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffb3a04994]
+[summitdev-r0c1n06:156404] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffb4e06b20]
+[summitdev-r0c1n06:156404] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffb4e035a0]
+[summitdev-r0c1n06:156404] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffb3d908a0]
+[summitdev-r0c1n06:156404] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffb3dc99d4]
+[summitdev-r0c1n06:156404] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n06:156404] [ 9] /lib64/libc.so.6(+0x24700)[0x3fffb39f4700]
+[summitdev-r0c1n06:156404] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffb39f48f4]
+[summitdev-r0c1n06:156404] *** End of error message ***
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n02:17006] *** Process received signal ***
+[summitdev-r0c1n02:17006] Signal: Aborted (6)
+[summitdev-r0c1n02:17006] Signal code:  (-6)
+[summitdev-r0c1n02:17006] [ 0] [0x3fff8cd20478]
+[summitdev-r0c1n02:17006] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff8b900d70]
+[summitdev-r0c1n02:17006] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff8b8f48a4]
+[summitdev-r0c1n02:17006] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff86264994]
+[summitdev-r0c1n07:86264] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff87666b20]
+[summitdev-r0c1n07:86264] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff876635a0]
+[summitdev-r0c1n07:86264] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff865f08a0]
+[summitdev-r0c1n07:86264] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff866299d4]
+[summitdev-r0c1n07:86264] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n07:86264] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff86254700]
+[summitdev-r0c1n07:86264] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff862548f4]
+[summitdev-r0c1n07:86264] *** End of error message ***
+[10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x1000013148f4]
+[summitdev-r0c2n09:138815] *** End of error message ***
+/autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff7b8a35a0]
+[summitdev-r0c1n05:97239] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff7a8308a0]
+[summitdev-r0c1n05:97239] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff7a8699d4]
+[summitdev-r0c1n05:97239] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n05:97239] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff7a494700]
+[summitdev-r0c1n05:97239] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff7a4948f4]
+[summitdev-r0c1n05:97239] *** End of error message ***
+/sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffaa5499d4]
+[summitdev-r0c1n01:62004] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n01:62004] [ 9] /lib64/libc.so.6(+0x24700)[0x3fffaa174700]
+[summitdev-r0c1n01:62004] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffaa1748f4]
+[summitdev-r0c1n01:62004] *** End of error message ***
+/sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff7b1099d4]
+[summitdev-r0c2n07:140509] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c2n07:140509] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff7ad34700]
+[summitdev-r0c2n07:140509] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff7ad348f4]
+[summitdev-r0c2n07:140509] *** End of error message ***
+/lib64/libc.so.6(__assert_fail+0x64)[0x3fff8b8f4994]
+[summitdev-r0c1n02:17006] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff8ccf6b20]
+[summitdev-r0c1n02:17006] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff8ccf35a0]
+[summitdev-r0c1n02:17006] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff8bc808a0]
+[summitdev-r0c1n02:17006] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff8bcb99d4]
+[summitdev-r0c1n02:17006] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n02:17006] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff8b8e4700]
+[summitdev-r0c1n02:17006] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff8b8e48f4]
+[summitdev-r0c1n02:17006] *** End of error message ***
+./run_8g_weak.sh: line 1: 86264 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 156404 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 140509 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 138815 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 62004 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 139800 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 17006 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 97239 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+ExE_Time: 35.67
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+dt: 1.67224e-06, iterations: 1001, final time: 0.00167391
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  8.561727 seconds
+Data transfer(s) HtD                         :  0.004205 seconds
+Data transfer(s) DtH                         :  0.004509 seconds
+===================================================================
+Total effective GFLOPs                       :  361.858673
+===================================================================
+3D Grid Size                                 :  400 x 400 x 806
+Iterations                                   :  1001 x 3 RK steps
+===================================================================
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c2n09:138825] *** Process received signal ***
+[summitdev-r0c2n09:138825] Signal: Aborted (6)
+[summitdev-r0c2n09:138825] Signal code:  (-6)
+[summitdev-r0c2n09:138825] [ 0] [0x100000050478]
+[summitdev-r0c2n09:138825] [ 1] /lib64/libc.so.6(abort+0x280)[0x100001330d70]
+[summitdev-r0c2n09:138825] [ 2] /lib64/libc.so.6(+0x348a4)[0x1000013248a4]
+[summitdev-r0c2n09:138825] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x100001324994]
+[summitdev-r0c2n09:138825] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x100000076b20]
+[summitdev-r0c2n09:138825] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x1000000735a0]
+[summitdev-r0c2n09:138825] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x1000010a08a0]
+[summitdev-r0c2n09:138825] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x1000010d99d4]
+[summitdev-r0c2n09:138825] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c2n09:138825] [ 9] /lib64/libc.so.6(+0x24700)[0x100001314700]
+[summitdev-r0c2n09:138825] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x1000013148f4]
+[summitdev-r0c2n09:138825] *** End of error message ***
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+Process 4 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n03:139810] *** Process received signal ***
+[summitdev-r0c1n03:139810] Signal: Aborted (6)
+[summitdev-r0c1n03:139810] Signal code:  (-6)
+[summitdev-r0c1n03:139810] [ 0] [0x3fffadfa0478]
+[summitdev-r0c1n03:139810] [ 1] Process 5 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c2n07:140517] *** Process received signal ***
+[summitdev-r0c2n07:140517] Signal: Aborted (6)
+[summitdev-r0c2n07:140517] Signal code:  (-6)
+[summitdev-r0c2n07:140517] [ 0] [0x3fff85130478]
+[summitdev-r0c2n07:140517] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fffacb80d70]
+[summitdev-r0c1n03:139810] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffacb748a4]
+[summitdev-r0c1n03:139810] [ 3] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+/lib64/libc.so.6(abort+0x280)[0x3fff83d10d70]
+[summitdev-r0c2n07:140517] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff83d048a4]
+[summitdev-r0c2n07:140517] [ 3] Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n06:156412] *** Process received signal ***
+[summitdev-r0c1n06:156412] Signal: Aborted (6)
+[summitdev-r0c1n06:156412] Signal code:  (-6)
+[summitdev-r0c1n06:156412] [ 0] [0x3fff97260478]
+[summitdev-r0c1n06:156412] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff95e40d70]
+[summitdev-r0c1n06:156412] [ 2] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+/lib64/libc.so.6(__assert_fail+0x64)[0x3fffacb74994]
+[summitdev-r0c1n03:139810] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffadf76b20]
+[summitdev-r0c1n03:139810] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffadf735a0]
+[summitdev-r0c1n03:139810] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffacf008a0]
+[summitdev-r0c1n03:139810] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffacf399d4]
+[summitdev-r0c1n03:139810] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n03:139810] [ 9] [summitdev-r0c1n05:97250] *** Process received signal ***
+[summitdev-r0c1n05:97250] Signal: Aborted (6)
+[summitdev-r0c1n05:97250] Signal code:  (-6)
+[summitdev-r0c1n05:97250] [ 0] [0x3fff9ee90478]
+[summitdev-r0c1n05:97250] [ 1] Process 6 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+/lib64/libc.so.6(__assert_fail+0x64)[0x3fff83d04994]
+[summitdev-r0c2n07:140517] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff85106b20]
+[summitdev-r0c2n07:140517] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff851035a0]
+[summitdev-r0c2n07:140517] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff840908a0]
+[summitdev-r0c2n07:140517] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff840c99d4]
+[summitdev-r0c2n07:140517] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c2n07:140517] [ 9] Process 7 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+/lib64/libc.so.6(+0x24700)[0x3fffacb64700]
+[summitdev-r0c1n03:139810] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffacb648f4]
+[summitdev-r0c1n03:139810] *** End of error message ***
+/lib64/libc.so.6(abort+0x280)[0x3fff9da70d70]
+[summitdev-r0c1n05:97250] [ 2] /lib64/libc.so.6(+0x24700)[0x3fff83cf4700]
+[summitdev-r0c2n07:140517] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff83cf48f4]
+[summitdev-r0c2n07:140517] *** End of error message ***
+/lib64/libc.so.6(+0x348a4)[0x3fff95e348a4]
+[summitdev-r0c1n06:156412] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff95e34994]
+[summitdev-r0c1n06:156412] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff97236b20]
+[summitdev-r0c1n06:156412] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff972335a0]
+[summitdev-r0c1n06:156412] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff961c08a0]
+[summitdev-r0c1n06:156412] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff961f99d4]
+[summitdev-r0c1n06:156412] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n06:156412] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff95e24700]
+[summitdev-r0c1n06:156412] [10] [summitdev-r0c1n02:17018] *** Process received signal ***
+[summitdev-r0c1n02:17018] Signal: Aborted (6)
+[summitdev-r0c1n02:17018] Signal code:  (-6)
+[summitdev-r0c1n02:17018] [ 0] [0x3fffb2240478]
+[summitdev-r0c1n02:17018] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fffb0e20d70]
+[summitdev-r0c1n02:17018] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffb0e148a4]
+[summitdev-r0c1n02:17018] [ 3] Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+/lib64/libc.so.6(+0x348a4)[0x3fff9da648a4]
+[summitdev-r0c1n05:97250] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff9da64994]
+[summitdev-r0c1n05:97250] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff9ee66b20]
+[summitdev-r0c1n05:97250] [ 5] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n01:62015] *** Process received signal ***
+[summitdev-r0c1n01:62015] Signal: Aborted (6)
+[summitdev-r0c1n01:62015] Signal code:  (-6)
+[summitdev-r0c1n01:62015] [ 0] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff95e248f4]
+[summitdev-r0c1n06:156412] *** End of error message ***
+/lib64/libc.so.6(__assert_fail+0x64)[0x3fffb0e14994]
+[summitdev-r0c1n02:17018] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffb2216b20]
+[summitdev-r0c1n02:17018] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffb22135a0]
+[summitdev-r0c1n02:17018] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffb11a08a0]
+[summitdev-r0c1n02:17018] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffb11d99d4]
+[summitdev-r0c1n02:17018] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n02:17018] [ 9] /lib64/libc.so.6(+0x24700)[0x3fffb0e04700]
+[summitdev-r0c1n02:17018] [10] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff9ee635a0]
+[summitdev-r0c1n05:97250] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff9ddf08a0]
+[summitdev-r0c1n05:97250] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff9de299d4]
+[summitdev-r0c1n05:97250] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n05:97250] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff9da54700]
+[summitdev-r0c1n05:97250] [10] [0x3fff8ece0478]
+[summitdev-r0c1n01:62015] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff8d8c0d70]
+[summitdev-r0c1n01:62015] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff8d8b48a4]
+[summitdev-r0c1n01:62015] [ 3] [summitdev-r0c1n07:86274] *** Process received signal ***
+[summitdev-r0c1n07:86274] Signal: Aborted (6)
+[summitdev-r0c1n07:86274] Signal code:  (-6)
+[summitdev-r0c1n07:86274] [ 0] [0x3fffa1d00478]
+[summitdev-r0c1n07:86274] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fffa08e0d70]
+[summitdev-r0c1n07:86274] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffa08d48a4]
+[summitdev-r0c1n07:86274] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffa08d4994]
+[summitdev-r0c1n07:86274] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffa1cd6b20]
+[summitdev-r0c1n07:86274] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffa1cd35a0]
+[summitdev-r0c1n07:86274] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffa0c608a0]
+[summitdev-r0c1n07:86274] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffa0c999d4]
+[summitdev-r0c1n07:86274] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n07:86274] [ 9] /lib64/libc.so.6(+0x24700)[0x3fffa08c4700]
+[summitdev-r0c1n07:86274] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffa08c48f4]
+[summitdev-r0c1n07:86274] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff9da548f4]
+[summitdev-r0c1n05:97250] *** End of error message ***
+/lib64/libc.so.6(__assert_fail+0x64)[0x3fff8d8b4994]
+[summitdev-r0c1n01:62015] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff8ecb6b20]
+[summitdev-r0c1n01:62015] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff8ecb35a0]
+[summitdev-r0c1n01:62015] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff8dc408a0]
+[summitdev-r0c1n01:62015] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff8dc799d4]
+[summitdev-r0c1n01:62015] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n01:62015] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff8d8a4700]
+[summitdev-r0c1n01:62015] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff8d8a48f4]
+[summitdev-r0c1n01:62015] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffb0e048f4]
+[summitdev-r0c1n02:17018] *** End of error message ***
+./run_8g_weak.sh: line 1: 140517 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 156412 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 17018 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 97250 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 138825 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 86274 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 139810 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 62015 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+ExE_Time: 35.84
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c2n09:138836] *** Process received signal ***
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+dt: 1.67224e-06, iterations: 1001, final time: 0.00167391
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  8.557574 seconds
+Data transfer(s) HtD                         :  0.004238 seconds
+Data transfer(s) DtH                         :  0.004590 seconds
+===================================================================
+Total effective GFLOPs                       :  362.034271
+===================================================================
+3D Grid Size                                 :  400 x 400 x 806
+Iterations                                   :  1001 x 3 RK steps
+===================================================================
+[summitdev-r0c2n09:138836] Signal: Aborted (6)
+[summitdev-r0c2n09:138836] Signal code:  (-6)
+[summitdev-r0c2n09:138836] [ 0] [0x100000050478]
+[summitdev-r0c2n09:138836] [ 1] /lib64/libc.so.6(abort+0x280)[0x100001330d70]
+[summitdev-r0c2n09:138836] [ 2] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+/lib64/libc.so.6(+0x348a4)[0x1000013248a4]
+[summitdev-r0c2n09:138836] [ 3] Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+/lib64/libc.so.6(__assert_fail+0x64)[0x100001324994]
+[summitdev-r0c2n09:138836] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x100000076b20]
+[summitdev-r0c2n09:138836] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x1000000735a0]
+[summitdev-r0c2n09:138836] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x1000010a08a0]
+[summitdev-r0c2n09:138836] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x1000010d99d4]
+[summitdev-r0c2n09:138836] [summitdev-r0c1n03:139819] *** Process received signal ***
+[summitdev-r0c1n03:139819] Signal: Aborted (6)
+[summitdev-r0c1n03:139819] Signal code:  (-6)
+[summitdev-r0c1n03:139819] [ 0] [0x3fff99ea0478]
+[summitdev-r0c1n03:139819] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff98a80d70]
+[summitdev-r0c1n03:139819] [ 2] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[ 8] ./diffusion[0x100024ac]
+[summitdev-r0c2n09:138836] [ 9] /lib64/libc.so.6(+0x24700)[0x100001314700]
+[summitdev-r0c2n09:138836] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x1000013148f4]
+[summitdev-r0c2n09:138836] *** End of error message ***
+/lib64/libc.so.6(+0x348a4)[0x3fff98a748a4]
+[summitdev-r0c1n03:139819] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff98a74994]
+[summitdev-r0c1n03:139819] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff99e76b20]
+[summitdev-r0c1n03:139819] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff99e735a0]
+[summitdev-r0c1n03:139819] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff98e008a0]
+[summitdev-r0c1n03:139819] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff98e399d4]
+[summitdev-r0c1n03:139819] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n03:139819] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff98a64700]
+[summitdev-r0c1n03:139819] [10] Process 5 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+Process 6 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n06:156422] *** Process received signal ***
+[summitdev-r0c1n06:156422] Signal: Aborted (6)
+[summitdev-r0c1n06:156422] Signal code:  (-6)
+[summitdev-r0c1n06:156422] [ 0] [0x3fff8c130478]
+[summitdev-r0c1n06:156422] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff8ad10d70]
+[summitdev-r0c1n06:156422] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff8ad048a4]
+[summitdev-r0c1n06:156422] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff8ad04994]
+[summitdev-r0c1n06:156422] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff8c106b20]
+[summitdev-r0c1n06:156422] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff8c1035a0]
+[summitdev-r0c1n06:156422] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff8b0908a0]
+[summitdev-r0c1n06:156422] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff8b0c99d4]
+[summitdev-r0c1n06:156422] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n06:156422] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff8acf4700]
+[summitdev-r0c1n06:156422] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff8acf48f4]
+[summitdev-r0c1n06:156422] *** End of error message ***
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n02:17028] *** Process received signal ***
+[summitdev-r0c1n02:17028] Signal: Aborted (6)
+[summitdev-r0c1n02:17028] Signal code:  (-6)
+[summitdev-r0c1n02:17028] [ 0] [0x3fff8c820478]
+[summitdev-r0c1n02:17028] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff8b400d70]
+[summitdev-r0c1n02:17028] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff8b3f48a4]
+[summitdev-r0c1n02:17028] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff8b3f4994]
+[summitdev-r0c1n02:17028] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff8c7f6b20]
+[summitdev-r0c1n02:17028] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff8c7f35a0]
+[summitdev-r0c1n02:17028] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff8b7808a0]
+[summitdev-r0c1n02:17028] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff8b7b99d4]
+[summitdev-r0c1n02:17028] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n02:17028] [ 9] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff98a648f4]
+[summitdev-r0c1n03:139819] *** End of error message ***
+/lib64/libc.so.6(+0x24700)[0x3fff8b3e4700]
+[summitdev-r0c1n02:17028] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff8b3e48f4]
+[summitdev-r0c1n02:17028] *** End of error message ***
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 7 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n07:86284] *** Process received signal ***
+[summitdev-r0c1n07:86284] Signal: Aborted (6)
+[summitdev-r0c1n07:86284] Signal code:  (-6)
+[summitdev-r0c1n07:86284] [ 0] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[0x3fffad8c0478]
+[summitdev-r0c1n07:86284] [ 1] Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+Process 4 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n01:62024] *** Process received signal ***
+[summitdev-r0c1n01:62024] Signal: Aborted (6)
+[summitdev-r0c1n01:62024] Signal code:  (-6)
+[summitdev-r0c1n01:62024] [ 0] [0x3fff7de10478]
+[summitdev-r0c1n01:62024] [ 1] [summitdev-r0c2n07:140528] *** Process received signal ***
+[summitdev-r0c2n07:140528] Signal: Aborted (6)
+[summitdev-r0c2n07:140528] Signal code:  (-6)
+[summitdev-r0c2n07:140528] [ 0] [summitdev-r0c1n05:97259] *** Process received signal ***
+[summitdev-r0c1n05:97259] Signal: Aborted (6)
+[summitdev-r0c1n05:97259] Signal code:  (-6)
+[summitdev-r0c1n05:97259] [ 0] [0x3fff82030478]
+[summitdev-r0c2n07:140528] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fffac4a0d70]
+[summitdev-r0c1n07:86284] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffac4948a4]
+[summitdev-r0c1n07:86284] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffac494994]
+[summitdev-r0c1n07:86284] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffad896b20]
+[summitdev-r0c1n07:86284] [ 5] /lib64/libc.so.6(abort+0x280)[0x3fff7c9f0d70]
+[summitdev-r0c1n01:62024] [ 2] [0x3fffa4da0478]
+[summitdev-r0c1n05:97259] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff80c10d70]
+[summitdev-r0c2n07:140528] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff7c9e48a4]
+[summitdev-r0c1n01:62024] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff7c9e4994]
+[summitdev-r0c1n01:62024] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff7dde6b20]
+[summitdev-r0c1n01:62024] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff7dde35a0]
+[summitdev-r0c1n01:62024] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff7cd708a0]
+[summitdev-r0c1n01:62024] [ 7] /lib64/libc.so.6(abort+0x280)[0x3fffa3980d70]
+[summitdev-r0c1n05:97259] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fff80c048a4]
+[summitdev-r0c2n07:140528] [ 3] /lib64/libc.so.6(+0x348a4)[0x3fffa39748a4]
+[summitdev-r0c1n05:97259] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff80c04994]
+[summitdev-r0c2n07:140528] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff82006b20]
+[summitdev-r0c2n07:140528] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff820035a0]
+[summitdev-r0c2n07:140528] [ 6] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffad8935a0]
+[summitdev-r0c1n07:86284] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffac8208a0]
+[summitdev-r0c1n07:86284] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffac8599d4]
+[summitdev-r0c1n07:86284] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n07:86284] [ 9] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff7cda99d4]
+[summitdev-r0c1n01:62024] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n01:62024] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff7c9d4700]
+[summitdev-r0c1n01:62024] [10] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffa3974994]
+[summitdev-r0c1n05:97259] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffa4d76b20]
+[summitdev-r0c1n05:97259] [ 5] /lib64/libc.so.6(+0x24700)[0x3fffac484700]
+[summitdev-r0c1n07:86284] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffac4848f4]
+[summitdev-r0c1n07:86284] *** End of error message ***
+/sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff80f908a0]
+[summitdev-r0c2n07:140528] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff80fc99d4]
+[summitdev-r0c2n07:140528] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c2n07:140528] [ 9] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff7c9d48f4]
+[summitdev-r0c1n01:62024] *** End of error message ***
+/autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffa4d735a0]
+[summitdev-r0c1n05:97259] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffa3d008a0]
+[summitdev-r0c1n05:97259] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffa3d399d4]
+[summitdev-r0c1n05:97259] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n05:97259] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff80bf4700]
+[summitdev-r0c2n07:140528] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff80bf48f4]
+[summitdev-r0c2n07:140528] *** End of error message ***
+/lib64/libc.so.6(+0x24700)[0x3fffa3964700]
+[summitdev-r0c1n05:97259] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffa39648f4]
+[summitdev-r0c1n05:97259] *** End of error message ***
+./run_8g_weak.sh: line 1: 86284 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 17028 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 139819 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 156422 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 62024 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 140528 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 97259 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 138836 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+ExE_Time: 35.40
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n03:139829] *** Process received signal ***
+[summitdev-r0c1n03:139829] Signal: Aborted (6)
+[summitdev-r0c1n03:139829] Signal code:  (-6)
+[summitdev-r0c1n03:139829] [ 0] [0x3fffaabe0478]
+[summitdev-r0c1n03:139829] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fffa97c0d70]
+[summitdev-r0c1n03:139829] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffa97b48a4]
+[summitdev-r0c1n03:139829] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffa97b4994]
+[summitdev-r0c1n03:139829] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffaabb6b20]
+[summitdev-r0c1n03:139829] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffaabb35a0]
+[summitdev-r0c1n03:139829] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffa9b408a0]
+[summitdev-r0c1n03:139829] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffa9b799d4]
+[summitdev-r0c1n03:139829] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n03:139829] [ 9] /lib64/libc.so.6(+0x24700)[0x3fffa97a4700]
+[summitdev-r0c1n03:139829] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffa97a48f4]
+[summitdev-r0c1n03:139829] *** End of error message ***
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+dt: 1.67224e-06, iterations: 1001, final time: 0.00167391
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  8.554909 seconds
+Data transfer(s) HtD                         :  0.004220 seconds
+Data transfer(s) DtH                         :  0.004436 seconds
+===================================================================
+Total effective GFLOPs                       :  362.147003
+===================================================================
+3D Grid Size                                 :  400 x 400 x 806
+Iterations                                   :  1001 x 3 RK steps
+===================================================================
+[summitdev-r0c2n09:138845] *** Process received signal ***
+[summitdev-r0c2n09:138845] Signal: Aborted (6)
+[summitdev-r0c2n09:138845] Signal code:  (-6)
+[summitdev-r0c2n09:138845] [ 0] [0x100000050478]
+[summitdev-r0c2n09:138845] [ 1] /lib64/libc.so.6(abort+0x280)[0x100001330d70]
+[summitdev-r0c2n09:138845] [ 2] /lib64/libc.so.6(+0x348a4)[0x1000013248a4]
+[summitdev-r0c2n09:138845] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x100001324994]
+[summitdev-r0c2n09:138845] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x100000076b20]
+[summitdev-r0c2n09:138845] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x1000000735a0]
+[summitdev-r0c2n09:138845] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x1000010a08a0]
+[summitdev-r0c2n09:138845] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[ 7] Process 7 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+/sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x1000010d99d4]
+Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+[summitdev-r0c1n01:62036] *** Process received signal ***
+[summitdev-r0c1n01:62036] Signal: Aborted (6)
+[summitdev-r0c1n01:62036] Signal code:  (-6)
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c2n09:138845] [summitdev-r0c1n01:62036] [ 0] [0x3fffa9c90478]
+[summitdev-r0c1n01:62036] [ 1] Process 5 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c1n07:86293] *** Process received signal ***
+[summitdev-r0c1n07:86293] Signal: Aborted (6)
+[summitdev-r0c1n07:86293] Signal code:  (-6)
+[summitdev-r0c1n07:86293] [ 0] [0x3fff91520478]
+[summitdev-r0c1n07:86293] [ 1] /lib64/libc.so.6(abort+0x280)[0x3fff90100d70]
+[summitdev-r0c1n07:86293] [ 2] [ 8] Process 4 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+/lib64/libc.so.6(abort+0x280)[0x3fffa8870d70]
+[summitdev-r0c1n01:62036] [ 2] [summitdev-r0c1n06:156431] *** Process received signal ***
+[summitdev-r0c1n06:156431] Signal: Aborted (6)
+[summitdev-r0c1n06:156431] Signal code:  (-6)
+[summitdev-r0c1n06:156431] [ 0] Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+./diffusion[0x100024ac]
+/lib64/libc.so.6(+0x348a4)[0x3fffa88648a4]
+[summitdev-r0c1n01:62036] [ 3] [summitdev-r0c2n07:140536] *** Process received signal ***
+[summitdev-r0c2n07:140536] Signal: Aborted (6)
+[summitdev-r0c2n07:140536] Signal code:  (-6)
+[summitdev-r0c2n07:140536] [ 0] [0x3fffabd10478]
+[summitdev-r0c1n06:156431] [ 1] diffusion: cudahook.cc:498: CUresult device_free_callback(CUdeviceptr): Assertion `cacheNode != __null' failed.
+[summitdev-r0c2n09:138845] [summitdev-r0c1n05:97269] *** Process received signal ***
+[summitdev-r0c1n05:97269] Signal: Aborted (6)
+[summitdev-r0c1n05:97269] Signal code:  (-6)
+[summitdev-r0c1n05:97269] [ 0] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffa8864994]
+[summitdev-r0c1n01:62036] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffa9c66b20]
+[summitdev-r0c1n01:62036] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffa9c635a0]
+[summitdev-r0c1n01:62036] [ 6] [0x3fff88f30478]
+[summitdev-r0c2n07:140536] [ 1] Process 6 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00250313, final time: 0.00167224
+
+pitch: 448
+gc_pitch: 448
+/lib64/libc.so.6(abort+0x280)[0x3fffaa8f0d70]
+[summitdev-r0c1n06:156431] [ 2] [ 9] [0x3fff89fd0478]
+[summitdev-r0c1n05:97269] [ 1] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffa8bf08a0]
+[summitdev-r0c1n01:62036] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffa8c299d4]
+[summitdev-r0c1n01:62036] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n01:62036] [ 9] /lib64/libc.so.6(abort+0x280)[0x3fff87b10d70]
+[summitdev-r0c2n07:140536] [ 2] /lib64/libc.so.6(+0x348a4)[0x3fffaa8e48a4]
+[summitdev-r0c1n06:156431] [ 3] [summitdev-r0c1n02:17037] *** Process received signal ***
+[summitdev-r0c1n02:17037] Signal: Aborted (6)
+[summitdev-r0c1n02:17037] Signal code:  (-6)
+[summitdev-r0c1n02:17037] [ 0] [0x3fff7b000478]
+[summitdev-r0c1n02:17037] [ 1] /lib64/libc.so.6(+0x24700)[0x100001314700]
+/lib64/libc.so.6(abort+0x280)[0x3fff88bb0d70]
+[summitdev-r0c1n05:97269] [ 2] /lib64/libc.so.6(+0x24700)[0x3fffa8854700]
+[summitdev-r0c1n01:62036] [10] /lib64/libc.so.6(+0x348a4)[0x3fff87b048a4]
+[summitdev-r0c2n07:140536] [ 3] [summitdev-r0c2n09:138845] /lib64/libc.so.6(+0x348a4)[0x3fff88ba48a4]
+[summitdev-r0c1n05:97269] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff87b04994]
+[summitdev-r0c2n07:140536] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff88f06b20]
+[summitdev-r0c2n07:140536] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff88f035a0]
+[summitdev-r0c2n07:140536] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff87e908a0]
+[summitdev-r0c2n07:140536] /lib64/libc.so.6(__assert_fail+0x64)[0x3fffaa8e4994]
+[summitdev-r0c1n06:156431] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fffabce6b20]
+[summitdev-r0c1n06:156431] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fffabce35a0]
+[summitdev-r0c1n06:156431] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fffaac708a0]
+[summitdev-r0c1n06:156431] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fffaaca99d4]
+[summitdev-r0c1n06:156431] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n06:156431] [ 9] /lib64/libc.so.6(abort+0x280)[0x3fff79be0d70]
+[summitdev-r0c1n02:17037] [ 2] [10] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff88ba4994]
+[summitdev-r0c1n05:97269] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff89fa6b20]
+[summitdev-r0c1n05:97269] [ 5] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffa88548f4]
+[summitdev-r0c1n01:62036] *** End of error message ***
+[ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff87ec99d4]
+[summitdev-r0c2n07:140536] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c2n07:140536] [ 9] /lib64/libc.so.6(+0x24700)[0x3fffaa8d4700]
+[summitdev-r0c1n06:156431] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x1000013148f4]
+/autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff89fa35a0]
+[summitdev-r0c1n05:97269] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff88f308a0]
+[summitdev-r0c1n05:97269] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff88f699d4]
+[summitdev-r0c1n05:97269] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n05:97269] /lib64/libc.so.6(+0x348a4)[0x3fff79bd48a4]
+[summitdev-r0c1n02:17037] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff79bd4994]
+[summitdev-r0c1n02:17037] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff7afd6b20]
+[summitdev-r0c1n02:17037] [ 5] /lib64/libc.so.6(+0x348a4)[0x3fff900f48a4]
+[summitdev-r0c1n07:86293] [ 3] /lib64/libc.so.6(__assert_fail+0x64)[0x3fff900f4994]
+[summitdev-r0c1n07:86293] [ 4] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(_Z20device_free_callbacky+0x1f0)[0x3fff914f6b20]
+[summitdev-r0c1n07:86293] [ 5] /autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff914f35a0]
+[summitdev-r0c1n07:86293] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff904808a0]
+[summitdev-r0c1n07:86293] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff904b99d4]
+[summitdev-r0c1n07:86293] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n07:86293] [ 9] /lib64/libc.so.6(+0x24700)[0x3fff900e4700]
+[summitdev-r0c1n07:86293] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff900e48f4]
+[summitdev-r0c1n07:86293] *** End of error message ***
+/lib64/libc.so.6(+0x24700)[0x3fff87af4700]
+[summitdev-r0c2n07:140536] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fffaa8d48f4]
+[summitdev-r0c1n06:156431] *** End of error message ***
+/autofs/nccs-svm1_sw/summitdev/.swci/1-compute/opt/spack/20171006/linux-rhel7-ppc64le/gcc-5.4.0/spectrum-mpi-10.1.0.4-20170915-ng7fmca3cgxyoe3us4mqqsa6ns5vwnkt/lib/libpami_cudahook.so(cuMemFree_v2+0x80)[0x3fff7afd35a0]
+[summitdev-r0c1n02:17037] [ 6] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(+0x108a0)[0x3fff79f608a0]
+[summitdev-r0c1n02:17037] [ 7] /sw/summitdev/cuda/8.0.54/lib64/libcudart.so.8.0(cudaFree+0x74)[0x3fff79f999d4]
+[summitdev-r0c1n02:17037] [ 8] ./diffusion[0x100024ac]
+[summitdev-r0c1n02:17037] [summitdev-r0c2n09:138845] *** End of error message ***
+[ 9] /lib64/libc.so.6(+0x24700)[0x3fff88b94700]
+[summitdev-r0c1n05:97269] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff88b948f4]
+[summitdev-r0c1n05:97269] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff87af48f4]
+[summitdev-r0c2n07:140536] *** End of error message ***
+[ 9] /lib64/libc.so.6(+0x24700)[0x3fff79bc4700]
+[summitdev-r0c1n02:17037] [10] /lib64/libc.so.6(__libc_start_main+0xc4)[0x3fff79bc48f4]
+[summitdev-r0c1n02:17037] *** End of error message ***
+./run_8g_weak.sh: line 1: 140536 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 156431 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 139829 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 138845 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 97269 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 17037 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 62036 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+./run_8g_weak.sh: line 1: 86293 Aborted                 ./diffusion 1.00 2.00 2.00 2.00 400 400 800 1000 64 4 1
+ExE_Time: 35.93
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 268058: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> in cluster <summitdev> Exited
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 8;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c2n07>
+                            <20*summitdev-r0c1n01>
+                            <20*summitdev-r0c2n09>
+                            <20*summitdev-r0c1n02>
+                            <20*summitdev-r0c1n03>
+                            <20*summitdev-r0c1n05>
+                            <20*summitdev-r0c1n06>
+                            <20*summitdev-r0c1n07>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out-pinned/diffusion> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 8
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n8 -a1 -g1 -c1 -r1 ./run_8g_weak.sh
+
+------------------------------------------------------------
+
+Exited with exit code 134.
+
+Resource usage summary:
+
+    CPU time :                                   1.39 sec.
+    Max Memory :                                 70 MB
+    Average Memory :                             56.70 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   208 sec.
+    Turnaround time :                            265 sec.
+
+The output (if any) is above this job summary.
+

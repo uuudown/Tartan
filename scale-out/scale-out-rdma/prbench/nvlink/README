@@ -1,0 +1,111 @@
+The two files in this directory can be used to enable NVLINK in the Pagerank
+code. Simply overwrite the file in the parent directory and compile with make.
+
+PLEASE NOTE THAT THIS IS JUST A PROOF OF CONCEPT DESIGNED TO USE NVLINK ON THE 8
+GPUS FOUND IN THE NVIDIA DGX-1. FOR THIS REASON IT CAN ONLY BE RUN WITH 8 MPI
+PROCESSES.
+
+Here's a little explanation of the design.
+
+The communication is performed in the get_roll(k,...) routine that is
+responsible of pulling the data from the remote GPU id+k.  The idea behind it
+comes from the fact that when GPU i needs data from a remote GPU that it cannot
+directly reach, then the same situation holds for the GPU, in the other quad,
+with the same quad id (which I call "dual" of i, (i+4)%8).  Moreover, in this
+case, the GPU i is directly connected to its dual's source and viceversa
+(because each gpu is fully connected to its quad).  So when a GPU needs data
+from another one to which it is not directly connected, it first pull data from
+the source of its dual and then it exchanges the relayed data with its dual.
+In this way the all the GPUs directly connected to their source perform the pull
+in one step and only those not directly connected perform it in two steps.
+
+
+These are the outputs obtained running the benchmark on a DGX-1 using both MPI
+and NVLink (compare the total time of kernel 3): 
+
+* MPI:
+
+$ mpirun -np 8 --bind-to none ./prbench -S 21 -E 16 -f
+
+Running Pagerank Benchmark with:
+
+Scale: 21 (2097152 vertices)
+Edge factor: 16 (33554432 edges)
+Number of processes: 8
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+        seed: 0
+        clip'n'flip: yes
+        vertex permutation: yes
+
+Kernel 0 (scale=21, edgef=16):
+        gen   time: 0.0042 secs
+        TOTAL time: 0.0042 secs (I/O: 0%), 7979.65 Medges/sec
+
+Kernel 1 (scale=21, edgef=16):
+        sort  time: 0.1388 secs
+        TOTAL time: 0.1388 secs (I/O: 0%), 241.71 Medges/sec
+
+Kernel 2 (scale=21, edgef=16):
+        gen   time: 0.4845 secs
+        TOTAL time: 0.4845 secs (I/O: 0%), 69.26 Medges/sec
+
+Kernel 3 (scale=21, edgef=16, numiter=20, c=0.85, a=7.15256E-08, rhs=RND):
+        gen   time: 0.0001 secs
+        comp  time: 0.0435 secs
+                min/max  d2h: 0.0071/0.0088 secs
+                min/max  mpi: 0.0171/0.0231 secs
+                min/max  h2d: 0.0074/0.0088 secs
+                min/max spmv: 0.0132/0.0172 secs
+        TOTAL time: 0.0437 secs, 15372.20 Medges/sec, MFLOPS: 30744.3944
+
+PageRank sum: 1.313004E-04
+
+* NVLink:
+
+$ mpirun -np 8 --bind-to none ./prbench -S 21 -E 16 -f
+
+Running Pagerank Benchmark with:
+
+Scale: 21 (2097152 vertices)
+Edge factor: 16 (33554432 edges)
+Number of processes: 8
+Rhs vector: random
+Size of real: 8
+Size of integer: 4
+Starting from kernel: 0
+Number of iterations for kernel 3: 20
+Fast mode ON (don't write to disk)
+Generating graph with:
+        seed: 0
+        clip'n'flip: yes
+        vertex permutation: yes
+
+Kernel 0 (scale=21, edgef=16):
+        gen   time: 0.0042 secs
+        TOTAL time: 0.0042 secs (I/O: 0%), 7989.15 Medges/sec
+
+Kernel 1 (scale=21, edgef=16):
+        sort  time: 0.1460 secs
+        TOTAL time: 0.1460 secs (I/O: 0%), 229.86 Medges/sec
+
+Kernel 2 (scale=21, edgef=16):
+        gen   time: 0.5195 secs
+        TOTAL time: 0.5195 secs (I/O: 0%), 64.59 Medges/sec
+
+Kernel 3 (scale=21, edgef=16, numiter=20, c=0.85, a=7.15256E-08, rhs=RND):
+        gen   time: 0.0002 secs
+        comp  time: 0.0171 secs
+                min/max  d2h: 0.0004/0.0004 secs
+                min/max  mpi: 0.0000/0.0001 secs
+                min/max  h2d: 0.0057/0.0058 secs
+                min/max spmv: 0.0131/0.0139 secs
+        TOTAL time: 0.0173 secs, 38755.41 Medges/sec, MFLOPS: 77510.8154
+
+PageRank sum: 1.313004E-04
+

@@ -1,0 +1,1308 @@
+rank: 0 host: summitdev-r0c0n15 device: 0000:01:00.0 IGLOBAL: 0
+rank: 1 host: summitdev-r0c0n13 device: 0000:01:00.0 IGLOBAL: 64
+
+# Running on 'Tesla P100-SXM2-16GB'
+# SMs = 56
+# clock = 1480500
+Creating dummy file.
+TauS path: ./tauS.dat
+Vmax=( 0.00634571, 0.00657228, 0.00649344 )
+Computing statistics.
+Appending file ./stats.00.csv
+Timer: 0.0523 sec Timestep: 1, Simulation time: 0.000000, Forcing coefficient: 138148823040.00000000
+
+Vmax=( 0.00634490, 0.00657191, 0.00649493 )
+Timer: 0.0179 sec Timestep: 2, Simulation time: 0.000000, Forcing coefficient: 56019722240.00000000
+
+Vmax=( 0.00634357, 0.00657130, 0.00649740 )
+Timer: 0.0183 sec Timestep: 3, Simulation time: 0.000000, Forcing coefficient: 20510830592.00000000
+
+Vmax=( 0.00634136, 0.00657028, 0.00650149 )
+Timer: 0.0184 sec Timestep: 4, Simulation time: 0.000000, Forcing coefficient: 7509752832.00000000
+
+Vmax=( 0.00633772, 0.00656860, 0.00650824 )
+Timer: 0.0183 sec Timestep: 5, Simulation time: 0.000000, Forcing coefficient: 2749590528.00000000
+
+Vmax=( 0.00633170, 0.00656583, 0.00651940 )
+Timer: 0.0183 sec Timestep: 6, Simulation time: 0.000000, Forcing coefficient: 1006723712.00000000
+
+Vmax=( 0.00632175, 0.00656125, 0.00653785 )
+Timer: 0.0183 sec Timestep: 7, Simulation time: 0.000000, Forcing coefficient: 368597760.00000000
+
+Vmax=( 0.00630531, 0.00655367, 0.00656833 )
+Timer: 0.0182 sec Timestep: 8, Simulation time: 0.000000, Forcing coefficient: 134956896.00000000
+
+Vmax=( 0.00627814, 0.00654116, 0.00661870 )
+Timer: 0.0182 sec Timestep: 9, Simulation time: 0.000000, Forcing coefficient: 49412568.00000000
+
+Vmax=( 0.00623323, 0.00652047, 0.00670195 )
+Timer: 0.0183 sec Timestep: 10, Simulation time: 0.000000, Forcing coefficient: 18091716.00000000
+
+Vmax=( 0.00615901, 0.00648628, 0.00683954 )
+Timer: 0.0183 sec Timestep: 11, Simulation time: 0.000000, Forcing coefficient: 6624028.00000000
+
+Vmax=( 0.00609004, 0.00642977, 0.00706690 )
+Timer: 0.0184 sec Timestep: 12, Simulation time: 0.000000, Forcing coefficient: 2425294.75000000
+
+Vmax=( 0.00656534, 0.00633637, 0.00744265 )
+Timer: 0.0183 sec Timestep: 13, Simulation time: 0.000001, Forcing coefficient: 887987.56250000
+
+Vmax=( 0.00740400, 0.00671173, 0.00806359 )
+Timer: 0.0182 sec Timestep: 14, Simulation time: 0.000002, Forcing coefficient: 325124.18750000
+
+Vmax=( 0.00878993, 0.00798365, 0.00908969 )
+Timer: 0.0182 sec Timestep: 15, Simulation time: 0.000007, Forcing coefficient: 119039.67187500
+
+Vmax=( 0.01146883, 0.01008549, 0.01078521 )
+Timer: 0.0184 sec Timestep: 16, Simulation time: 0.000018, Forcing coefficient: 43584.72265625
+
+Vmax=( 0.01589707, 0.01355856, 0.01411455 )
+Timer: 0.0182 sec Timestep: 17, Simulation time: 0.000049, Forcing coefficient: 15957.94531250
+
+Vmax=( 0.02321404, 0.02046883, 0.02082991 )
+Timer: 0.0184 sec Timestep: 18, Simulation time: 0.000135, Forcing coefficient: 5842.78759766
+
+Vmax=( 0.03727802, 0.03348117, 0.03422727 )
+Timer: 0.0182 sec Timestep: 19, Simulation time: 0.000369, Forcing coefficient: 2139.26391602
+
+Vmax=( 0.06128849, 0.05502991, 0.05640772 )
+Timer: 0.0183 sec Timestep: 20, Simulation time: 0.001007, Forcing coefficient: 783.27032471
+
+Vmax=( 0.10096538, 0.09070921, 0.09306180 )
+Timer: 0.0183 sec Timestep: 21, Simulation time: 0.002751, Forcing coefficient: 286.79241943
+
+Vmax=( 0.16652654, 0.14975908, 0.15362898 )
+Timer: 0.0182 sec Timestep: 22, Simulation time: 0.007512, Forcing coefficient: 105.01399231
+
+Vmax=( 0.27485073, 0.24734443, 0.25370097 )
+Timer: 0.0183 sec Timestep: 23, Simulation time: 0.020513, Forcing coefficient: 38.45837402
+
+Vmax=( 0.45391813, 0.40861446, 0.41889220 )
+Timer: 0.0184 sec Timestep: 24, Simulation time: 0.029658, Forcing coefficient: 14.08997536
+
+Vmax=( 0.51633072, 0.46472961, 0.47624087 )
+Timer: 0.0182 sec Timestep: 25, Simulation time: 0.037699, Forcing coefficient: 10.89297199
+
+Vmax=( 0.56360078, 0.50719953, 0.51957130 )
+Timer: 0.0183 sec Timestep: 26, Simulation time: 0.045068, Forcing coefficient: 9.14580059
+
+Vmax=( 0.60290635, 0.54249126, 0.55551898 )
+Timer: 0.0182 sec Timestep: 27, Simulation time: 0.051958, Forcing coefficient: 7.99535942
+
+Vmax=( 0.63707244, 0.57315105, 0.58669829 )
+Timer: 0.0181 sec Timestep: 28, Simulation time: 0.058479, Forcing coefficient: 7.16367674
+
+Vmax=( 0.66757023, 0.60050547, 0.61447138 )
+Timer: 0.0183 sec Timestep: 29, Simulation time: 0.064704, Forcing coefficient: 6.52672577
+
+Vmax=( 0.69528306, 0.62535131, 0.63965684 )
+Timer: 0.0182 sec Timestep: 30, Simulation time: 0.070682, Forcing coefficient: 6.01920795
+
+Vmax=( 0.72079575, 0.64821148, 0.66279268 )
+Timer: 0.0183 sec Timestep: 31, Simulation time: 0.076450, Forcing coefficient: 5.60291338
+
+Vmax=( 0.74452806, 0.66945159, 0.68425441 )
+Timer: 0.0182 sec Timestep: 32, Simulation time: 0.082035, Forcing coefficient: 5.25376081
+
+Vmax=( 0.76675922, 0.68933827, 0.70431632 )
+Timer: 0.0182 sec Timestep: 33, Simulation time: 0.087459, Forcing coefficient: 4.95571136
+
+Vmax=( 0.78771317, 0.70807326, 0.72318631 )
+Timer: 0.0183 sec Timestep: 34, Simulation time: 0.092740, Forcing coefficient: 4.69760895
+
+Vmax=( 0.80756372, 0.72581351, 0.74102592 )
+Timer: 0.0184 sec Timestep: 35, Simulation time: 0.097893, Forcing coefficient: 4.47141886
+
+Vmax=( 0.82644922, 0.74269915, 0.75796390 )
+Timer: 0.0184 sec Timestep: 36, Simulation time: 0.102929, Forcing coefficient: 4.27119350
+
+Vmax=( 0.84448153, 0.75883818, 0.77410460 )
+Timer: 0.0181 sec Timestep: 37, Simulation time: 0.107858, Forcing coefficient: 4.09242105
+
+Vmax=( 0.86175281, 0.77429235, 0.78953350 )
+Timer: 0.0182 sec Timestep: 38, Simulation time: 0.112689, Forcing coefficient: 3.93161058
+
+Vmax=( 0.87834013, 0.78913170, 0.80432248 )
+Timer: 0.0183 sec Timestep: 39, Simulation time: 0.117430, Forcing coefficient: 3.78601146
+
+Vmax=( 0.89430833, 0.80341464, 0.81853253 )
+Timer: 0.0181 sec Timestep: 40, Simulation time: 0.122087, Forcing coefficient: 3.65342426
+
+Vmax=( 0.90971363, 0.81719148, 0.83221525 )
+Timer: 0.0183 sec Timestep: 41, Simulation time: 0.126666, Forcing coefficient: 3.53206635
+
+Vmax=( 0.92460328, 0.83050561, 0.84541535 )
+Timer: 0.0183 sec Timestep: 42, Simulation time: 0.131173, Forcing coefficient: 3.42047739
+
+Vmax=( 0.93901896, 0.84339458, 0.85817188 )
+Timer: 0.0182 sec Timestep: 43, Simulation time: 0.135611, Forcing coefficient: 3.31744790
+
+Vmax=( 0.95299715, 0.85589111, 0.87052822 )
+Timer: 0.0182 sec Timestep: 44, Simulation time: 0.139984, Forcing coefficient: 3.22196531
+
+Vmax=( 0.96656984, 0.86802429, 0.88254386 )
+Timer: 0.0182 sec Timestep: 45, Simulation time: 0.144297, Forcing coefficient: 3.13317680
+
+Vmax=( 0.97976536, 0.87981951, 0.89420664 )
+Timer: 0.0182 sec Timestep: 46, Simulation time: 0.148553, Forcing coefficient: 3.05035734
+
+Vmax=( 0.99260902, 0.89129949, 0.90553987 )
+Timer: 0.0182 sec Timestep: 47, Simulation time: 0.152754, Forcing coefficient: 2.97288561
+
+Vmax=( 1.00512302, 0.90248477, 0.91656506 )
+Timer: 0.0182 sec Timestep: 48, Simulation time: 0.156903, Forcing coefficient: 2.90022731
+
+Vmax=( 1.01732862, 0.91339374, 0.92730087 )
+Timer: 0.0183 sec Timestep: 49, Simulation time: 0.161004, Forcing coefficient: 2.83191657
+
+Vmax=( 1.02924347, 0.92404282, 0.93776459 )
+Timer: 0.0181 sec Timestep: 50, Simulation time: 0.165057, Forcing coefficient: 2.76755047
+
+Vmax=( 1.04093277, 0.93444705, 0.94797158 )
+Timer: 0.0182 sec Timestep: 51, Simulation time: 0.169066, Forcing coefficient: 2.70677400
+
+Vmax=( 1.05237317, 0.94461983, 0.95793629 )
+Timer: 0.0181 sec Timestep: 52, Simulation time: 0.173032, Forcing coefficient: 2.64927721
+
+Vmax=( 1.06356907, 0.95457351, 0.96767098 )
+Timer: 0.0182 sec Timestep: 53, Simulation time: 0.176956, Forcing coefficient: 2.59478474
+
+Vmax=( 1.07453310, 0.96431983, 0.97718799 )
+Timer: 0.0182 sec Timestep: 54, Simulation time: 0.180842, Forcing coefficient: 2.54305053
+
+Vmax=( 1.08527672, 0.97386879, 0.98649776 )
+Timer: 0.0182 sec Timestep: 55, Simulation time: 0.184690, Forcing coefficient: 2.49385738
+
+Vmax=( 1.09581101, 0.98323023, 0.99561059 )
+Timer: 0.0182 sec Timestep: 56, Simulation time: 0.188501, Forcing coefficient: 2.44701052
+
+Vmax=( 1.10616612, 0.99241298, 1.00453591 )
+Timer: 0.0182 sec Timestep: 57, Simulation time: 0.192277, Forcing coefficient: 2.40233541
+
+Vmax=( 1.11636198, 1.00142515, 1.01328170 )
+Timer: 0.0183 sec Timestep: 58, Simulation time: 0.196020, Forcing coefficient: 2.35967469
+
+Vmax=( 1.12637639, 1.01027417, 1.02185631 )
+Timer: 0.0183 sec Timestep: 59, Simulation time: 0.199730, Forcing coefficient: 2.31888628
+
+Vmax=( 1.13621712, 1.01896715, 1.03026676 )
+Timer: 0.0183 sec Timestep: 60, Simulation time: 0.203409, Forcing coefficient: 2.27984166
+
+Vmax=( 1.14589119, 1.02751100, 1.03851998 )
+Timer: 0.0181 sec Timestep: 61, Simulation time: 0.207058, Forcing coefficient: 2.24242449
+
+Vmax=( 1.15540540, 1.03591120, 1.04662228 )
+Timer: 0.0182 sec Timestep: 62, Simulation time: 0.210677, Forcing coefficient: 2.20652843
+
+Vmax=( 1.16476619, 1.04417384, 1.05457973 )
+Timer: 0.0183 sec Timestep: 63, Simulation time: 0.214268, Forcing coefficient: 2.17205644
+
+Vmax=( 1.17397976, 1.05231404, 1.06239820 )
+Timer: 0.0181 sec Timestep: 64, Simulation time: 0.217831, Forcing coefficient: 2.13892007
+
+Vmax=( 1.18305123, 1.06036925, 1.07008255 )
+Timer: 0.0182 sec Timestep: 65, Simulation time: 0.221368, Forcing coefficient: 2.10703778
+
+Vmax=( 1.19198585, 1.06830215, 1.07763779 )
+Timer: 0.0181 sec Timestep: 66, Simulation time: 0.224878, Forcing coefficient: 2.07633615
+
+Vmax=( 1.20078850, 1.07611763, 1.08506811 )
+Timer: 0.0183 sec Timestep: 67, Simulation time: 0.228364, Forcing coefficient: 2.04674602
+
+Vmax=( 1.20946372, 1.08382022, 1.09237850 )
+Timer: 0.0182 sec Timestep: 68, Simulation time: 0.231825, Forcing coefficient: 2.01820469
+
+Vmax=( 1.21801567, 1.09141338, 1.09957266 )
+Timer: 0.0183 sec Timestep: 69, Simulation time: 0.235263, Forcing coefficient: 1.99065351
+
+Vmax=( 1.22644901, 1.09890115, 1.10665452 )
+Timer: 0.0182 sec Timestep: 70, Simulation time: 0.238678, Forcing coefficient: 1.96403813
+
+Vmax=( 1.23476756, 1.10628664, 1.11363769 )
+Timer: 0.0182 sec Timestep: 71, Simulation time: 0.242070, Forcing coefficient: 1.93830931
+
+Vmax=( 1.24297404, 1.11357331, 1.12054229 )
+Timer: 0.0183 sec Timestep: 72, Simulation time: 0.245440, Forcing coefficient: 1.91342008
+
+Vmax=( 1.25107265, 1.12076461, 1.12736487 )
+Timer: 0.0181 sec Timestep: 73, Simulation time: 0.248789, Forcing coefficient: 1.88932800
+
+Vmax=( 1.25906634, 1.12786281, 1.13408899 )
+Timer: 0.0183 sec Timestep: 74, Simulation time: 0.252117, Forcing coefficient: 1.86599255
+
+Vmax=( 1.26695848, 1.13487101, 1.14071763 )
+Timer: 0.0183 sec Timestep: 75, Simulation time: 0.255425, Forcing coefficient: 1.84337723
+
+Vmax=( 1.27475142, 1.14179182, 1.14725351 )
+Timer: 0.0181 sec Timestep: 76, Simulation time: 0.258713, Forcing coefficient: 1.82144666
+
+Vmax=( 1.28244853, 1.14862812, 1.15369964 )
+Timer: 0.0182 sec Timestep: 77, Simulation time: 0.261983, Forcing coefficient: 1.80016792
+
+Vmax=( 1.29006147, 1.15538180, 1.16005802 )
+Timer: 0.0181 sec Timestep: 78, Simulation time: 0.265233, Forcing coefficient: 1.77951074
+
+Vmax=( 1.29758823, 1.16205573, 1.16633189 )
+Timer: 0.0182 sec Timestep: 79, Simulation time: 0.268465, Forcing coefficient: 1.75944650
+
+Vmax=( 1.30502701, 1.16865158, 1.17252278 )
+Timer: 0.0182 sec Timestep: 80, Simulation time: 0.271679, Forcing coefficient: 1.73994863
+
+Vmax=( 1.31237936, 1.17517197, 1.17863321 )
+Timer: 0.0182 sec Timestep: 81, Simulation time: 0.274875, Forcing coefficient: 1.72099161
+
+Vmax=( 1.31964791, 1.18161857, 1.18466544 )
+Timer: 0.0181 sec Timestep: 82, Simulation time: 0.278054, Forcing coefficient: 1.70255196
+
+Vmax=( 1.32683444, 1.18799353, 1.19062126 )
+Timer: 0.0182 sec Timestep: 83, Simulation time: 0.281217, Forcing coefficient: 1.68460739
+
+Vmax=( 1.33394063, 1.19429839, 1.19650257 )
+Timer: 0.0183 sec Timestep: 84, Simulation time: 0.284363, Forcing coefficient: 1.66713727
+
+Vmax=( 1.34096885, 1.20053518, 1.20231128 )
+Timer: 0.0182 sec Timestep: 85, Simulation time: 0.287493, Forcing coefficient: 1.65012169
+
+Vmax=( 1.34792662, 1.20670521, 1.20804906 )
+Timer: 0.0183 sec Timestep: 86, Simulation time: 0.290608, Forcing coefficient: 1.63354194
+
+Vmax=( 1.35491753, 1.21281064, 1.21371770 )
+Timer: 0.0182 sec Timestep: 87, Simulation time: 0.293707, Forcing coefficient: 1.61738002
+
+Vmax=( 1.36183631, 1.21885264, 1.21931875 )
+Timer: 0.0183 sec Timestep: 88, Simulation time: 0.296791, Forcing coefficient: 1.60162091
+
+Vmax=( 1.36868513, 1.22483230, 1.22485375 )
+Timer: 0.0183 sec Timestep: 89, Simulation time: 0.299860, Forcing coefficient: 1.58624780
+
+Vmax=( 1.37546504, 1.23075199, 1.23032391 )
+Timer: 0.0183 sec Timestep: 90, Simulation time: 0.302914, Forcing coefficient: 1.57124615
+
+Vmax=( 1.38217819, 1.23661208, 1.23573077 )
+Timer: 0.0183 sec Timestep: 91, Simulation time: 0.305954, Forcing coefficient: 1.55660152
+
+Vmax=( 1.38882494, 1.24242139, 1.24107587 )
+Timer: 0.0183 sec Timestep: 92, Simulation time: 0.308981, Forcing coefficient: 1.54230082
+
+Vmax=( 1.39540744, 1.24822402, 1.24636042 )
+Timer: 0.0182 sec Timestep: 93, Simulation time: 0.311993, Forcing coefficient: 1.52833128
+
+Vmax=( 1.40192652, 1.25397539, 1.25161636 )
+Timer: 0.0183 sec Timestep: 94, Simulation time: 0.314992, Forcing coefficient: 1.51468122
+
+Vmax=( 1.40838349, 1.25967276, 1.25681877 )
+Timer: 0.0181 sec Timestep: 95, Simulation time: 0.317978, Forcing coefficient: 1.50133896
+
+Vmax=( 1.41477978, 1.26531768, 1.26196456 )
+Timer: 0.0182 sec Timestep: 96, Simulation time: 0.320951, Forcing coefficient: 1.48829317
+
+Vmax=( 1.42111599, 1.27091110, 1.26705515 )
+Timer: 0.0184 sec Timestep: 97, Simulation time: 0.323911, Forcing coefficient: 1.47553420
+
+Vmax=( 1.42739332, 1.27645397, 1.27209103 )
+Timer: 0.0184 sec Timestep: 98, Simulation time: 0.326858, Forcing coefficient: 1.46305203
+
+Vmax=( 1.43361342, 1.28194761, 1.27707434 )
+Timer: 0.0183 sec Timestep: 99, Simulation time: 0.329793, Forcing coefficient: 1.45083678
+
+Vmax=( 1.43977678, 1.28739262, 1.28200519 )
+Timer: 0.0183 sec Timestep: 100, Simulation time: 0.332716, Forcing coefficient: 1.43887961
+TauS path: ./tauS.dat
+Vmax=( 1.44588470, 1.29279006, 1.28688478 )
+Computing statistics.
+Appending file ./stats.00.csv
+Timer: 0.0209 sec Timestep: 101, Simulation time: 0.335627, Forcing coefficient: 1.42717195
+
+Vmax=( 1.45193768, 1.29814100, 1.29171467 )
+Timer: 0.0183 sec Timestep: 102, Simulation time: 0.338527, Forcing coefficient: 1.41570568
+
+Vmax=( 1.45793688, 1.30344641, 1.29650128 )
+Timer: 0.0182 sec Timestep: 103, Simulation time: 0.341415, Forcing coefficient: 1.40447295
+
+Vmax=( 1.46388340, 1.30870700, 1.30126560 )
+Timer: 0.0183 sec Timestep: 104, Simulation time: 0.344291, Forcing coefficient: 1.39346600
+
+Vmax=( 1.46977794, 1.31392324, 1.30598235 )
+Timer: 0.0181 sec Timestep: 105, Simulation time: 0.347157, Forcing coefficient: 1.38267803
+
+Vmax=( 1.47562599, 1.31909657, 1.31065321 )
+Timer: 0.0183 sec Timestep: 106, Simulation time: 0.350011, Forcing coefficient: 1.37210178
+
+Vmax=( 1.48143578, 1.32422733, 1.31527817 )
+Timer: 0.0183 sec Timestep: 107, Simulation time: 0.352855, Forcing coefficient: 1.36173105
+
+Vmax=( 1.48719656, 1.32931614, 1.31985819 )
+Timer: 0.0184 sec Timestep: 108, Simulation time: 0.355688, Forcing coefficient: 1.35155952
+
+Vmax=( 1.49290812, 1.33436418, 1.32439399 )
+Timer: 0.0183 sec Timestep: 109, Simulation time: 0.358511, Forcing coefficient: 1.34158134
+
+Vmax=( 1.49857223, 1.33937192, 1.32888663 )
+Timer: 0.0182 sec Timestep: 110, Simulation time: 0.361323, Forcing coefficient: 1.33179021
+
+Vmax=( 1.50418913, 1.34433985, 1.33333671 )
+Timer: 0.0182 sec Timestep: 111, Simulation time: 0.364125, Forcing coefficient: 1.32218099
+
+Vmax=( 1.50975919, 1.34926856, 1.33774483 )
+Timer: 0.0182 sec Timestep: 112, Simulation time: 0.366918, Forcing coefficient: 1.31274843
+
+Vmax=( 1.51528358, 1.35415936, 1.34211183 )
+Timer: 0.0181 sec Timestep: 113, Simulation time: 0.369700, Forcing coefficient: 1.30348706
+
+Vmax=( 1.52076268, 1.35901213, 1.34643793 )
+Timer: 0.0183 sec Timestep: 114, Simulation time: 0.372473, Forcing coefficient: 1.29439223
+
+Vmax=( 1.52619731, 1.36382759, 1.35072541 )
+Timer: 0.0184 sec Timestep: 115, Simulation time: 0.375236, Forcing coefficient: 1.28545940
+
+Vmax=( 1.53158772, 1.36860657, 1.35500896 )
+Timer: 0.0183 sec Timestep: 116, Simulation time: 0.377990, Forcing coefficient: 1.27668357
+
+Vmax=( 1.53697956, 1.37334931, 1.35925376 )
+Timer: 0.0182 sec Timestep: 117, Simulation time: 0.380735, Forcing coefficient: 1.26806128
+
+Vmax=( 1.54235446, 1.37805676, 1.36346090 )
+Timer: 0.0182 sec Timestep: 118, Simulation time: 0.383471, Forcing coefficient: 1.25958729
+
+Vmax=( 1.54768789, 1.38274753, 1.36763072 )
+Timer: 0.0181 sec Timestep: 119, Simulation time: 0.386197, Forcing coefficient: 1.25125825
+
+Vmax=( 1.55297947, 1.38743782, 1.37176383 )
+Timer: 0.0182 sec Timestep: 120, Simulation time: 0.388915, Forcing coefficient: 1.24307001
+
+Vmax=( 1.55823088, 1.39209461, 1.37586021 )
+Timer: 0.0182 sec Timestep: 121, Simulation time: 0.391624, Forcing coefficient: 1.23501897
+
+Vmax=( 1.56344175, 1.39671803, 1.37992096 )
+Timer: 0.0182 sec Timestep: 122, Simulation time: 0.394324, Forcing coefficient: 1.22710168
+
+Vmax=( 1.56865597, 1.40130830, 1.38394666 )
+Timer: 0.0181 sec Timestep: 123, Simulation time: 0.397015, Forcing coefficient: 1.21931469
+
+Vmax=( 1.57385004, 1.40586662, 1.38793707 )
+Timer: 0.0181 sec Timestep: 124, Simulation time: 0.399698, Forcing coefficient: 1.21165466
+
+Vmax=( 1.57900572, 1.41039300, 1.39189363 )
+Timer: 0.0182 sec Timestep: 125, Simulation time: 0.402373, Forcing coefficient: 1.20411825
+
+Vmax=( 1.58412337, 1.41488755, 1.39582705 )
+Timer: 0.0183 sec Timestep: 126, Simulation time: 0.405039, Forcing coefficient: 1.19670224
+
+Vmax=( 1.58920336, 1.41935146, 1.39975214 )
+Timer: 0.0181 sec Timestep: 127, Simulation time: 0.407698, Forcing coefficient: 1.18940365
+
+Vmax=( 1.59424627, 1.42378485, 1.40364456 )
+Timer: 0.0182 sec Timestep: 128, Simulation time: 0.410348, Forcing coefficient: 1.18221962
+
+Vmax=( 1.59925210, 1.42820311, 1.40750408 )
+Timer: 0.0183 sec Timestep: 129, Simulation time: 0.412990, Forcing coefficient: 1.17514741
+
+Vmax=( 1.60422194, 1.43259370, 1.41133213 )
+Timer: 0.0181 sec Timestep: 130, Simulation time: 0.415625, Forcing coefficient: 1.16818392
+
+Vmax=( 1.60915613, 1.43695486, 1.41512859 )
+Timer: 0.0182 sec Timestep: 131, Simulation time: 0.418252, Forcing coefficient: 1.16132689
+
+Vmax=( 1.61405468, 1.44128764, 1.41889441 )
+Timer: 0.0182 sec Timestep: 132, Simulation time: 0.420871, Forcing coefficient: 1.15457380
+
+Vmax=( 1.61891806, 1.44559133, 1.42262900 )
+Timer: 0.0182 sec Timestep: 133, Simulation time: 0.423483, Forcing coefficient: 1.14792204
+
+Vmax=( 1.62374663, 1.44986701, 1.42633379 )
+Timer: 0.0183 sec Timestep: 134, Simulation time: 0.426087, Forcing coefficient: 1.14136922
+
+Vmax=( 1.62854087, 1.45411491, 1.43000817 )
+Timer: 0.0182 sec Timestep: 135, Simulation time: 0.428684, Forcing coefficient: 1.13491344
+
+Vmax=( 1.63330090, 1.45833492, 1.43365335 )
+Timer: 0.0183 sec Timestep: 136, Simulation time: 0.431273, Forcing coefficient: 1.12855184
+
+Vmax=( 1.63802803, 1.46252847, 1.43726933 )
+Timer: 0.0183 sec Timestep: 137, Simulation time: 0.433856, Forcing coefficient: 1.12228239
+
+Vmax=( 1.64272153, 1.46669459, 1.44085670 )
+Timer: 0.0182 sec Timestep: 138, Simulation time: 0.436431, Forcing coefficient: 1.11610329
+
+Vmax=( 1.64739525, 1.47083426, 1.44441569 )
+Timer: 0.0182 sec Timestep: 139, Simulation time: 0.439000, Forcing coefficient: 1.11001229
+
+Vmax=( 1.65204036, 1.47494781, 1.44794655 )
+Timer: 0.0181 sec Timestep: 140, Simulation time: 0.441561, Forcing coefficient: 1.10400736
+
+Vmax=( 1.65665317, 1.47903562, 1.45144939 )
+Timer: 0.0183 sec Timestep: 141, Simulation time: 0.444116, Forcing coefficient: 1.09808671
+
+Vmax=( 1.66123402, 1.48309755, 1.45494223 )
+Timer: 0.0183 sec Timestep: 142, Simulation time: 0.446664, Forcing coefficient: 1.09224820
+
+Vmax=( 1.66578329, 1.48713386, 1.45843005 )
+Timer: 0.0183 sec Timestep: 143, Simulation time: 0.449205, Forcing coefficient: 1.08649039
+
+Vmax=( 1.67033792, 1.49114823, 1.46189117 )
+Timer: 0.0183 sec Timestep: 144, Simulation time: 0.451740, Forcing coefficient: 1.08081150
+
+Vmax=( 1.67489994, 1.49519873, 1.46532607 )
+Timer: 0.0182 sec Timestep: 145, Simulation time: 0.454268, Forcing coefficient: 1.07520986
+
+Vmax=( 1.67943168, 1.49922526, 1.46873498 )
+Timer: 0.0182 sec Timestep: 146, Simulation time: 0.456789, Forcing coefficient: 1.06968367
+
+Vmax=( 1.68393302, 1.50322771, 1.47211814 )
+Timer: 0.0183 sec Timestep: 147, Simulation time: 0.459304, Forcing coefficient: 1.06423187
+
+Vmax=( 1.68840456, 1.50720668, 1.47547722 )
+Timer: 0.0182 sec Timestep: 148, Simulation time: 0.461813, Forcing coefficient: 1.05885231
+
+Vmax=( 1.69284618, 1.51116240, 1.47884846 )
+Timer: 0.0184 sec Timestep: 149, Simulation time: 0.464316, Forcing coefficient: 1.05354381
+
+Vmax=( 1.69725823, 1.51509452, 1.48219454 )
+Timer: 0.0182 sec Timestep: 150, Simulation time: 0.466812, Forcing coefficient: 1.04830515
+
+Vmax=( 1.70164144, 1.51900399, 1.48551631 )
+Timer: 0.0182 sec Timestep: 151, Simulation time: 0.469302, Forcing coefficient: 1.04313469
+
+Vmax=( 1.70599520, 1.52289093, 1.48881400 )
+Timer: 0.0182 sec Timestep: 152, Simulation time: 0.471786, Forcing coefficient: 1.03803074
+
+Vmax=( 1.71032059, 1.52675521, 1.49208724 )
+Timer: 0.0182 sec Timestep: 153, Simulation time: 0.474264, Forcing coefficient: 1.03299248
+
+Vmax=( 1.71461678, 1.53059685, 1.49533665 )
+Timer: 0.0182 sec Timestep: 154, Simulation time: 0.476736, Forcing coefficient: 1.02801836
+
+Vmax=( 1.71888542, 1.53441679, 1.49856281 )
+Timer: 0.0182 sec Timestep: 155, Simulation time: 0.479202, Forcing coefficient: 1.02310717
+
+Vmax=( 1.72312641, 1.53821492, 1.50176561 )
+Timer: 0.0183 sec Timestep: 156, Simulation time: 0.481662, Forcing coefficient: 1.01825726
+
+Vmax=( 1.72733927, 1.54199171, 1.50494564 )
+Timer: 0.0183 sec Timestep: 157, Simulation time: 0.484117, Forcing coefficient: 1.01346779
+
+Vmax=( 1.73152483, 1.54574680, 1.50810277 )
+Timer: 0.0181 sec Timestep: 158, Simulation time: 0.486566, Forcing coefficient: 1.00873733
+
+Vmax=( 1.73568320, 1.54948127, 1.51123762 )
+Timer: 0.0183 sec Timestep: 159, Simulation time: 0.489009, Forcing coefficient: 1.00406504
+
+Vmax=( 1.73981464, 1.55319452, 1.51434994 )
+Timer: 0.0182 sec Timestep: 160, Simulation time: 0.491447, Forcing coefficient: 0.99944955
+
+Vmax=( 1.74391901, 1.55688655, 1.51744020 )
+Timer: 0.0184 sec Timestep: 161, Simulation time: 0.493879, Forcing coefficient: 0.99488997
+
+Vmax=( 1.74799728, 1.56055856, 1.52050889 )
+Timer: 0.0181 sec Timestep: 162, Simulation time: 0.496306, Forcing coefficient: 0.99038506
+
+Vmax=( 1.75204825, 1.56420934, 1.52355576 )
+Timer: 0.0182 sec Timestep: 163, Simulation time: 0.498727, Forcing coefficient: 0.98593444
+
+Vmax=( 1.75607347, 1.56784046, 1.52658129 )
+Timer: 0.0184 sec Timestep: 164, Simulation time: 0.501143, Forcing coefficient: 0.98153621
+
+Vmax=( 1.76011419, 1.57145166, 1.52958584 )
+Timer: 0.0182 sec Timestep: 165, Simulation time: 0.503554, Forcing coefficient: 0.97718960
+
+Vmax=( 1.76415491, 1.57504261, 1.53256941 )
+Timer: 0.0183 sec Timestep: 166, Simulation time: 0.505959, Forcing coefficient: 0.97289407
+
+Vmax=( 1.76817048, 1.57861388, 1.53553212 )
+Timer: 0.0182 sec Timestep: 167, Simulation time: 0.508359, Forcing coefficient: 0.96864855
+
+Vmax=( 1.77216101, 1.58216596, 1.53849685 )
+Timer: 0.0181 sec Timestep: 168, Simulation time: 0.510754, Forcing coefficient: 0.96445203
+
+Vmax=( 1.77612591, 1.58569813, 1.54145873 )
+Timer: 0.0183 sec Timestep: 169, Simulation time: 0.513144, Forcing coefficient: 0.96030360
+
+Vmax=( 1.78006577, 1.58921289, 1.54441190 )
+Timer: 0.0182 sec Timestep: 170, Simulation time: 0.515529, Forcing coefficient: 0.95620251
+
+Vmax=( 1.78398132, 1.59277332, 1.54737616 )
+Timer: 0.0185 sec Timestep: 171, Simulation time: 0.517909, Forcing coefficient: 0.95214796
+
+Vmax=( 1.78787196, 1.59631515, 1.55032039 )
+Timer: 0.0185 sec Timestep: 172, Simulation time: 0.520284, Forcing coefficient: 0.94813913
+
+Vmax=( 1.79176307, 1.59983826, 1.55324483 )
+Timer: 0.0182 sec Timestep: 173, Simulation time: 0.522654, Forcing coefficient: 0.94417542
+
+Vmax=( 1.79569876, 1.60334361, 1.55615032 )
+Timer: 0.0182 sec Timestep: 174, Simulation time: 0.525019, Forcing coefficient: 0.94025570
+
+Vmax=( 1.79961038, 1.60683060, 1.55903661 )
+Timer: 0.0183 sec Timestep: 175, Simulation time: 0.527379, Forcing coefficient: 0.93637925
+
+Vmax=( 1.80349803, 1.61029923, 1.56190372 )
+Timer: 0.0183 sec Timestep: 176, Simulation time: 0.529734, Forcing coefficient: 0.93254554
+
+Vmax=( 1.80736232, 1.61375022, 1.56475198 )
+Timer: 0.0183 sec Timestep: 177, Simulation time: 0.532084, Forcing coefficient: 0.92875373
+
+Vmax=( 1.81120229, 1.61718345, 1.56758142 )
+Timer: 0.0183 sec Timestep: 178, Simulation time: 0.534430, Forcing coefficient: 0.92500353
+
+Vmax=( 1.81501901, 1.62059867, 1.57039237 )
+Timer: 0.0183 sec Timestep: 179, Simulation time: 0.536771, Forcing coefficient: 0.92129374
+
+Vmax=( 1.81881273, 1.62399638, 1.57318521 )
+Timer: 0.0183 sec Timestep: 180, Simulation time: 0.539107, Forcing coefficient: 0.91762376
+
+Vmax=( 1.82258284, 1.62737679, 1.57595956 )
+Timer: 0.0182 sec Timestep: 181, Simulation time: 0.541439, Forcing coefficient: 0.91399306
+
+Vmax=( 1.82632995, 1.63074923, 1.57871592 )
+Timer: 0.0182 sec Timestep: 182, Simulation time: 0.543766, Forcing coefficient: 0.91040111
+
+Vmax=( 1.83005416, 1.63411117, 1.58145440 )
+Timer: 0.0184 sec Timestep: 183, Simulation time: 0.546089, Forcing coefficient: 0.90684712
+
+Vmax=( 1.83375537, 1.63745594, 1.58417535 )
+Timer: 0.0182 sec Timestep: 184, Simulation time: 0.548407, Forcing coefficient: 0.90333021
+
+Vmax=( 1.83743393, 1.64078379, 1.58687854 )
+Timer: 0.0183 sec Timestep: 185, Simulation time: 0.550720, Forcing coefficient: 0.89985031
+
+Vmax=( 1.84109020, 1.64409530, 1.58956456 )
+Timer: 0.0182 sec Timestep: 186, Simulation time: 0.553029, Forcing coefficient: 0.89640611
+
+Vmax=( 1.84472406, 1.64739001, 1.59223294 )
+Timer: 0.0182 sec Timestep: 187, Simulation time: 0.555334, Forcing coefficient: 0.89299780
+
+Vmax=( 1.84833574, 1.65066826, 1.59488451 )
+Timer: 0.0183 sec Timestep: 188, Simulation time: 0.557635, Forcing coefficient: 0.88962430
+
+Vmax=( 1.85192502, 1.65393066, 1.59751928 )
+Timer: 0.0181 sec Timestep: 189, Simulation time: 0.559931, Forcing coefficient: 0.88628519
+
+Vmax=( 1.85549259, 1.65717578, 1.60013723 )
+Timer: 0.0183 sec Timestep: 190, Simulation time: 0.562223, Forcing coefficient: 0.88297993
+
+Vmax=( 1.85903835, 1.66040587, 1.60273838 )
+Timer: 0.0182 sec Timestep: 191, Simulation time: 0.564511, Forcing coefficient: 0.87970793
+
+Vmax=( 1.86256194, 1.66361928, 1.60532784 )
+Timer: 0.0184 sec Timestep: 192, Simulation time: 0.566795, Forcing coefficient: 0.87646884
+
+Vmax=( 1.86606407, 1.66681719, 1.60798228 )
+Timer: 0.0184 sec Timestep: 193, Simulation time: 0.569074, Forcing coefficient: 0.87326211
+
+Vmax=( 1.86954474, 1.66999888, 1.61062050 )
+Timer: 0.0182 sec Timestep: 194, Simulation time: 0.571350, Forcing coefficient: 0.87008721
+
+Vmax=( 1.87300336, 1.67316520, 1.61324263 )
+Timer: 0.0183 sec Timestep: 195, Simulation time: 0.573621, Forcing coefficient: 0.86694354
+
+Vmax=( 1.87644136, 1.67631555, 1.61584878 )
+Timer: 0.0182 sec Timestep: 196, Simulation time: 0.575888, Forcing coefficient: 0.86383069
+
+Vmax=( 1.87985754, 1.67945075, 1.61843920 )
+Timer: 0.0182 sec Timestep: 197, Simulation time: 0.578152, Forcing coefficient: 0.86074805
+
+Vmax=( 1.88325286, 1.68263507, 1.62101424 )
+Timer: 0.0182 sec Timestep: 198, Simulation time: 0.580411, Forcing coefficient: 0.85769552
+
+Vmax=( 1.88662720, 1.68581235, 1.62357342 )
+Timer: 0.0182 sec Timestep: 199, Simulation time: 0.582666, Forcing coefficient: 0.85467261
+
+Vmax=( 1.88998055, 1.68897462, 1.62611723 )
+Timer: 0.0183 sec Timestep: 200, Simulation time: 0.584918, Forcing coefficient: 0.85167855
+TauS path: ./tauS.dat
+Vmax=( 1.89331293, 1.69212198, 1.62864566 )
+Computing statistics.
+Appending file ./stats.00.csv
+Timer: 0.0225 sec Timestep: 201, Simulation time: 0.587165, Forcing coefficient: 0.84871334
+
+Vmax=( 1.89662457, 1.69525480, 1.63115883 )
+Timer: 0.0184 sec Timestep: 202, Simulation time: 0.589409, Forcing coefficient: 0.84577632
+
+Vmax=( 1.89991522, 1.69837248, 1.63365722 )
+Timer: 0.0183 sec Timestep: 203, Simulation time: 0.591649, Forcing coefficient: 0.84286720
+
+Vmax=( 1.90318584, 1.70147598, 1.63614023 )
+Timer: 0.0182 sec Timestep: 204, Simulation time: 0.593885, Forcing coefficient: 0.83998537
+
+Vmax=( 1.90643525, 1.70456529, 1.63860881 )
+Timer: 0.0182 sec Timestep: 205, Simulation time: 0.596117, Forcing coefficient: 0.83713055
+
+Vmax=( 1.90966511, 1.70763969, 1.64106250 )
+Timer: 0.0183 sec Timestep: 206, Simulation time: 0.598346, Forcing coefficient: 0.83430237
+
+Vmax=( 1.91297364, 1.71070015, 1.64350152 )
+Timer: 0.0182 sec Timestep: 207, Simulation time: 0.600570, Forcing coefficient: 0.83150035
+
+Vmax=( 1.91633010, 1.71374607, 1.64592600 )
+Timer: 0.0183 sec Timestep: 208, Simulation time: 0.602792, Forcing coefficient: 0.82872432
+
+Vmax=( 1.91966724, 1.71677768, 1.64833605 )
+Timer: 0.0182 sec Timestep: 209, Simulation time: 0.605009, Forcing coefficient: 0.82597393
+
+Vmax=( 1.92298412, 1.71979499, 1.65073156 )
+Timer: 0.0182 sec Timestep: 210, Simulation time: 0.607223, Forcing coefficient: 0.82324880
+
+Vmax=( 1.92628086, 1.72279847, 1.65311301 )
+Timer: 0.0182 sec Timestep: 211, Simulation time: 0.609433, Forcing coefficient: 0.82054836
+
+Vmax=( 1.92955840, 1.72578812, 1.65548062 )
+Timer: 0.0182 sec Timestep: 212, Simulation time: 0.611640, Forcing coefficient: 0.81787258
+
+Vmax=( 1.93281627, 1.72876310, 1.65783381 )
+Timer: 0.0183 sec Timestep: 213, Simulation time: 0.613843, Forcing coefficient: 0.81522083
+
+Vmax=( 1.93605459, 1.73172438, 1.66020107 )
+Timer: 0.0182 sec Timestep: 214, Simulation time: 0.616042, Forcing coefficient: 0.81259292
+
+Vmax=( 1.93927360, 1.73467195, 1.66257715 )
+Timer: 0.0183 sec Timestep: 215, Simulation time: 0.618238, Forcing coefficient: 0.80998844
+
+Vmax=( 1.94247293, 1.73760533, 1.66493940 )
+Timer: 0.0183 sec Timestep: 216, Simulation time: 0.620431, Forcing coefficient: 0.80740738
+
+Vmax=( 1.94565332, 1.74052560, 1.66729355 )
+Timer: 0.0181 sec Timestep: 217, Simulation time: 0.622620, Forcing coefficient: 0.80484891
+
+Vmax=( 1.94881415, 1.74343193, 1.66966844 )
+Timer: 0.0182 sec Timestep: 218, Simulation time: 0.624805, Forcing coefficient: 0.80231303
+
+Vmax=( 1.95195615, 1.74632466, 1.67202961 )
+Timer: 0.0181 sec Timestep: 219, Simulation time: 0.626987, Forcing coefficient: 0.79979956
+
+Vmax=( 1.95507908, 1.74920380, 1.67437792 )
+Timer: 0.0184 sec Timestep: 220, Simulation time: 0.629166, Forcing coefficient: 0.79730791
+
+Vmax=( 1.95818293, 1.75206935, 1.67671263 )
+Timer: 0.0182 sec Timestep: 221, Simulation time: 0.631341, Forcing coefficient: 0.79483789
+
+Vmax=( 1.96126759, 1.75492191, 1.67903435 )
+Timer: 0.0182 sec Timestep: 222, Simulation time: 0.633513, Forcing coefficient: 0.79238933
+
+Vmax=( 1.96433342, 1.75776029, 1.68134332 )
+Timer: 0.0183 sec Timestep: 223, Simulation time: 0.635682, Forcing coefficient: 0.78996199
+
+Vmax=( 1.96738088, 1.76058543, 1.68363929 )
+Timer: 0.0182 sec Timestep: 224, Simulation time: 0.637848, Forcing coefficient: 0.78755540
+
+Vmax=( 1.97040915, 1.76339734, 1.68592203 )
+Timer: 0.0183 sec Timestep: 225, Simulation time: 0.640010, Forcing coefficient: 0.78516948
+
+Vmax=( 1.97341895, 1.76619565, 1.68819225 )
+Timer: 0.0181 sec Timestep: 226, Simulation time: 0.642169, Forcing coefficient: 0.78280377
+
+Vmax=( 1.97641027, 1.76898158, 1.69044983 )
+Timer: 0.0182 sec Timestep: 227, Simulation time: 0.644325, Forcing coefficient: 0.78045809
+
+Vmax=( 1.97938311, 1.77184856, 1.69269514 )
+Timer: 0.0182 sec Timestep: 228, Simulation time: 0.646477, Forcing coefficient: 0.77813208
+
+Vmax=( 1.98233747, 1.77470708, 1.69492769 )
+Timer: 0.0182 sec Timestep: 229, Simulation time: 0.648627, Forcing coefficient: 0.77582568
+
+Vmax=( 1.98527372, 1.77755320, 1.69714773 )
+Timer: 0.0182 sec Timestep: 230, Simulation time: 0.650773, Forcing coefficient: 0.77353859
+
+Vmax=( 1.98819137, 1.78038681, 1.69935548 )
+Timer: 0.0182 sec Timestep: 231, Simulation time: 0.652916, Forcing coefficient: 0.77127051
+
+Vmax=( 1.99109125, 1.78320861, 1.70157957 )
+Timer: 0.0183 sec Timestep: 232, Simulation time: 0.655056, Forcing coefficient: 0.76902121
+
+Vmax=( 1.99397254, 1.78601754, 1.70381546 )
+Timer: 0.0184 sec Timestep: 233, Simulation time: 0.657193, Forcing coefficient: 0.76679063
+
+Vmax=( 1.99683583, 1.78881478, 1.70603943 )
+Timer: 0.0182 sec Timestep: 234, Simulation time: 0.659327, Forcing coefficient: 0.76457816
+
+Vmax=( 1.99968135, 1.79159975, 1.70825124 )
+Timer: 0.0184 sec Timestep: 235, Simulation time: 0.661458, Forcing coefficient: 0.76238388
+
+Vmax=( 2.00250912, 1.79437280, 1.71045160 )
+Timer: 0.0183 sec Timestep: 236, Simulation time: 0.663586, Forcing coefficient: 0.76020730
+
+Vmax=( 2.00531864, 1.79713333, 1.71263981 )
+Timer: 0.0182 sec Timestep: 237, Simulation time: 0.665711, Forcing coefficient: 0.75804865
+
+Vmax=( 2.00811028, 1.79988194, 1.71481669 )
+Timer: 0.0183 sec Timestep: 238, Simulation time: 0.667833, Forcing coefficient: 0.75590736
+
+Vmax=( 2.01088452, 1.80261850, 1.71698177 )
+Timer: 0.0182 sec Timestep: 239, Simulation time: 0.669952, Forcing coefficient: 0.75378340
+
+Vmax=( 2.01366067, 1.80534327, 1.71913564 )
+Timer: 0.0182 sec Timestep: 240, Simulation time: 0.672068, Forcing coefficient: 0.75167638
+
+Vmax=( 2.01648569, 1.80805635, 1.72127795 )
+Timer: 0.0182 sec Timestep: 241, Simulation time: 0.674181, Forcing coefficient: 0.74958599
+
+Vmax=( 2.01929307, 1.81075740, 1.72340906 )
+Timer: 0.0183 sec Timestep: 242, Simulation time: 0.676291, Forcing coefficient: 0.74751240
+
+Vmax=( 2.02208281, 1.81344616, 1.72552860 )
+Timer: 0.0183 sec Timestep: 243, Simulation time: 0.678398, Forcing coefficient: 0.74545521
+
+Vmax=( 2.02485561, 1.81612360, 1.72763729 )
+Timer: 0.0182 sec Timestep: 244, Simulation time: 0.680503, Forcing coefficient: 0.74341428
+
+Vmax=( 2.02761102, 1.81878948, 1.72973490 )
+Timer: 0.0183 sec Timestep: 245, Simulation time: 0.682604, Forcing coefficient: 0.74138933
+
+Vmax=( 2.03034902, 1.82144296, 1.73182106 )
+Timer: 0.0183 sec Timestep: 246, Simulation time: 0.684703, Forcing coefficient: 0.73938030
+
+Vmax=( 2.03307033, 1.82408500, 1.73391891 )
+Timer: 0.0182 sec Timestep: 247, Simulation time: 0.686799, Forcing coefficient: 0.73738670
+
+Vmax=( 2.03577852, 1.82671571, 1.73602247 )
+Timer: 0.0182 sec Timestep: 248, Simulation time: 0.688892, Forcing coefficient: 0.73540878
+
+Vmax=( 2.03853941, 1.82933414, 1.73811507 )
+Timer: 0.0182 sec Timestep: 249, Simulation time: 0.690983, Forcing coefficient: 0.73344624
+
+Vmax=( 2.04128337, 1.83194113, 1.74020147 )
+Timer: 0.0182 sec Timestep: 250, Simulation time: 0.693070, Forcing coefficient: 0.73149884
+
+Vmax=( 2.04401040, 1.83453655, 1.74232614 )
+Timer: 0.0182 sec Timestep: 251, Simulation time: 0.695155, Forcing coefficient: 0.72956640
+
+Vmax=( 2.04672050, 1.83712029, 1.74444032 )
+Timer: 0.0181 sec Timestep: 252, Simulation time: 0.697237, Forcing coefficient: 0.72764885
+
+Vmax=( 2.04941440, 1.83969259, 1.74654365 )
+Timer: 0.0182 sec Timestep: 253, Simulation time: 0.699317, Forcing coefficient: 0.72574586
+
+Vmax=( 2.05209112, 1.84225345, 1.74863672 )
+Timer: 0.0182 sec Timestep: 254, Simulation time: 0.701393, Forcing coefficient: 0.72385740
+
+Vmax=( 2.05475140, 1.84480286, 1.75071919 )
+Timer: 0.0183 sec Timestep: 255, Simulation time: 0.703467, Forcing coefficient: 0.72198325
+
+Vmax=( 2.05739522, 1.84734046, 1.75279129 )
+Timer: 0.0182 sec Timestep: 256, Simulation time: 0.705539, Forcing coefficient: 0.72012323
+
+Vmax=( 2.06002259, 1.84986663, 1.75485277 )
+Timer: 0.0182 sec Timestep: 257, Simulation time: 0.707607, Forcing coefficient: 0.71827728
+
+Vmax=( 2.06263328, 1.85238135, 1.75690436 )
+Timer: 0.0183 sec Timestep: 258, Simulation time: 0.709673, Forcing coefficient: 0.71644503
+
+Vmax=( 2.06522799, 1.85488534, 1.75894558 )
+Timer: 0.0182 sec Timestep: 259, Simulation time: 0.711737, Forcing coefficient: 0.71462643
+
+Vmax=( 2.06780624, 1.85737741, 1.76097679 )
+Timer: 0.0182 sec Timestep: 260, Simulation time: 0.713798, Forcing coefficient: 0.71282130
+
+Vmax=( 2.07036805, 1.85985839, 1.76299787 )
+Timer: 0.0183 sec Timestep: 261, Simulation time: 0.715856, Forcing coefficient: 0.71102977
+
+Vmax=( 2.07291412, 1.86239374, 1.76500845 )
+Timer: 0.0182 sec Timestep: 262, Simulation time: 0.717912, Forcing coefficient: 0.70925122
+
+Vmax=( 2.07544398, 1.86495769, 1.76700938 )
+Timer: 0.0182 sec Timestep: 263, Simulation time: 0.719965, Forcing coefficient: 0.70748580
+
+Vmax=( 2.07795763, 1.86751103, 1.76900053 )
+Timer: 0.0182 sec Timestep: 264, Simulation time: 0.722016, Forcing coefficient: 0.70573336
+
+Vmax=( 2.08045554, 1.87005401, 1.77098179 )
+Timer: 0.0183 sec Timestep: 265, Simulation time: 0.724064, Forcing coefficient: 0.70399344
+
+Vmax=( 2.08293772, 1.87258649, 1.77295327 )
+Timer: 0.0182 sec Timestep: 266, Simulation time: 0.726110, Forcing coefficient: 0.70226651
+
+Vmax=( 2.08540344, 1.87510848, 1.77491486 )
+Timer: 0.0182 sec Timestep: 267, Simulation time: 0.728153, Forcing coefficient: 0.70055199
+
+Vmax=( 2.08785343, 1.87761998, 1.77686644 )
+Timer: 0.0182 sec Timestep: 268, Simulation time: 0.730194, Forcing coefficient: 0.69884986
+
+Vmax=( 2.09028721, 1.88012111, 1.77880871 )
+Timer: 0.0182 sec Timestep: 269, Simulation time: 0.732232, Forcing coefficient: 0.69715995
+
+Vmax=( 2.09270573, 1.88261175, 1.78074145 )
+Timer: 0.0183 sec Timestep: 270, Simulation time: 0.734268, Forcing coefficient: 0.69548225
+
+Vmax=( 2.09514832, 1.88509214, 1.78266466 )
+Timer: 0.0182 sec Timestep: 271, Simulation time: 0.736302, Forcing coefficient: 0.69381642
+
+Vmax=( 2.09762836, 1.88756216, 1.78457856 )
+Timer: 0.0183 sec Timestep: 272, Simulation time: 0.738333, Forcing coefficient: 0.69216228
+
+Vmax=( 2.10009241, 1.89002156, 1.78655946 )
+Timer: 0.0183 sec Timestep: 273, Simulation time: 0.740361, Forcing coefficient: 0.69052011
+
+Vmax=( 2.10254002, 1.89247060, 1.78854966 )
+Timer: 0.0181 sec Timestep: 274, Simulation time: 0.742387, Forcing coefficient: 0.68888956
+
+Vmax=( 2.10497260, 1.89490938, 1.79053056 )
+Timer: 0.0183 sec Timestep: 275, Simulation time: 0.744411, Forcing coefficient: 0.68727046
+
+Vmax=( 2.10738993, 1.89733839, 1.79250216 )
+Timer: 0.0181 sec Timestep: 276, Simulation time: 0.746433, Forcing coefficient: 0.68566269
+
+Vmax=( 2.10979128, 1.89975643, 1.79446471 )
+Timer: 0.0183 sec Timestep: 277, Simulation time: 0.748452, Forcing coefficient: 0.68406630
+
+Vmax=( 2.11217666, 1.90216398, 1.79641783 )
+Timer: 0.0182 sec Timestep: 278, Simulation time: 0.750468, Forcing coefficient: 0.68248105
+
+Vmax=( 2.11454725, 1.90456212, 1.79836190 )
+Timer: 0.0182 sec Timestep: 279, Simulation time: 0.752483, Forcing coefficient: 0.68090665
+
+Vmax=( 2.11690235, 1.90694940, 1.80029702 )
+Timer: 0.0183 sec Timestep: 280, Simulation time: 0.754495, Forcing coefficient: 0.67934334
+
+Vmax=( 2.11924171, 1.90932655, 1.80222273 )
+Timer: 0.0182 sec Timestep: 281, Simulation time: 0.756505, Forcing coefficient: 0.67779094
+
+Vmax=( 2.12156630, 1.91169322, 1.80413997 )
+Timer: 0.0184 sec Timestep: 282, Simulation time: 0.758512, Forcing coefficient: 0.67624915
+
+Vmax=( 2.12387562, 1.91404974, 1.80604780 )
+Timer: 0.0182 sec Timestep: 283, Simulation time: 0.760518, Forcing coefficient: 0.67471790
+
+Vmax=( 2.12616920, 1.91639638, 1.80794692 )
+Timer: 0.0182 sec Timestep: 284, Simulation time: 0.762521, Forcing coefficient: 0.67319721
+
+Vmax=( 2.12844801, 1.91873264, 1.80983758 )
+Timer: 0.0182 sec Timestep: 285, Simulation time: 0.764521, Forcing coefficient: 0.67168683
+
+Vmax=( 2.13071156, 1.92105889, 1.81171894 )
+Timer: 0.0182 sec Timestep: 286, Simulation time: 0.766520, Forcing coefficient: 0.67018670
+
+Vmax=( 2.13296008, 1.92345011, 1.81359220 )
+Timer: 0.0183 sec Timestep: 287, Simulation time: 0.768516, Forcing coefficient: 0.66869676
+
+Vmax=( 2.13519382, 1.92586470, 1.81545615 )
+Timer: 0.0183 sec Timestep: 288, Simulation time: 0.770511, Forcing coefficient: 0.66721690
+
+Vmax=( 2.13741207, 1.92826986, 1.81731176 )
+Timer: 0.0183 sec Timestep: 289, Simulation time: 0.772503, Forcing coefficient: 0.66574705
+
+Vmax=( 2.13961554, 1.93066525, 1.81915879 )
+Timer: 0.0184 sec Timestep: 290, Simulation time: 0.774492, Forcing coefficient: 0.66428709
+
+Vmax=( 2.14180470, 1.93305123, 1.82099712 )
+Timer: 0.0182 sec Timestep: 291, Simulation time: 0.776480, Forcing coefficient: 0.66283685
+
+Vmax=( 2.14397836, 1.93542767, 1.82282710 )
+Timer: 0.0182 sec Timestep: 292, Simulation time: 0.778466, Forcing coefficient: 0.66139650
+
+Vmax=( 2.14613748, 1.93779492, 1.82464862 )
+Timer: 0.0183 sec Timestep: 293, Simulation time: 0.780449, Forcing coefficient: 0.65996540
+
+Vmax=( 2.14828205, 1.94015241, 1.82646179 )
+Timer: 0.0182 sec Timestep: 294, Simulation time: 0.782430, Forcing coefficient: 0.65854394
+
+Vmax=( 2.15041161, 1.94250059, 1.82826686 )
+Timer: 0.0182 sec Timestep: 295, Simulation time: 0.784409, Forcing coefficient: 0.65713191
+
+Vmax=( 2.15252686, 1.94483960, 1.83006346 )
+Timer: 0.0182 sec Timestep: 296, Simulation time: 0.786386, Forcing coefficient: 0.65572906
+
+Vmax=( 2.15462899, 1.94716859, 1.83185935 )
+Timer: 0.0183 sec Timestep: 297, Simulation time: 0.788361, Forcing coefficient: 0.65433556
+
+Vmax=( 2.15679026, 1.94948888, 1.83373618 )
+Timer: 0.0184 sec Timestep: 298, Simulation time: 0.790334, Forcing coefficient: 0.65295100
+
+Vmax=( 2.15893722, 1.95179939, 1.83560467 )
+Timer: 0.0183 sec Timestep: 299, Simulation time: 0.792305, Forcing coefficient: 0.65157568
+
+Vmax=( 2.16106987, 1.95410049, 1.83746505 )
+Timer: 0.0183 sec Timestep: 300, Simulation time: 0.794273, Forcing coefficient: 0.65020919
+TauS path: ./tauS.dat
+Vmax=( 2.16318798, 1.95639229, 1.83931708 )
+Computing statistics.
+Appending file ./stats.00.csv
+Timer: 0.0210 sec Timestep: 301, Simulation time: 0.796240, Forcing coefficient: 0.64885163
+
+Vmax=( 2.16529131, 1.95867443, 1.84116113 )
+Timer: 0.0181 sec Timestep: 302, Simulation time: 0.798205, Forcing coefficient: 0.64750290
+
+Vmax=( 2.16738677, 1.96094704, 1.84299684 )
+Timer: 0.0182 sec Timestep: 303, Simulation time: 0.800167, Forcing coefficient: 0.64616287
+
+Vmax=( 2.16954827, 1.96321034, 1.84482503 )
+Timer: 0.0182 sec Timestep: 304, Simulation time: 0.802128, Forcing coefficient: 0.64483154
+
+Vmax=( 2.17169619, 1.96546459, 1.84664512 )
+Timer: 0.0183 sec Timestep: 305, Simulation time: 0.804086, Forcing coefficient: 0.64350867
+
+Vmax=( 2.17382956, 1.96770930, 1.84845698 )
+Timer: 0.0181 sec Timestep: 306, Simulation time: 0.806042, Forcing coefficient: 0.64219439
+
+Vmax=( 2.17594862, 1.96994483, 1.85026097 )
+Timer: 0.0183 sec Timestep: 307, Simulation time: 0.807997, Forcing coefficient: 0.64088845
+
+Vmax=( 2.17805362, 1.97217011, 1.85205722 )
+Timer: 0.0186 sec Timestep: 308, Simulation time: 0.809949, Forcing coefficient: 0.63959098
+
+Vmax=( 2.18014431, 1.97438669, 1.85384560 )
+Timer: 0.0183 sec Timestep: 309, Simulation time: 0.811900, Forcing coefficient: 0.63830167
+
+Vmax=( 2.18222141, 1.97659397, 1.85562634 )
+Timer: 0.0181 sec Timestep: 310, Simulation time: 0.813848, Forcing coefficient: 0.63702053
+
+Vmax=( 2.18428421, 1.97906518, 1.85739934 )
+Timer: 0.0184 sec Timestep: 311, Simulation time: 0.815794, Forcing coefficient: 0.63574737
+
+Vmax=( 2.18633318, 1.98268723, 1.85916424 )
+Timer: 0.0182 sec Timestep: 312, Simulation time: 0.817738, Forcing coefficient: 0.63448238
+
+Vmax=( 2.18836784, 1.98629940, 1.86092150 )
+Timer: 0.0182 sec Timestep: 313, Simulation time: 0.819680, Forcing coefficient: 0.63322562
+
+Vmax=( 2.19038749, 1.98990154, 1.86267030 )
+Timer: 0.0182 sec Timestep: 314, Simulation time: 0.821619, Forcing coefficient: 0.63197702
+
+Vmax=( 2.19239354, 1.99349332, 1.86441147 )
+Timer: 0.0182 sec Timestep: 315, Simulation time: 0.823556, Forcing coefficient: 0.63073665
+
+Vmax=( 2.19438529, 1.99707508, 1.86614501 )
+Timer: 0.0185 sec Timestep: 316, Simulation time: 0.825491, Forcing coefficient: 0.62950397
+
+Vmax=( 2.19636273, 2.00064588, 1.86787021 )
+Timer: 0.0182 sec Timestep: 317, Simulation time: 0.827423, Forcing coefficient: 0.62827951
+
+Vmax=( 2.19832635, 2.00420666, 1.86958766 )
+Timer: 0.0182 sec Timestep: 318, Simulation time: 0.829353, Forcing coefficient: 0.62706280
+
+Vmax=( 2.20027542, 2.00775719, 1.87129736 )
+Timer: 0.0182 sec Timestep: 319, Simulation time: 0.831280, Forcing coefficient: 0.62585390
+
+Vmax=( 2.20221066, 2.01129723, 1.87299979 )
+Timer: 0.0182 sec Timestep: 320, Simulation time: 0.833206, Forcing coefficient: 0.62465268
+
+Vmax=( 2.20413232, 2.01482630, 1.87469387 )
+Timer: 0.0182 sec Timestep: 321, Simulation time: 0.835129, Forcing coefficient: 0.62345904
+
+Vmax=( 2.20603991, 2.01834488, 1.87638044 )
+Timer: 0.0182 sec Timestep: 322, Simulation time: 0.837050, Forcing coefficient: 0.62227303
+
+Vmax=( 2.20793390, 2.02185369, 1.87805998 )
+Timer: 0.0183 sec Timestep: 323, Simulation time: 0.838968, Forcing coefficient: 0.62109441
+
+Vmax=( 2.20981407, 2.02538562, 1.87980950 )
+Timer: 0.0182 sec Timestep: 324, Simulation time: 0.840885, Forcing coefficient: 0.61992323
+
+Vmax=( 2.21168041, 2.02904248, 1.88157010 )
+Timer: 0.0182 sec Timestep: 325, Simulation time: 0.842799, Forcing coefficient: 0.61875945
+
+Vmax=( 2.21353292, 2.03275776, 1.88332295 )
+Timer: 0.0182 sec Timestep: 326, Simulation time: 0.844711, Forcing coefficient: 0.61760283
+
+Vmax=( 2.21537185, 2.03649282, 1.88506818 )
+Timer: 0.0182 sec Timestep: 327, Simulation time: 0.846620, Forcing coefficient: 0.61645353
+
+Vmax=( 2.21719718, 2.04021811, 1.88680649 )
+Timer: 0.0182 sec Timestep: 328, Simulation time: 0.848527, Forcing coefficient: 0.61531138
+
+Vmax=( 2.21900868, 2.04393291, 1.88853669 )
+Timer: 0.0182 sec Timestep: 329, Simulation time: 0.850433, Forcing coefficient: 0.61417651
+
+Vmax=( 2.22080708, 2.04763794, 1.89025974 )
+Timer: 0.0182 sec Timestep: 330, Simulation time: 0.852335, Forcing coefficient: 0.61304861
+
+Vmax=( 2.22259116, 2.05133247, 1.89197505 )
+Timer: 0.0182 sec Timestep: 331, Simulation time: 0.854236, Forcing coefficient: 0.61192775
+
+Vmax=( 2.22436261, 2.05501676, 1.89368308 )
+Timer: 0.0183 sec Timestep: 332, Simulation time: 0.856134, Forcing coefficient: 0.61081374
+
+Vmax=( 2.22612047, 2.05869102, 1.89538395 )
+Timer: 0.0183 sec Timestep: 333, Simulation time: 0.858030, Forcing coefficient: 0.60970658
+
+Vmax=( 2.22786474, 2.06235480, 1.89707732 )
+Timer: 0.0182 sec Timestep: 334, Simulation time: 0.859924, Forcing coefficient: 0.60860634
+
+Vmax=( 2.22959590, 2.06600857, 1.89876354 )
+Timer: 0.0183 sec Timestep: 335, Simulation time: 0.861816, Forcing coefficient: 0.60751283
+
+Vmax=( 2.23131394, 2.06965160, 1.90044260 )
+Timer: 0.0182 sec Timestep: 336, Simulation time: 0.863706, Forcing coefficient: 0.60642600
+
+Vmax=( 2.23301840, 2.07328415, 1.90211463 )
+Timer: 0.0182 sec Timestep: 337, Simulation time: 0.865594, Forcing coefficient: 0.60534579
+
+Vmax=( 2.23471022, 2.07690644, 1.90377975 )
+Timer: 0.0183 sec Timestep: 338, Simulation time: 0.867479, Forcing coefficient: 0.60427207
+
+Vmax=( 2.23638868, 2.08051825, 1.90543699 )
+Timer: 0.0182 sec Timestep: 339, Simulation time: 0.869362, Forcing coefficient: 0.60320485
+
+Vmax=( 2.23805404, 2.08411884, 1.90708780 )
+Timer: 0.0183 sec Timestep: 340, Simulation time: 0.871244, Forcing coefficient: 0.60214406
+
+Vmax=( 2.23970652, 2.08770967, 1.90873170 )
+Timer: 0.0182 sec Timestep: 341, Simulation time: 0.873123, Forcing coefficient: 0.60108966
+
+Vmax=( 2.24136305, 2.09140348, 1.91036832 )
+Timer: 0.0182 sec Timestep: 342, Simulation time: 0.875000, Forcing coefficient: 0.60004163
+
+Vmax=( 2.24307609, 2.09518099, 1.91199851 )
+Timer: 0.0183 sec Timestep: 343, Simulation time: 0.876875, Forcing coefficient: 0.59899974
+
+Vmax=( 2.24477673, 2.09894800, 1.91362154 )
+Timer: 0.0182 sec Timestep: 344, Simulation time: 0.878747, Forcing coefficient: 0.59796423
+
+Vmax=( 2.24646449, 2.10270500, 1.91523790 )
+Timer: 0.0183 sec Timestep: 345, Simulation time: 0.880618, Forcing coefficient: 0.59693480
+
+Vmax=( 2.24813914, 2.10645103, 1.91684699 )
+Timer: 0.0181 sec Timestep: 346, Simulation time: 0.882487, Forcing coefficient: 0.59591156
+
+Vmax=( 2.24980116, 2.11018705, 1.91844964 )
+Timer: 0.0182 sec Timestep: 347, Simulation time: 0.884353, Forcing coefficient: 0.59489447
+
+Vmax=( 2.25145054, 2.11391258, 1.92004538 )
+Timer: 0.0184 sec Timestep: 348, Simulation time: 0.886218, Forcing coefficient: 0.59388334
+
+Vmax=( 2.25314140, 2.11762738, 1.92163467 )
+Timer: 0.0183 sec Timestep: 349, Simulation time: 0.888080, Forcing coefficient: 0.59287822
+
+Vmax=( 2.25483251, 2.12139869, 1.92321754 )
+Timer: 0.0183 sec Timestep: 350, Simulation time: 0.889940, Forcing coefficient: 0.59187895
+
+Vmax=( 2.25651073, 2.12517738, 1.92479277 )
+Timer: 0.0183 sec Timestep: 351, Simulation time: 0.891799, Forcing coefficient: 0.59088558
+
+Vmax=( 2.25817585, 2.12894607, 1.92637539 )
+Timer: 0.0183 sec Timestep: 352, Simulation time: 0.893655, Forcing coefficient: 0.58989823
+
+Vmax=( 2.25982809, 2.13270378, 1.92803216 )
+Timer: 0.0182 sec Timestep: 353, Simulation time: 0.895509, Forcing coefficient: 0.58891660
+
+Vmax=( 2.26146770, 2.13645124, 1.92968237 )
+Timer: 0.0182 sec Timestep: 354, Simulation time: 0.897361, Forcing coefficient: 0.58794075
+
+Vmax=( 2.26309466, 2.14018726, 1.93132591 )
+Timer: 0.0183 sec Timestep: 355, Simulation time: 0.899211, Forcing coefficient: 0.58697063
+
+Vmax=( 2.26470852, 2.14391303, 1.93296266 )
+Timer: 0.0184 sec Timestep: 356, Simulation time: 0.901059, Forcing coefficient: 0.58600610
+
+Vmax=( 2.26630998, 2.14762783, 1.93459320 )
+Timer: 0.0182 sec Timestep: 357, Simulation time: 0.902905, Forcing coefficient: 0.58504730
+
+Vmax=( 2.26789904, 2.15133190, 1.93621671 )
+Timer: 0.0183 sec Timestep: 358, Simulation time: 0.904748, Forcing coefficient: 0.58409387
+
+Vmax=( 2.26947546, 2.15511751, 1.93783391 )
+Timer: 0.0182 sec Timestep: 359, Simulation time: 0.906590, Forcing coefficient: 0.58314610
+
+Vmax=( 2.27103949, 2.15902328, 1.93944466 )
+Timer: 0.0182 sec Timestep: 360, Simulation time: 0.908430, Forcing coefficient: 0.58220357
+
+Vmax=( 2.27259064, 2.16291904, 1.94104910 )
+Timer: 0.0183 sec Timestep: 361, Simulation time: 0.910268, Forcing coefficient: 0.58126664
+
+Vmax=( 2.27412987, 2.16680408, 1.94264698 )
+Timer: 0.0183 sec Timestep: 362, Simulation time: 0.912104, Forcing coefficient: 0.58033508
+
+Vmax=( 2.27565622, 2.17067862, 1.94423842 )
+Timer: 0.0184 sec Timestep: 363, Simulation time: 0.913937, Forcing coefficient: 0.57940888
+
+Vmax=( 2.27717018, 2.17454219, 1.94582295 )
+Timer: 0.0183 sec Timestep: 364, Simulation time: 0.915769, Forcing coefficient: 0.57848799
+
+Vmax=( 2.27867174, 2.17839479, 1.94740164 )
+Timer: 0.0181 sec Timestep: 365, Simulation time: 0.917599, Forcing coefficient: 0.57757246
+
+Vmax=( 2.28016138, 2.18223715, 1.94897389 )
+Timer: 0.0182 sec Timestep: 366, Simulation time: 0.919427, Forcing coefficient: 0.57666212
+
+Vmax=( 2.28163886, 2.18606853, 1.95054007 )
+Timer: 0.0183 sec Timestep: 367, Simulation time: 0.921253, Forcing coefficient: 0.57575697
+
+Vmax=( 2.28310347, 2.18988919, 1.95209956 )
+Timer: 0.0182 sec Timestep: 368, Simulation time: 0.923077, Forcing coefficient: 0.57485688
+
+Vmax=( 2.28455687, 2.19369864, 1.95365322 )
+Timer: 0.0181 sec Timestep: 369, Simulation time: 0.924899, Forcing coefficient: 0.57396185
+
+Vmax=( 2.28599739, 2.19749689, 1.95520043 )
+Timer: 0.0182 sec Timestep: 370, Simulation time: 0.926719, Forcing coefficient: 0.57307184
+
+Vmax=( 2.28745222, 2.20128465, 1.95674169 )
+Timer: 0.0185 sec Timestep: 371, Simulation time: 0.928537, Forcing coefficient: 0.57218695
+
+Vmax=( 2.28895617, 2.20506096, 1.95827723 )
+Timer: 0.0183 sec Timestep: 372, Simulation time: 0.930353, Forcing coefficient: 0.57130688
+
+Vmax=( 2.29044795, 2.20882654, 1.95980597 )
+Timer: 0.0183 sec Timestep: 373, Simulation time: 0.932167, Forcing coefficient: 0.57043177
+
+Vmax=( 2.29192710, 2.21258020, 1.96132874 )
+Timer: 0.0183 sec Timestep: 374, Simulation time: 0.933980, Forcing coefficient: 0.56956154
+
+Vmax=( 2.29339504, 2.21632338, 1.96284628 )
+Timer: 0.0182 sec Timestep: 375, Simulation time: 0.935790, Forcing coefficient: 0.56869614
+
+Vmax=( 2.29485083, 2.22005486, 1.96435726 )
+Timer: 0.0182 sec Timestep: 376, Simulation time: 0.937599, Forcing coefficient: 0.56783557
+
+Vmax=( 2.29629445, 2.22380161, 1.96586204 )
+Timer: 0.0182 sec Timestep: 377, Simulation time: 0.939406, Forcing coefficient: 0.56697983
+
+Vmax=( 2.29772687, 2.22770023, 1.96736145 )
+Timer: 0.0183 sec Timestep: 378, Simulation time: 0.941210, Forcing coefficient: 0.56612861
+
+Vmax=( 2.29914737, 2.23173690, 1.96885490 )
+Timer: 0.0184 sec Timestep: 379, Simulation time: 0.943013, Forcing coefficient: 0.56528217
+
+Vmax=( 2.30055571, 2.23576260, 1.97034252 )
+Timer: 0.0182 sec Timestep: 380, Simulation time: 0.944814, Forcing coefficient: 0.56444043
+
+Vmax=( 2.30195260, 2.23977780, 1.97182417 )
+Timer: 0.0182 sec Timestep: 381, Simulation time: 0.946614, Forcing coefficient: 0.56360328
+
+Vmax=( 2.30333757, 2.24378181, 1.97329998 )
+Timer: 0.0183 sec Timestep: 382, Simulation time: 0.948411, Forcing coefficient: 0.56277078
+
+Vmax=( 2.30471110, 2.24777460, 1.97477007 )
+Timer: 0.0182 sec Timestep: 383, Simulation time: 0.950206, Forcing coefficient: 0.56194288
+
+Vmax=( 2.30607271, 2.25175643, 1.97623825 )
+Timer: 0.0184 sec Timestep: 384, Simulation time: 0.952000, Forcing coefficient: 0.56111944
+
+Vmax=( 2.30742264, 2.25572658, 1.97778761 )
+Timer: 0.0185 sec Timestep: 385, Simulation time: 0.953791, Forcing coefficient: 0.56030065
+
+Vmax=( 2.30876112, 2.25968623, 1.97933102 )
+Timer: 0.0183 sec Timestep: 386, Simulation time: 0.955581, Forcing coefficient: 0.55948621
+
+Vmax=( 2.31008863, 2.26363420, 1.98086858 )
+Timer: 0.0182 sec Timestep: 387, Simulation time: 0.957369, Forcing coefficient: 0.55867606
+
+Vmax=( 2.31140399, 2.26757050, 1.98240018 )
+Timer: 0.0183 sec Timestep: 388, Simulation time: 0.959155, Forcing coefficient: 0.55787057
+
+Vmax=( 2.31316996, 2.27149534, 1.98392630 )
+Timer: 0.0182 sec Timestep: 389, Simulation time: 0.960939, Forcing coefficient: 0.55706924
+
+Vmax=( 2.31525946, 2.27540874, 1.98544598 )
+Timer: 0.0183 sec Timestep: 390, Simulation time: 0.962721, Forcing coefficient: 0.55627239
+
+Vmax=( 2.31733751, 2.27930975, 1.98696041 )
+Timer: 0.0182 sec Timestep: 391, Simulation time: 0.964501, Forcing coefficient: 0.55547994
+
+Vmax=( 2.31940389, 2.28319860, 1.98846889 )
+Timer: 0.0182 sec Timestep: 392, Simulation time: 0.966279, Forcing coefficient: 0.55469173
+
+Vmax=( 2.32145882, 2.28707552, 1.98997140 )
+Timer: 0.0183 sec Timestep: 393, Simulation time: 0.968055, Forcing coefficient: 0.55390781
+
+Vmax=( 2.32350230, 2.29093957, 1.99146795 )
+Timer: 0.0181 sec Timestep: 394, Simulation time: 0.969829, Forcing coefficient: 0.55312836
+
+Vmax=( 2.32553434, 2.29479170, 1.99295878 )
+Timer: 0.0182 sec Timestep: 395, Simulation time: 0.971601, Forcing coefficient: 0.55235308
+
+Vmax=( 2.32755470, 2.29863143, 1.99444389 )
+Timer: 0.0183 sec Timestep: 396, Simulation time: 0.973371, Forcing coefficient: 0.55158186
+
+Vmax=( 2.32956433, 2.30245900, 1.99592376 )
+Timer: 0.0183 sec Timestep: 397, Simulation time: 0.975139, Forcing coefficient: 0.55081481
+
+Vmax=( 2.33156180, 2.30627418, 1.99739742 )
+Timer: 0.0182 sec Timestep: 398, Simulation time: 0.976905, Forcing coefficient: 0.55005199
+
+Vmax=( 2.33354807, 2.31013131, 1.99886560 )
+Timer: 0.0182 sec Timestep: 399, Simulation time: 0.978669, Forcing coefficient: 0.54929328
+
+Vmax=( 2.33552313, 2.31409669, 2.00032830 )
+Timer: 0.0183 sec Timestep: 400, Simulation time: 0.980431, Forcing coefficient: 0.54853863
+TauS path: ./tauS.dat
+Vmax=( 2.33748651, 2.31805038, 2.00178528 )
+Computing statistics.
+Appending file ./stats.00.csv
+Timer: 0.0214 sec Timestep: 401, Simulation time: 0.982192, Forcing coefficient: 0.54778796
+
+Vmax=( 2.33943820, 2.32211113, 2.00323677 )
+Timer: 0.0183 sec Timestep: 402, Simulation time: 0.983950, Forcing coefficient: 0.54704136
+
+Vmax=( 2.34137917, 2.32623863, 2.00468278 )
+Timer: 0.0184 sec Timestep: 403, Simulation time: 0.985706, Forcing coefficient: 0.54629868
+
+Vmax=( 2.34330797, 2.33035374, 2.00612307 )
+Timer: 0.0183 sec Timestep: 404, Simulation time: 0.987461, Forcing coefficient: 0.54556012
+
+Vmax=( 2.34522533, 2.33445621, 2.00755811 )
+Timer: 0.0182 sec Timestep: 405, Simulation time: 0.989213, Forcing coefficient: 0.54482543
+
+Vmax=( 2.34713221, 2.33854723, 2.00898790 )
+Timer: 0.0182 sec Timestep: 406, Simulation time: 0.990964, Forcing coefficient: 0.54409462
+
+Vmax=( 2.34902668, 2.34262538, 2.01041198 )
+Timer: 0.0182 sec Timestep: 407, Simulation time: 0.992712, Forcing coefficient: 0.54336762
+
+Vmax=( 2.35091043, 2.34669113, 2.01183057 )
+Timer: 0.0183 sec Timestep: 408, Simulation time: 0.994459, Forcing coefficient: 0.54264456
+
+Vmax=( 2.35278249, 2.35074472, 2.01324368 )
+Timer: 0.0184 sec Timestep: 409, Simulation time: 0.996203, Forcing coefficient: 0.54192531
+
+Vmax=( 2.35464239, 2.35478497, 2.01465154 )
+Timer: 0.0182 sec Timestep: 410, Simulation time: 0.997946, Forcing coefficient: 0.54120994
+
+Vmax=( 2.35649157, 2.35881281, 2.01605415 )
+Timer: 0.0182 sec Timestep: 411, Simulation time: 0.999687, Forcing coefficient: 0.54049832
+
+Vmax=( 2.35835695, 2.36282802, 2.01745176 )
+Timer: 0.0182 sec Timestep: 412, Simulation time: 1.001426, Forcing coefficient: 0.53979015
+
+Total time: 10.185543 sec, Average: 0.024782 sec/iter 
+
+RK iterations finished.
+RK iterations finished.
+Writing output.
+Nothing important left to do.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 266192: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; export OMPI_MCA_pml_pami_enable_cuda=0 ;#source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; export OMPI_MCA_pml_pami_enable_cuda=0 ;#source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n13>
+                            <20*summitdev-r0c0n15>
+</ccs/home/angli> was used as the home directory.
+</ccs/home/angli/tartan/Tartan/scale-out-rdma/hit> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 5
+#BSUB -nnodes 2
+module load cuda/8.0.54
+module load spectrum-mpi
+module load hdf5
+
+export OMPI_MCA_pml_pami_enable_cuda=0 
+#source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+
+jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.82 sec.
+    Max Memory :                                 42 MB
+    Average Memory :                             42.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1125 MB
+    Max Processes :                              1
+    Max Threads :                                23
+    Run time :                                   47 sec.
+    Turnaround time :                            113 sec.
+
+The output (if any) is above this job summary.
+

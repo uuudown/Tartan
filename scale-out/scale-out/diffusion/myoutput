@@ -1,0 +1,346 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 305174: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 1;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 1;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n07>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out/diffusion> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 1
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+export OMPI_MCA_pml_pami_enable_cuda=0 
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n1 -a1 -g1 -c1 -r1 ./run_1g_strong.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.48 sec.
+    Max Memory :                                 52 MB
+    Average Memory :                             51.39 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   273 sec.
+    Turnaround time :                            318 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 305176: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 2;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 2;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n18>
+                            <20*summitdev-r0c2n01>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out/diffusion> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 2
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+export OMPI_MCA_pml_pami_enable_cuda=0 
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_strong.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.39 sec.
+    Max Memory :                                 51 MB
+    Average Memory :                             50.78 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   151 sec.
+    Turnaround time :                            199 sec.
+
+The output (if any) is above this job summary.
+
+[1521115836.061316] [summitdev-r0c1n15:67122:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115836.089619] [summitdev-r0c1n15:67122:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115836.189609] [summitdev-r0c1n13:159925:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115836.194887] [summitdev-r0c1n13:159925:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+dt: 3.35006e-06, iterations: 1000, final time: 0.00335006
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  12.088215 seconds
+Data transfer(s) HtD                         :  0.004222 seconds
+Data transfer(s) DtH                         :  0.004166 seconds
+===================================================================
+Total effective GFLOPs                       :  128.971893
+===================================================================
+3D Grid Size                                 :  400 x 400 x 406
+Iterations                                   :  1000 x 3 RK steps
+===================================================================
+ExE_Time: 31.35
+[1521115865.120229] [summitdev-r0c1n13:159939:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115865.126776] [summitdev-r0c1n13:159939:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115865.128262] [summitdev-r0c1n15:67136:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115865.132849] [summitdev-r0c1n15:67136:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+dt: 3.35006e-06, iterations: 1000, final time: 0.00335006
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  12.188348 seconds
+Data transfer(s) HtD                         :  0.004321 seconds
+Data transfer(s) DtH                         :  0.004209 seconds
+===================================================================
+Total effective GFLOPs                       :  127.912331
+===================================================================
+3D Grid Size                                 :  400 x 400 x 406
+Iterations                                   :  1000 x 3 RK steps
+===================================================================
+ExE_Time: 25.61
+[1521115890.700347] [summitdev-r0c1n13:159952:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115890.704645] [summitdev-r0c1n13:159952:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115890.705651] [summitdev-r0c1n15:67148:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115890.709931] [summitdev-r0c1n15:67148:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+dt: 3.35006e-06, iterations: 1000, final time: 0.00335006
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  12.133395 seconds
+Data transfer(s) HtD                         :  0.004211 seconds
+Data transfer(s) DtH                         :  0.004171 seconds
+===================================================================
+Total effective GFLOPs                       :  128.491653
+===================================================================
+3D Grid Size                                 :  400 x 400 x 406
+Iterations                                   :  1000 x 3 RK steps
+===================================================================
+ExE_Time: 28.05
+[1521115918.800712] [summitdev-r0c1n13:159966:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115918.805102] [summitdev-r0c1n13:159966:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115918.825253] [summitdev-r0c1n15:67162:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115918.829598] [summitdev-r0c1n15:67162:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+dt: 3.35006e-06, iterations: 1000, final time: 0.00335006
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  12.199606 seconds
+Data transfer(s) HtD                         :  0.004220 seconds
+Data transfer(s) DtH                         :  0.004191 seconds
+===================================================================
+Total effective GFLOPs                       :  127.794281
+===================================================================
+3D Grid Size                                 :  400 x 400 x 406
+Iterations                                   :  1000 x 3 RK steps
+===================================================================
+ExE_Time: 28.65
+[1521115947.408172] [summitdev-r0c1n13:159980:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115947.412267] [summitdev-r0c1n13:159980:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115947.422488] [summitdev-r0c1n15:67177:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+[1521115947.426423] [summitdev-r0c1n15:67177:0]         mxm.c:196  MXM  WARN  The 'ulimit -s' on the system is set to 'unlimited'. This may have negative performance implications. Please set the stack size to the default value (10240) 
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 3 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+Process 2 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.00501253, final time: 0.00335006
+
+IC saved in Host rank 0
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+pitch: 448
+gc_pitch: 448
+dt: 3.35006e-06, iterations: 1000, final time: 0.00335006
+
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  12.158331 seconds
+Data transfer(s) HtD                         :  0.004288 seconds
+Data transfer(s) DtH                         :  0.004252 seconds
+===================================================================
+Total effective GFLOPs                       :  128.228134
+===================================================================
+3D Grid Size                                 :  400 x 400 x 406
+Iterations                                   :  1000 x 3 RK steps
+===================================================================
+ExE_Time: 25.95
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 305178: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 4;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 10;#BSUB -nnodes 4;module load gcc/5.4.0;module load hdf5;module load cuda/8.0.54;module load spectrum-mpi;export OMPI_MCA_pml_pami_enable_cuda=0 ;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh;/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c1n11>
+                            <20*summitdev-r0c1n12>
+                            <20*summitdev-r0c1n13>
+                            <20*summitdev-r0c1n15>
+</ccs/home/angli> was used as the home directory.
+</autofs/nccs-svm1_home1/angli/tartan/Tartan/scale-out/diffusion> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 10
+#BSUB -nnodes 4
+module load gcc/5.4.0
+module load hdf5
+module load cuda/8.0.54
+module load spectrum-mpi
+export OMPI_MCA_pml_pami_enable_cuda=0 
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+/usr/bin/time -f 'ExE_Time: %e' jsrun -n4 -a1 -g1 -c1 -r1 ./run_4g_strong.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1.41 sec.
+    Max Memory :                                 52 MB
+    Average Memory :                             51.43 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1368 MB
+    Max Processes :                              7
+    Max Threads :                                31
+    Run time :                                   143 sec.
+    Turnaround time :                            500750 sec.
+
+The output (if any) is above this job summary.
+

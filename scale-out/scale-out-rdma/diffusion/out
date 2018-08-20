@@ -1,0 +1,91 @@
+Process 1 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.0100503, final time: 0.00446924
+
+Domain Initialized rank 1
+SubDomain 1 Initialized
+Send/Receive buffers allocated in rank 1
+Streams created in rank 1
+Pitched memory arrays created in GPU 1
+Memory copied to GPU 1
+pitch: 448
+gc_pitch: 448
+Begin computation loop in rank 1
+Memory copied back to Host 1
+Subdomains merged 1
+Process 0 -> GPU0
+dx: 0.00501253, dy: 0.00501253, dz: 0.0100503, final time: 0.00446924
+
+Domain Initialized rank 0
+IC saved in Host rank 0
+SubDomain 0 Initialized
+Send/Receive buffers allocated in rank 0
+Streams created in rank 0
+Pitched memory arrays created in GPU 0
+Memory copied to GPU 0
+pitch: 448
+gc_pitch: 448
+Begin computation loop in rank 0
+dt: 4.46924e-06, iterations: 1000, final time: 0.00446924
+
+Memory copied back to Host 0
+Subdomains merged 0
+Solution saved in Host rank 0
+=======================Diffusion-3D MPI-GPU-FD4=====================
+Optimization                                 :  Pitched Memory
+Kernel time ex. data transfers               :  7.565463 seconds
+Data transfer(s) HtD                         :  0.004146 seconds
+Data transfer(s) DtH                         :  0.004117 seconds
+===================================================================
+Total effective GFLOPs                       :  104.559364
+===================================================================
+3D Grid Size                                 :  400 x 400 x 206
+Iterations                                   :  1000 x 3 RK steps
+===================================================================
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@summitdev-login1.ccs.ornl.gov>
+Subject: Job 266259: <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> in cluster <summitdev> Done
+
+Job <#!/bin/bash;#BSUB -P CSC249ADCD502;#BSUB -W 5;#BSUB -nnodes 2;module load cuda/8.0.54;module load spectrum-mpi;module load hdf5; #export OMPI_MCA_pml_pami_enable_cuda=0 ;source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu; jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh> was submitted from host <summitdev-login1.ccs.ornl.gov> by user <angli> in cluster <summitdev>.
+Job was executed on host(s) <1*summitdev-login1>, in queue <batch>, as user <angli> in cluster <summitdev>.
+                            <20*summitdev-r0c0n13>
+                            <20*summitdev-r0c0n15>
+</ccs/home/angli> was used as the home directory.
+</ccs/home/angli/tartan/Tartan/scale-out-rdma/diffusion> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -P CSC249ADCD502
+#BSUB -W 5
+#BSUB -nnodes 2
+module load cuda/8.0.54
+module load spectrum-mpi
+module load hdf5
+
+#export OMPI_MCA_pml_pami_enable_cuda=0 
+source $OLCF_SPECTRUM_MPI_ROOT/jsm_pmix/bin/export_smpi_env -gpu
+
+jsrun -n2 -a1 -g1 -c1 -r1 ./run_2g_weak.sh
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.82 sec.
+    Max Memory :                                 50 MB
+    Average Memory :                             50.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1171 MB
+    Max Processes :                              6
+    Max Threads :                                30
+    Run time :                                   16 sec.
+    Turnaround time :                            66 sec.
+
+The output (if any) is above this job summary.
+
