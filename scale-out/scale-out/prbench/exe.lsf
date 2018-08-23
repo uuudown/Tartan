@@ -1,5 +1,5 @@
 #!/bin/bash
-#BSUB -P CSC249ADCD502
+#BSUB -P #PROJECTNUMBER
 #BSUB -W 10
 #BSUB -nnodes 4
 module load gcc/5.4.0
