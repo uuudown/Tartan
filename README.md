@@ -7,8 +7,8 @@
 ##Introduction:
 
  Tartan is a multi-GPU benchmark suite. It is proposed to evaluate modern GPU interconnect 
- in our IISWC-18 paper "Tartan: Evaluating Modern GPU Interconnect via a Multi-GPU Benchmark
- Suite". Please see our paper for more details.
+ in our IISWC-18 paper **"Tartan: Evaluating Modern GPU Interconnect via a Multi-GPU Benchmark
+ Suite"**. Please see our paper (as included) for more details.
 
  Tartan contains three sub-directories:
 
