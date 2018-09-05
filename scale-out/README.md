@@ -13,7 +13,7 @@
 ##Run:
  Execute the python script: 
  ```
-   $ python run\_scale\_out.py
+   $ python run_scale_out.py
  ```
  or enter into each app dir, make, and run:
  ```  
@@ -26,18 +26,18 @@
 ##Scaling Test:
   Strong scaling:
   ```
-   $ ./run\_1g\_strong.sh
-   $ ./run\_2g\_strong.sh
-   $ ./run\_4g\_strong.sh
-   $ ./run\_8g\_strong.sh
+   $ ./run_1g_strong.sh
+   $ ./run_2g_strong.sh
+   $ ./run_4g_strong.sh
+   $ ./run_8g_strong.sh
 ```
 
   Weak scaling: 
 ```
-   $ ./run\_1g\_weak.sh
-   $ ./run\_2g\_weak.sh
-   $ ./run\_4g\_weak.sh
-   $ ./run\_8g\_weak.sh
+   $ ./run_1g_weak.sh
+   $ ./run_2g_weak.sh
+   $ ./run_4g_weak.sh
+   $ ./run_8g_weak.sh
 ```
 ##Acknowledge:
  Our scale-out test is conducted on SummitDev of Oak-Ridge National Laboratory (ORNL). The
