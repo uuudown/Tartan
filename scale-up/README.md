@@ -4,14 +4,14 @@
 ####        Created:  03/19/2018 02:44:40 PM, Richland, WA, USA.
 ###========================================================================
 
-##Introduction:
+- Introduction:
  This directory contains the 7 multi-GPU benchmarks for intr-node scale-up with PCI-e 
  and NVLink-V1/V2 interconnect.
 
-##Config:
+- Config:
  Set env in "shared.mk". You need to install NCCL library before building the NVLink version.
 
-##Run:
+- Run:
  Execute the python script: 
  ```
    $ python run_scale_up.py 
