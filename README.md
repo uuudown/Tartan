@@ -51,7 +51,6 @@ The applications in Tartan were modified from their original implementations. It
 - HIT: M.V.Martin, “HIT: a parallel GPGPU code to simulate Homogeneous Isotropic Turbulence,” https://github.com/albertovelam/HIT_MPI.
 - Mavtec: T. Agarwal, “Multi-GPU Matrix Multiplication using CUDA and MPI,”https://github.com/tejaswiagarwal/multigpumatmul
 
-
 The Tartan Benchmark Suite and the evaluation research was supported by the U.S. DOE Office of 
 Science, Office of Advanced Scientific Computing Research, under award 66150: "CENATE - Center
 for Advanced Architecture Evaluation". The Pacific Northwest National Laboratory is operated
@@ -61,8 +60,6 @@ a collaborative effort of the U.S. DOE Office of Science and National Nuclear Se
 Administration. Part of the computing resources is from the Oak Ridge Leadership Computing 
 Facility. The Oak Ridge National Laboratory is supported by the Office of Science of 
 the U.S. Department of Energy under Contract No. DE-AC05-00OR22725.
-
-
 
 ##MIT License
 
