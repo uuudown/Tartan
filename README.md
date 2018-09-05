@@ -25,11 +25,11 @@
 
 The applications in Tartan were modified from their original implementations so it is a joint effort of the community.  
 
-*Microbenchmark*:
-Scale-up P2P: NVIDIA, “CUDA SDK Code Samples,” 2015.
-Scale-up Collective: NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
-Scale-out P2P: “MPI-GPU-BW,” https://github.com/frroberts/MPI-GPU-BW
-Scale-out Collective: NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
+####Microbenchmark:
+*Scale-up P2P:* NVIDIA, “CUDA SDK Code Samples,” 2015.
+*Scale-up Collective:* NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
+*Scale-out P2P:* “MPI-GPU-BW,” https://github.com/frroberts/MPI-GPU-BW
+*Scale-out Collective:* NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
 
 *Scale-up*:
 ConvNet2: Google, “High-Performance C++/CUDA Implementation of Convolutional Neural Networks Version-2,” https://github.com/akrizhevsky/
