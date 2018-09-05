@@ -23,7 +23,7 @@
 
 ##Acknowledge:
 
-The applications in Tartan were modified from their original implementations so it is a joint effort of the community.  
+The applications in Tartan were modified from their original implementations. It is an joint effort of the community. Here we list the source of the original design.
 
 **Microbenchmark:**
 
