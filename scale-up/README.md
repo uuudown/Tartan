@@ -1,7 +1,7 @@
 ###========================================================================
-###         Author:  Ang Li, PNNL
-###        Website:  http://www.angliphd.com  
-###        Created:  03/19/2018 02:44:40 PM, Richland, WA, USA.
+####         Author:  Ang Li, PNNL
+####        Website:  http://www.angliphd.com  
+####        Created:  03/19/2018 02:44:40 PM, Richland, WA, USA.
 ###========================================================================
 
 ##Introduction:
@@ -13,26 +13,32 @@
 
 ##Run:
  Execute the python script: 
-   $ python run\_scale\_up.py 
+ ```
+   $ python run_scale_up.py 
+ ```
  or enter into each app dir, make, and run:
+ ```
    $ cd scale-up/$app$/
    $ make
    $ chmod +x run.sh
    $ ./run.sh
-
+ ```
 ##Scaling Test:
   Strong scaling:
-   $ ./run\_1g\_strong.sh
-   $ ./run\_2g\_strong.sh
-   $ ./run\_4g\_strong.sh
-   $ ./run\_8g\_strong.sh
-
+  ```
+   $ ./run_1g_strong.sh
+   $ ./run_2g_strong.sh
+   $ ./run_4g_strong.sh
+   $ ./run_8g_strong.sh
+  ```
+  
   Weak scaling: 
-   $ ./run\_1g\_weak.sh
-   $ ./run\_2g\_weak.sh
-   $ ./run\_4g\_weak.sh
-   $ ./run\_8g\_weak.sh
-
+  ```
+   $ ./run_1g_weak.sh
+   $ ./run_2g_weak.sh
+   $ ./run_4g_weak.sh
+   $ ./run_8g_weak.sh
+  ```
 ##File Description: 
 ```shell
             shared.mk: Overall configuration file for all Makefile. Please config your env here.
