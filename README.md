@@ -23,6 +23,34 @@
 
 ##Acknowledge:
 
+The applications in Tartan were modified from their original implementations so it is a joint effort of the community.  
+
+*Microbenchmark*:
+Scale-up P2P: NVIDIA, “CUDA SDK Code Samples,” 2015.
+Scale-up Collective: NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
+Scale-out P2P: “MPI-GPU-BW,” https://github.com/frroberts/MPI-GPU-BW
+Scale-out Collective: NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
+
+*Scale-up*:
+ConvNet2: Google, “High-Performance C++/CUDA Implementation of Convolutional Neural Networks Version-2,” https://github.com/akrizhevsky/
+cuda-convnet2.
+Cusimann:A.M.F. Ferreiro, J.A.G. Rodrıguez, J.G.L. Salas, and C.V. Cendon, “CUSIMANN: An optimized simulated annealing software for GPUs,” https://github.com/palmalcheg/cusimann.
+GMM:A. D. Pangborn, “Expectation Maximization with a Gaussian Mixture Model using CUDA,” https://github.com/corv/cuda-gmm-multigpu.
+Kmeans: NVIDIA, “Kmeans Clustering with Multi-GPU Capabilities,” https://github.com/NVIDIA/kmeans.
+MonteCarlo: NVIDIA, “CUDA SDK Code Samples,” 2015.
+Planar: B. Dimitrov, “Multi-GPU Code to Count all PLANAR Langford Sequences,” https://github.com/boris-dimitrov/z4 planar langford multigpu.
+Trueke: C. Navarro, “Multi-GPU Exchange Monte Carlo for 3D Random Field Ising Model ,” https://github.com/crinavar/trueke
+
+*Scale-out*:
+B2rEqwp: Z. Liu, “Efficient Large-scale Parallel Stencil Computation on Multi-Core and Multi-GPU Accelerated Clusters,” https://github.com/lzhengchun/b2r.
+Diffusion: M. A. Diaz, “Multi-GPU (CUDA-MPI) baseline implementation of Heat Equation and the inviscid Burgers’ equation,” https://github.com/wme7/MultiGPU AdvectionDiffusion.
+Lulesh:LLNL, “Livermore Unstructured Lagrangian Explicit Shock Hydrodynamics,” https://codesign.llnl.gov/lulesh.php
+CoMD:NVIDIA, “GPU implementation of classical molecular dynamics proxy application,” https://github.com/NVIDIA/CoMD-CUDA
+Prbench: NVIDIA, “A CUDA implementation of the PageRank Pipeline Benchmark ,” https://github.com/NVIDIA/PRBench
+HIT: M.V.Mart ́ın, “HIT: a parallel GPGPU code to simulate Homogeneous Isotropic Turbulence,” https://github.com/albertovelam/HIT_MPI.
+Mavtec:T. Agarwal, “Multi-GPU Matrix Multiplication using CUDA and MPI,”https://github.com/tejaswiagarwal/multigpumatmul
+
+
 The Tartan Benchmark Suite and the evaluation research was supported by the U.S. DOE Office of 
 Science, Office of Advanced Scientific Computing Research, under award 66150: "CENATE - Center
 for Advanced Architecture Evaluation". The Pacific Northwest National Laboratory is operated
@@ -34,7 +62,10 @@ Facility. The Oak Ridge National Laboratory is supported by the Office of Scienc
 the U.S. Department of Energy under Contract No. DE-AC05-00OR22725.
 
 
+
 ##MIT License
+
+This benchmark suite is modified from individual applications. Please refer to each application's license requirement.
 
 Copyright 2018 Ang Li, PNNL.
 
