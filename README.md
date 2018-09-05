@@ -25,15 +25,12 @@
 
 The applications in Tartan were modified from their original implementations so it is a joint effort of the community.  
 
-#Microbenchmark:
+**Microbenchmark:**
 
-*Scale-up P2P:* NVIDIA, “CUDA SDK Code Samples,” 2015.
-
-*Scale-up Collective:* NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
-
-*Scale-out P2P:* “MPI-GPU-BW,” https://github.com/frroberts/MPI-GPU-BW
-
-*Scale-out Collective:* NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
+-Scale-up P2P: NVIDIA, “CUDA SDK Code Samples,” 2015.
+-Scale-up Collective: NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
+-Scale-out P2P: “MPI-GPU-BW,” https://github.com/frroberts/MPI-GPU-BW
+-Scale-out Collective: NVIDIA, “NCCL Tests,” http://github.com/NVIDIA/nccl-tests
 
 #Scale-up:
 *ConvNet2:* Google, “High-Performance C++/CUDA Implementation of Convolutional Neural Networks Version-2,” https://github.com/akrizhevsky/cuda-convnet2
@@ -62,7 +59,7 @@ The applications in Tartan were modified from their original implementations so 
 
 *Prbench:* NVIDIA, “A CUDA implementation of the PageRank Pipeline Benchmark ,” https://github.com/NVIDIA/PRBench
 
-*HIT:* M.V.Mart ́ın, “HIT: a parallel GPGPU code to simulate Homogeneous Isotropic Turbulence,” https://github.com/albertovelam/HIT_MPI.
+*HIT:* M.V.Martin, “HIT: a parallel GPGPU code to simulate Homogeneous Isotropic Turbulence,” https://github.com/albertovelam/HIT_MPI.
 
 *Mavtec:* T. Agarwal, “Multi-GPU Matrix Multiplication using CUDA and MPI,”https://github.com/tejaswiagarwal/multigpumatmul
 
