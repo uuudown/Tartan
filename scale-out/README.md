@@ -1,7 +1,7 @@
 ###========================================================================
-###         Author:  Ang Li, PNNL
-###        Website:  http://www.angliphd.com  
-###        Created:  03/19/2018 03:44:40 PM, Richland, WA, USA.
+####         Author:  Ang Li, PNNL
+####        Website:  http://www.angliphd.com  
+####        Created:  03/19/2018 03:44:40 PM, Richland, WA, USA.
 ###========================================================================
 
 ##Introduction:
@@ -12,26 +12,33 @@
 
 ##Run:
  Execute the python script: 
-   $ python run\_scale\_out.py 
+ ```
+   $ python run\_scale\_out.py
+ ```
  or enter into each app dir, make, and run:
+ ```  
    $ cd scale-out/$app$/
    $ make
    $ chmod +x run.sh
    $ ./run.sh
+```
 
 ##Scaling Test:
   Strong scaling:
+  ```
    $ ./run\_1g\_strong.sh
    $ ./run\_2g\_strong.sh
    $ ./run\_4g\_strong.sh
    $ ./run\_8g\_strong.sh
+```
 
   Weak scaling: 
+```
    $ ./run\_1g\_weak.sh
    $ ./run\_2g\_weak.sh
    $ ./run\_4g\_weak.sh
    $ ./run\_8g\_weak.sh
-
+```
 ##Acknowledge:
  Our scale-out test is conducted on SummitDev of Oak-Ridge National Laboratory (ORNL). The
  research and evaluation is supported by Exascale Computing Project (17-SC-20-SC), a joint 
