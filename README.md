@@ -43,12 +43,12 @@ The applications in Tartan were modified from their original implementations. It
 
 **Scale-out:**
 
-- B2rEqwp: Z. Liu, “Efficient Large-scale Parallel Stencil Computation on Multi-Core and Multi-GPU Accelerated Clusters”, https://github.com/lzhengchun/b2r.
-- Diffusion: M. A. Diaz, “Multi-GPU (CUDA-MPI) baseline implementation of Heat Equation and the inviscid Burgers’ equation”, https://github.com/wme7/MultiGPU_AdvectionDiffusion.
+- B2rEqwp: Z. Liu, “Efficient Large-scale Parallel Stencil Computation on Multi-Core and Multi-GPU Accelerated Clusters”, https://github.com/lzhengchun/b2r
+- Diffusion: M. A. Diaz, “Multi-GPU (CUDA-MPI) baseline implementation of Heat Equation and the inviscid Burgers’ equation”, https://github.com/wme7/MultiGPU_AdvectionDiffusion
 - Lulesh: LLNL, “Livermore Unstructured Lagrangian Explicit Shock Hydrodynamics”, https://codesign.llnl.gov/lulesh.php
 - CoMD: NVIDIA, “GPU implementation of classical molecular dynamics proxy application”, https://github.com/NVIDIA/CoMD-CUDA
 - Prbench: NVIDIA, “A CUDA implementation of the PageRank Pipeline Benchmark”, https://github.com/NVIDIA/PRBench
-- HIT: M.V.Martin, “HIT: a parallel GPGPU code to simulate Homogeneous Isotropic Turbulence”, https://github.com/albertovelam/HIT_MPI.
+- HIT: M.V.Martin, “HIT: a parallel GPGPU code to simulate Homogeneous Isotropic Turbulence”, https://github.com/albertovelam/HIT_MPI
 - Mavtec: T. Agarwal, “Multi-GPU Matrix Multiplication using CUDA and MPI”, https://github.com/tejaswiagarwal/multigpumatmul
 
 The Tartan Benchmark Suite and the evaluation research was supported by the U.S. DOE Office of 
