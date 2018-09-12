@@ -38,7 +38,7 @@ The applications in Tartan were modified from their original implementations. It
 - GMM: A.D. Pangborn, “Expectation Maximization with a Gaussian Mixture Model using CUDA,” https://github.com/corv/cuda-gmm-multigpu
 - Kmeans: NVIDIA, “Kmeans Clustering with Multi-GPU Capabilities,” https://github.com/NVIDIA/kmeans.
 - MonteCarlo: NVIDIA, “CUDA SDK Code Samples,” 2015.
-- Planar: B. Dimitrov, “Multi-GPU Code to Count all PLANAR Langford Sequences,” https://github.com/boris-dimitrov/z4 planar langford multigpu.
+- Planar: B. Dimitrov, “Multi-GPU Code to Count all PLANAR Langford Sequences,” https://github.com/boris-dimitrov/z4_planar_langford_multigpu.
 - Trueke: C. Navarro, “Multi-GPU Exchange Monte Carlo for 3D Random Field Ising Model ,” https://github.com/crinavar/trueke
 
 **Scale-out:**
